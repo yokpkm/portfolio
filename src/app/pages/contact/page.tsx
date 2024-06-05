@@ -8,7 +8,7 @@ import {
   FacebookFilled,
   InstagramFilled,
 } from "@ant-design/icons";
-import { DividerSection } from "@/app/components/divider";
+import { DividerSection } from "@/app/components/Divider";
 import {
   TextBody,
   TextDescription,

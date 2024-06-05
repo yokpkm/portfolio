@@ -1,7 +1,7 @@
 import { Row } from "antd";
 import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
 import React, { useState } from "react";
-import { DividerSection } from "../../components/divider";
+import { DividerSection } from "../../components/Divider";
 import { TextDescription, TextHeader } from "../../components/Text";
 import { WebAppDesign } from "./card-items/01-web-app-design";
 import { AppDesign } from "./card-items/02-app-design";
