@@ -1,16 +1,8 @@
-import { Modal } from "antd";
 import styled from "styled-components";
-import { PropsTheme } from "../../src/theme";
+import { PropsTheme } from "@/theme";
+import { Modal } from "antd";
 
-interface Props {
-  padding: string;
-}
-
-export const StyledModal = styled(Modal).attrs((props: Props) => {
-  return {
-    padding: props.padding,
-  };
-})`
+export const StyledModal = styled(Modal)<PropsTheme>`
   &.ant-modal {
     max-width: 100%;
     margin: 0;
@@ -20,22 +12,28 @@ export const StyledModal = styled(Modal).attrs((props: Props) => {
   }
 
   .ant-modal-body {
-    padding: ${(props) => props?.padding || "48px 0px"};
+    padding: 48px 0px;
   }
 
   .ant-modal-close {
+    /* position: fixed;
+    top: auto; */
+
+    /* top: auto; */
     position: fixed;
-    top: auto;
+    background-color: unset;
+    /* margin: 48px 48px; */
   }
 
   .ant-modal-close-x {
     font-size: 20px;
-    color: ${(props: PropsTheme) => props.theme.closeColor.default};
+    color: ${(props) => props.theme.closeColor.default};
+    /* position: absolute; */
 
     :hover,
     :focus,
     :active {
-      color: ${(props: PropsTheme) => props.theme.closeColor.hover};
+      color: ${(props) => props.theme.closeColor.hover};
     }
   }
 
@@ -45,8 +43,7 @@ export const StyledModal = styled(Modal).attrs((props: Props) => {
     overflow-y: scroll;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    background-color: ${(props: PropsTheme) =>
-      props.theme.backgroundColors.default};
+    background-color: ${(props) => props.theme.backgroundColors.default};
   }
 
   .ant-modal-mask {

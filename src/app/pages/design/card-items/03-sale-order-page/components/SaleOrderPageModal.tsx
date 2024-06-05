@@ -1,6 +1,6 @@
 import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
 import React from "react";
-import { StyledModal } from "../../../../../components/Modal";
+import { StyledModal } from "../../../../../components/modal";
 import { CloseCircleFilled } from "@ant-design/icons";
 import { Col, Image, Row } from "antd";
 import { TextHeader, TextModal } from "../../../../../components/text";
