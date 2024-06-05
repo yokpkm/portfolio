@@ -4,7 +4,7 @@ import styled, { ThemeContext } from "styled-components";
 
 import { TextMenu } from "../../../Text";
 import { StyledDrawer } from "../../../drawer";
-import { DividerMenu } from "../../../Divider";
+import { DividerMenu } from "../../../divider";
 import { StyledSwitch } from "../../../Switch";
 import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
