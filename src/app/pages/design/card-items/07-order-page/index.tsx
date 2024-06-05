@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonMore } from "../../../../components/button";
 import { StyledTagCoding, StyledTagDesign } from "../../../../components/Tag";
-import { TextContent, TextTitle } from "../../../../components/Text";
+import { TextContent, TextTitle } from "../../../../components/text";
 
 import { OrderPageModal } from "./components/OrderPageModal";
 import { DarkTheme, LightTheme } from "@/theme";

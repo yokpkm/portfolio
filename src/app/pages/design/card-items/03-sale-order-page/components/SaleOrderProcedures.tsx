@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
 import React from "react";
-import { TextModal } from "../../../../../components/Text";
+import { TextModal } from "../../../../../components/text";
 
 export const SaleOrderProcedures = () => {
   const { xs, sm } = useBreakpoint();

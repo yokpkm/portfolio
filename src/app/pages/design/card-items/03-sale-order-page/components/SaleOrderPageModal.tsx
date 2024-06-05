@@ -3,7 +3,7 @@ import React from "react";
 import { StyledModal } from "../../../../../components/Modal";
 import { CloseCircleFilled } from "@ant-design/icons";
 import { Col, Image, Row } from "antd";
-import { TextHeader, TextModal } from "../../../../../components/Text";
+import { TextHeader, TextModal } from "../../../../../components/text";
 import {
   StyledTagCoding,
   StyledTagDatabase,

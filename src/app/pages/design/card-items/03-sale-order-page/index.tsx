@@ -9,7 +9,7 @@ import {
   StyledTagDatabase,
   StyledTagDesign,
 } from "../../../../components/Tag";
-import { TextContent, TextTitle } from "../../../../components/Text";
+import { TextContent, TextTitle } from "../../../../components/text";
 
 import { SaleOrderPageModal } from "./components/SaleOrderPageModal";
 import { DarkTheme, LightTheme } from "@/theme";

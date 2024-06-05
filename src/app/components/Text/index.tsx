@@ -1,82 +1,83 @@
-import Text from "antd/lib/typography/Text";
 import styled from "styled-components";
-import { PropsTheme } from "../../src/theme";
+import { PropsTheme } from "@/theme";
+import { Typography } from "antd";
 
-export const TextHeader = styled(Text)`
-  font-size: ${(props: PropsTheme) => props.theme.fontSize.header};
+export const TextHeader = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.fontSize.header};
   font-weight: 700;
-  color: ${(props: PropsTheme) => props.theme.fontColor.default};
   letter-spacing: 0.03em;
+  color: ${(props) => props.theme.fontColor.default};
   margin-bottom: 0;
 `;
 
-export const TextTitle = styled(Text)`
-  font-size: ${(props: PropsTheme) => props.theme.fontSize.title};
+export const TextTitle = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.fontSize.title};
   font-weight: 700;
-  color: ${(props: PropsTheme) => props.theme.fontColor.default};
   letter-spacing: 0.03em;
+  color: ${(props) => props.theme.fontColor.default};
   margin-bottom: 0;
 `;
 
-export const TextMenu = styled(Text)`
-  font-size: ${(props: PropsTheme) => props.theme.fontSize.menu};
+export const TextMenu = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.fontSize.menu};
   font-weight: 400;
-  color: ${(props: PropsTheme) => props.theme.fontColor.default};
   letter-spacing: 0.04em;
+  color: ${(props) => props.theme.fontColor.default};
   margin-bottom: 0;
 
-  :hover,
-  :focus,
-  :active {
-    color: ${(props: PropsTheme) => props.theme.fontColor.link};
-  }
-`;
-
-export const TextLink = styled(Text)`
-  font-size: ${(props: PropsTheme) => props.theme.fontSize.body};
-  font-weight: 400;
-  color: ${(props: PropsTheme) => props.theme.fontColor.medium};
-  letter-spacing: 0.04em;
-  margin-bottom: 0;
-
-  :hover,
-  :focus,
-  :active {
-    color: ${(props: PropsTheme) => props.theme.fontColor.link};
+  &&.ant-typography:hover,
+  .ant-typography:active,
+  .ant-typography:focus {
+    color: ${(props) => props.theme.fontColor.link};
     cursor: pointer;
   }
 `;
 
-export const TextBody = styled(Text)`
-  font-size: ${(props: PropsTheme) => props.theme.fontSize.body};
+export const TextLink = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.fontSize.body};
   font-weight: 400;
-  color: ${(props: PropsTheme) => props.theme.fontColor.medium};
   letter-spacing: 0.04em;
+  color: ${(props) => props.theme.fontColor.medium};
+  margin-bottom: 0;
+
+  &&.ant-typography:hover,
+  .ant-typography:active,
+  .ant-typography:focus {
+    color: ${(props) => props.theme.fontColor.link};
+    cursor: pointer;
+  }
+`;
+
+export const TextBody = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.fontSize.body};
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: ${(props) => props.theme.fontColor.medium};
   margin-bottom: 0;
 `;
 
-export const TextContent = styled(Text)`
-  font-size: ${(props: PropsTheme) => props.theme.fontSize.content};
+export const TextContent = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.fontSize.content};
   font-weight: 400;
-  color: ${(props: PropsTheme) => props.theme.fontColor.medium};
   letter-spacing: 0.04em;
-  margin-bottom: 0;
   line-height: 22px;
-`;
-
-export const TextDescription = styled(Text)`
-  font-size: ${(props: PropsTheme) => props.theme.fontSize.description};
-  font-weight: 400;
-  color: ${(props: PropsTheme) => props.theme.fontColor.medium};
-  letter-spacing: 0.04em;
+  color: ${(props) => props.theme.fontColor.medium};
   margin-bottom: 0;
 `;
 
-export const TextModal = styled(Text)`
-  font-size: ${(props: PropsTheme) => props.theme.fontSize.menu};
+export const TextDescription = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.fontSize.description};
   font-weight: 400;
-  color: ${(props: PropsTheme) => props.theme.fontColor.medium};
   letter-spacing: 0.04em;
+  color: ${(props) => props.theme.fontColor.medium};
   margin-bottom: 0;
+`;
+
+export const TextModal = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.fontSize.menu};
+  font-weight: 400;
+  letter-spacing: 0.04em;
   line-height: 26px;
+  color: ${(props) => props.theme.fontColor.medium};
+  margin-bottom: 0;
 `;

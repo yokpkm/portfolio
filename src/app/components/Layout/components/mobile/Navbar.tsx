@@ -2,7 +2,7 @@ import { Button, Col, Image, Row } from "antd";
 import React, { useContext, useState } from "react";
 import styled, { ThemeContext } from "styled-components";
 
-import { TextMenu } from "../../../Text";
+import { TextMenu } from "../../../text";
 import { StyledDrawer } from "../../../drawer";
 import { DividerMenu } from "../../../divider";
 import { StyledSwitch } from "../../../Switch";

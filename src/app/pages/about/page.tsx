@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
 import { Col, Row } from "antd";
 import { DividerSection } from "@/app/components/divider";
-import { TextBody, TextDescription, TextHeader } from "@/app/components/Text";
+import { TextBody, TextDescription, TextHeader } from "@/app/components/text";
 import { ButtonPrimary, ButtonSecondary } from "@/app/components/button";
 
 const AboutSection = () => {

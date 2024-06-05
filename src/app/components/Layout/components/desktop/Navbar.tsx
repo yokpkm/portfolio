@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { StyledSwitch } from "../../../Switch";
-import { TextMenu } from "../../../Text";
+import { TextMenu } from "../../../text";
 import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
 import { PropsTheme } from "@/theme";

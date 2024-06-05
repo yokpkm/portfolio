@@ -14,7 +14,7 @@ import {
   TextDescription,
   TextHeader,
   TextLink,
-} from "@/app/components/Text";
+} from "@/app/components/text";
 import { ButtonIcon } from "@/app/components/button";
 
 const ContactSection = () => {

@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonMore } from "../../../../components/button";
 import { StyledTagDesign } from "../../../../components/Tag";
-import { TextContent, TextTitle } from "../../../../components/Text";
+import { TextContent, TextTitle } from "../../../../components/text";
 
 import { FormDesignModal } from "./components/FormDesignModal";
 import { DarkTheme, LightTheme } from "@/theme";

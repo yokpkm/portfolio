@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import styled from "styled-components";
-import { TextModal } from "../../../../../components/Text";
+import { TextModal } from "../../../../../components/text";
 
 export const ColorTone = styled.div`
   border-radius: 360px;
