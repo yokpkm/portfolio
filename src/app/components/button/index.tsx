@@ -1,114 +1,96 @@
-import { Button } from "antd";
 import styled from "styled-components";
 import { PropsTheme } from "../../../theme";
+import { Button } from "antd";
 
-export const ButtonTheme = styled(Button)`
-  && {
-    padding: 0px;
-    width: 32px;
-    height: 32px;
-  }
+export const ButtonPrimary = styled(Button)<PropsTheme>`
+  padding: 0px 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.buttonColors.background} !important;
+  border: 0px solid ${(props) => props.theme.fontColor.link};
+  border-radius: 360px;
+  box-shadow: unset;
+  font-size: ${(props) => props.theme.fontSize.body};
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: ${(props) => props.theme.buttonColors.font} !important;
 
-  img {
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-  }
-`;
-
-export const ButtonPrimary = styled(Button)`
-  && {
-    border: none;
-    height: 40px;
-    padding: 0px 24px;
-    background-color: ${(props: PropsTheme) =>
-      props.theme.buttonColors.background};
-    border-radius: 360px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: ${(props: PropsTheme) => props.theme.fontSize.body};
-    font-weight: 600;
-    color: ${(props: PropsTheme) => props.theme.buttonColors.font};
-    letter-spacing: 0.08em;
-  }
-
-  :hover,
-  :focus,
-  :active {
-    background-color: ${(props: PropsTheme) => props.theme.fontColor.link};
+  &&.ant-btn:hover,
+  .ant-btn:focus,
+  .ant-btn:active {
+    background: ${(props) => props.theme.fontColor.link} !important;
+    border: 0px solid ${(props) => props.theme.fontColor.link};
+    color: ${(props) => props.theme.buttonColors.font} !important;
   }
 `;
 
-export const ButtonSecondary = styled(Button)`
-  && {
-    border: 2px solid ${(props: PropsTheme) => props.theme.fontColor.default};
-    height: 40px;
-    padding: 0px 24px;
-    background-color: ${(props: PropsTheme) =>
-      props.theme.backgroundColors.default};
-    border-radius: 360px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: ${(props: PropsTheme) => props.theme.fontSize.body};
-    font-weight: 600;
-    color: ${(props: PropsTheme) => props.theme.fontColor.default};
-    letter-spacing: 0.08em;
+export const ButtonSecondary = styled(Button)<PropsTheme>`
+  padding: 0px 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.backgroundColors.default} !important;
+  border: 2px solid ${(props) => props.theme.fontColor.default};
+  border-radius: 360px;
+  box-shadow: unset;
+  color: ${(props) => props.theme.fontColor.default} !important;
+  font-size: ${(props) => props.theme.fontSize.body};
+  font-weight: 600;
+  letter-spacing: 0.08em;
+
+  &&.ant-btn:hover,
+  .ant-btn:focus,
+  .ant-btn:active {
+    border: 2px solid ${(props) => props.theme.fontColor.link};
+    background: ${(props) => props.theme.backgroundColors.default} !important;
+    color: ${(props) => props.theme.fontColor.link} !important;
+  }
+`;
+
+export const ButtonIcon = styled(Button)<PropsTheme>`
+  padding: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: auto;
+    height: 24px;
+    border-radius: 6px;
+    color: ${(props) => props.theme.fontColor.default};
   }
 
   :hover,
-  :focus,
-  :active {
-    border: 2px solid ${(props: PropsTheme) => props.theme.fontColor.link};
-    color: ${(props: PropsTheme) => props.theme.fontColor.link};
+  :active,
+  :focus {
+    color: ${(props) => props.theme.fontColor.link} !important;
   }
 `;
 
 export const ButtonMore = styled(Button)`
-  && {
-    border: none;
-    height: 36px;
-    padding: 0px 16px;
-    background-color: ${(props: PropsTheme) =>
-      props.theme.buttonColors.background};
-    border-radius: 360px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: ${(props: PropsTheme) => props.theme.fontSize.description};
-    font-weight: 600;
-    color: ${(props: PropsTheme) => props.theme.buttonColors.font};
-    letter-spacing: 0.04em;
-  }
+  padding: 0px 20px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.buttonColors.background} !important;
+  border: 0px solid ${(props) => props.theme.fontColor.link};
+  border-radius: 360px;
+  box-shadow: unset;
+  font-size: ${(props) => props.theme.fontSize.description};
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: ${(props) => props.theme.buttonColors.font} !important;
 
-  :hover,
-  :focus,
-  :active {
-    background-color: ${(props: PropsTheme) => props.theme.fontColor.link};
-  }
-`;
-
-export const ButtonIcon = styled(Button)`
-  color: ${(props: PropsTheme) => props.theme.fontColor.default};
-
-  &&.ant-btn {
-    padding: 0;
-  }
-
-  svg {
-    width: 24px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-  }
-
-  :hover,
-  :focus,
-  :active {
-    color: ${(props: PropsTheme) => props.theme.fontColor.link};
+  &&.ant-btn:hover,
+  .ant-btn:focus,
+  .ant-btn:active {
+    background: ${(props) => props.theme.fontColor.link} !important;
+    border: 0px solid ${(props) => props.theme.fontColor.link};
+    color: ${(props) => props.theme.buttonColors.font} !important;
   }
 `;
