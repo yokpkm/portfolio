@@ -4,7 +4,7 @@ import { StyledModal } from "../../../../../components/Modal";
 import { CloseCircleFilled } from "@ant-design/icons";
 import { Col, Image, Row } from "antd";
 import { TextHeader, TextModal } from "../../../../../components/text";
-import { StyledTagDesign } from "../../../../../components/Tag";
+import { StyledTagDesign } from "../../../../../components/tag";
 import { LogoColorToneMeaning } from "./LogoColorToneMeaning";
 
 interface Props {

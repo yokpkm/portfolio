@@ -7,7 +7,7 @@ import { TextHeader, TextModal } from "../../../../../components/text";
 import {
   StyledTagCoding,
   StyledTagDesign,
-} from "../../../../../components/Tag";
+} from "../../../../../components/tag";
 import { ProductProcedures } from "./ProductProcedures";
 
 interface Props {

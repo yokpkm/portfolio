@@ -8,7 +8,7 @@ import {
   StyledTagCoding,
   StyledTagDatabase,
   StyledTagDesign,
-} from "../../../../../components/Tag";
+} from "../../../../../components/tag";
 import { SaleOrderProcedures } from "./SaleOrderProcedures";
 
 interface Props {

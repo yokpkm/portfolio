@@ -8,7 +8,7 @@ import {
   StyledTagCoding,
   StyledTagDatabase,
   StyledTagDesign,
-} from "../../../../components/Tag";
+} from "../../../../components/tag";
 import { TextContent, TextTitle } from "../../../../components/text";
 
 import { SaleOrderPageModal } from "./components/SaleOrderPageModal";

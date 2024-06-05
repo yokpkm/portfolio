@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonMore } from "../../../../components/button";
-import { StyledTagDesign } from "../../../../components/Tag";
+import { StyledTagDesign } from "../../../../components/tag";
 import { TextContent, TextTitle } from "../../../../components/text";
 
 import { WebAppDesignModal } from "./components/WebAppDesignModal";
