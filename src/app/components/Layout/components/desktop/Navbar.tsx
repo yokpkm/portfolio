@@ -2,7 +2,7 @@ import { Button, Col, Image, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
 
-import { StyledSwitch } from "../../../Switch";
+import { StyledSwitch } from "../../../switch";
 import { TextMenu } from "../../../text";
 import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";

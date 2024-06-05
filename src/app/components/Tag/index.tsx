@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Tag } from "antd";
 import { PropsTheme } from "@/theme";
+import { Tag } from "antd";
 
 export const StyledTag = styled(Tag)`
   margin-right: 0;
