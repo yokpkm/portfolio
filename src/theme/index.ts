@@ -50,6 +50,53 @@ export interface LightTheme {
   cardShadow: {
     default: string;
   };
+
+  //new TypeScript
+  layout: {
+    background: string;
+    divider: string;
+  };
+  primaryBtn: {
+    default: string;
+    hover: string;
+    foreground: string;
+  };
+  secondaryBtn: {
+    default: string;
+    hover: string;
+    foreground: string;
+  };
+  iconBtn: {
+    default: string;
+    hover: string;
+  };
+  closeBtn: {
+    default: string;
+    hover: string;
+  };
+  swith: {
+    default: string;
+  };
+  card: {
+    background: string;
+    border: string;
+    shadow: string;
+  };
+  tag: {
+    background: string;
+    border: string;
+  };
+  textColor: {
+    primary: string;
+    secondary: string;
+    link: string;
+  };
+  textSize: {
+    headline: string;
+    title: string;
+    body: string;
+    caption: string;
+  };
 }
 
 export interface DarkTheme {
@@ -96,6 +143,53 @@ export interface DarkTheme {
   };
   cardShadow: {
     default: string;
+  };
+
+  //new TypeScript
+  layout: {
+    background: string;
+    divider: string;
+  };
+  primaryBtn: {
+    default: string;
+    hover: string;
+    foreground: string;
+  };
+  secondaryBtn: {
+    default: string;
+    hover: string;
+    foreground: string;
+  };
+  iconBtn: {
+    default: string;
+    hover: string;
+  };
+  closeBtn: {
+    default: string;
+    hover: string;
+  };
+  swith: {
+    default: string;
+  };
+  card: {
+    background: string;
+    border: string;
+    shadow: string;
+  };
+  tag: {
+    background: string;
+    border: string;
+  };
+  textColor: {
+    primary: string;
+    secondary: string;
+    link: string;
+  };
+  textSize: {
+    headline: string;
+    title: string;
+    body: string;
+    caption: string;
   };
 }
 
