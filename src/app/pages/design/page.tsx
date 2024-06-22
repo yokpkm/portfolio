@@ -14,7 +14,7 @@ import { ProductPage } from "./card-items/08-product-page";
 import { LogoDesign } from "./card-items/09-logo-design";
 import { BagDesign } from "./card-items/10-bag-design";
 
-const DesignSection = () => {
+const DesignSection: React.FC = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 

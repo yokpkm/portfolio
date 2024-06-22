@@ -5,7 +5,7 @@ import { ButtonPrimary, ButtonSecondary } from "@/app/components/button";
 import { DividerSection } from "@/app/components/divider";
 import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
 
-const AboutSection = () => {
+const AboutSection: React.FC = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 
