@@ -1,20 +1,19 @@
 "use client";
 
-// import "antd/dist/antd.css";
-import { ConfigProvider, Grid } from "antd";
 import { useContext, useEffect, useState } from "react";
-import { animateScroll } from "react-scroll";
 import { ThemeContext, ThemeProvider } from "styled-components";
-
-import { DarkTheme, LightTheme, darkTheme, lightTheme } from "../theme";
-import { ThemeType } from "../utils/constants";
-import { MainLayout } from "./components/Layout";
-import { NavbarDesktop } from "./components/Layout/components/desktop/Navbar";
-import { NavbarMobile } from "./components/Layout/components/mobile/Navbar";
+import { ConfigProvider, Grid } from "antd";
 import { GlobalStyle } from "./global-style";
+import { ThemeType } from "./constants";
+import { LightTheme, DarkTheme, lightTheme, darkTheme } from "./theme";
+import customTheme from "./configs/theme-config";
+import { animateScroll } from "react-scroll";
+import { MainLayout } from "./components/Layout";
+import { NavbarDesktop } from "./components/Layout/components/desktop/navbar";
+import { NavbarMobile } from "./components/Layout/components/mobile/navbar";
 import AboutSection from "./pages/about/page";
-import ProjectSection from "./pages/design/page";
 import ContactSection from "./pages/contact/page";
+import DesignSection from "./pages/design/page";
 
 const AppPage = () => {
   const { useBreakpoint } = Grid;
@@ -40,11 +39,8 @@ const AppPage = () => {
 
   return (
     <>
-      <ConfigProvider>
-        <ThemeProvider
-          theme={theme === ThemeType.LIGHT ? lightTheme : darkTheme}
-        >
-          {/* <GlobalStyle theme={themeContext} />
+      <ThemeProvider theme={theme === ThemeType.LIGHT ? lightTheme : darkTheme}>
+        {/* <GlobalStyle theme={themeContext} />
           {loading ? (
             "loader"
           ) : (
@@ -61,6 +57,7 @@ const AppPage = () => {
             </>
           )} */}
 
+        <ConfigProvider theme={customTheme}>
           <GlobalStyle theme={themeContext} />
           <>
             {(xs || sm || md) && !lg ? (
@@ -68,14 +65,15 @@ const AppPage = () => {
             ) : (
               <NavbarDesktop themeToggle={() => themeToggle()} theme={theme} />
             )}
+
             <MainLayout>
               <AboutSection />
-              <ProjectSection />
+              <DesignSection />
               <ContactSection />
             </MainLayout>
           </>
-        </ThemeProvider>
-      </ConfigProvider>
+        </ConfigProvider>
+      </ThemeProvider>
     </>
   );
 };

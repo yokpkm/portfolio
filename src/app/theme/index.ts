@@ -74,7 +74,7 @@ export interface LightTheme {
     default: string;
     hover: string;
   };
-  swith: {
+  switch: {
     default: string;
   };
   card: {
@@ -168,7 +168,7 @@ export interface DarkTheme {
     default: string;
     hover: string;
   };
-  swith: {
+  switch: {
     default: string;
   };
   card: {

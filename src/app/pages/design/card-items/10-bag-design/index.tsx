@@ -3,11 +3,11 @@ import { Image } from "@nextui-org/image";
 import { Col, Row } from "antd";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
-import { ButtonMore } from "../../../../components/button";
+import { ButtonCard } from "../../../../components/button";
 import { StyledTagDesign } from "../../../../components/tag";
 import { TextContent, TextTitle } from "../../../../components/text";
 import { BagDesignModal } from "./components/BagDesignModal";
-import { DarkTheme, LightTheme } from "@/theme";
+import { DarkTheme, LightTheme } from "@/app/theme";
 
 interface Props {
   visible: boolean;
@@ -42,9 +42,9 @@ export const BagDesign: React.FC<Props> = ({ visible, setVisible }) => {
                 <StyledTagDesign>Pattern Design</StyledTagDesign>
               </Col>
               <Col>
-                <ButtonMore onClick={() => setVisible(true)}>
+                <ButtonCard onClick={() => setVisible(true)}>
                   Read more
-                </ButtonMore>
+                </ButtonCard>
               </Col>
             </Row>
           </CardBody>

@@ -1,25 +1,25 @@
 import styled from "styled-components";
-import { PropsTheme } from "@/theme";
+import { PropsTheme } from "@/app/theme";
 import { Switch } from "antd";
 
 export const StyledSwitch = styled(Switch)<PropsTheme>`
   &&.ant-switch {
-    background: ${(props) => props.theme.switchColors.inactive} !important;
-    border: 0px solid ${(props) => props.theme.fontColor.link} !important;
+    background: ${(props) => props.theme.switch.default} !important;
+    border: 0px solid ${(props) => props.theme.switch.default};
   }
 
   &&.ant-switch:hover {
-    background: ${(props) => props.theme.closeColor.default} !important;
-    border: 0px solid ${(props) => props.theme.fontColor.link} !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    border: 0px solid ${(props) => props.theme.switch.default};
   }
 
   &&.ant-switch-checked {
-    background: ${(props) => props.theme.switchColors.active} !important;
-    border: 0px solid ${(props) => props.theme.fontColor.link} !important;
+    background: ${(props) => props.theme.switch.default} !important;
+    border: 0px solid ${(props) => props.theme.switch.default};
   }
 
   &&.ant-switch-checked:hover {
-    background: ${(props) => props.theme.switchColors.active} !important;
-    border: 0px solid ${(props) => props.theme.fontColor.link} !important;
+    background: ${(props) => props.theme.switch.default} !important;
+    border: 0px solid ${(props) => props.theme.switch.default};
   }
 `;

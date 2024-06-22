@@ -1,13 +1,13 @@
-import { AppProps } from "next/app";
-import { lightTheme } from "../../theme";
-import { ThemeProvider } from "styled-components";
+import React from "react";
+import { ConfigProvider } from "antd";
+import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <ThemeProvider theme={lightTheme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  );
-}
+import customTheme from "./theme-config";
 
-export default MyApp;
+const App = ({ Component, pageProps }: AppProps) => (
+  <ConfigProvider theme={customTheme}>
+    <Component {...pageProps} />
+  </ConfigProvider>
+);
+
+export default App;

@@ -1,16 +1,15 @@
-import { Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <title>Portfolio</title>
-      <body className={openSans.className}>{children}</body>
-    </html>
-  );
-}
+const RootLayout = ({ children }: React.PropsWithChildren) => (
+  <html lang="en">
+    <title>Portfolio</title>
+    <body className={inter.className}>
+      <AntdRegistry>{children}</AntdRegistry>
+    </body>
+  </html>
+);
+
+export default RootLayout;

@@ -1,35 +1,13 @@
 import styled from "styled-components";
-import { PropsTheme } from "@/theme";
+import { PropsTheme } from "@/app/theme";
 import { Tag } from "antd";
 
-export const StyledTag = styled(Tag)`
-  margin-right: 0;
+export const StyledTag = styled(Tag)<PropsTheme>`
   background: transparent;
-`;
-
-export const StyledTagDesign = styled(StyledTag)<PropsTheme>`
-  &.ant-tag {
-    border: 1px solid ${(props) => props.theme.tagColors.design};
-    border-radius: 4px;
-    color: ${(props) => props.theme.tagColors.design};
-    font-weight: 700;
-  }
-`;
-
-export const StyledTagCoding = styled(StyledTag)<PropsTheme>`
-  &.ant-tag {
-    border: 1px solid ${(props) => props.theme.tagColors.coding};
-    border-radius: 4px;
-    color: ${(props) => props.theme.tagColors.coding};
-    font-weight: 700;
-  }
-`;
-
-export const StyledTagDatabase = styled(StyledTag)<PropsTheme>`
-  &.ant-tag {
-    border: 1px solid ${(props) => props.theme.tagColors.database};
-    border-radius: 4px;
-    color: ${(props) => props.theme.tagColors.database};
-    font-weight: 700;
-  }
+  border: 1px solid ${(props) => props.theme.secondaryBtn.default};
+  border-radius: 4px;
+  color: ${(props) => props.theme.textColor.primary};
+  font-size: ${(props) => props.theme.textSize.caption};
+  font-weight: 400;
+  margin-right: 0;
 `;

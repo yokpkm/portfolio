@@ -3,12 +3,12 @@ import { Image } from "@nextui-org/image";
 import { Col, Row } from "antd";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
-import { ButtonMore } from "../../../../components/button";
+import { ButtonCard } from "../../../../components/button";
 import { StyledTagDesign } from "../../../../components/tag";
 import { TextContent, TextTitle } from "../../../../components/text";
 
-import { AppDesignModal } from "./components/AppDesignModal";
-import { DarkTheme, LightTheme } from "@/theme";
+import { AppDesignModal } from "./components/modal";
+import { DarkTheme, LightTheme } from "@/app/theme";
 
 interface Props {
   visible: boolean;
@@ -22,15 +22,7 @@ export const AppDesign: React.FC<Props> = ({ visible, setVisible }) => {
     <>
       <AppDesignModal visible={visible} setVisible={setVisible} />
       <Col xs={22} sm={22} md={12} lg={12} xl={12} xxl={12}>
-        <Card
-        // variant="flat"
-        // css={{
-        //   background: themeContext.backgroundColors.card,
-        //   shadow: themeContext.cardShadow.default,
-        //   borderRadius: 16,
-        // }}
-        >
-          {/* <CardBody css={{ p: "28px 24px" }}> */}
+        <Card>
           <CardBody>
             <Image src="/image/card/imgCard02.jpg" />
             <Row>
@@ -44,9 +36,9 @@ export const AppDesign: React.FC<Props> = ({ visible, setVisible }) => {
                 <StyledTagDesign>App Design</StyledTagDesign>
               </Col>
               <Col>
-                <ButtonMore onClick={() => setVisible(true)}>
+                <ButtonCard onClick={() => setVisible(true)}>
                   Read more
-                </ButtonMore>
+                </ButtonCard>
               </Col>
             </Row>
           </CardBody>

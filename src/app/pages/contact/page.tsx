@@ -1,23 +1,16 @@
-import { Col, Row } from "antd";
-import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
-import React from "react";
-
+import { Grid, Row, Col } from "antd";
 import {
-  GithubFilled,
+  MailFilled,
   LinkedinFilled,
-  FacebookFilled,
+  GithubFilled,
   InstagramFilled,
 } from "@ant-design/icons";
-import { DividerSection } from "@/app/components/divider";
-import {
-  TextBody,
-  TextDescription,
-  TextHeader,
-  TextLink,
-} from "@/app/components/text";
 import { ButtonIcon } from "@/app/components/button";
+import { DividerSection } from "@/app/components/divider";
+import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
 
 const ContactSection = () => {
+  const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 
   return (
@@ -34,27 +27,44 @@ const ContactSection = () => {
               }
             >
               <DividerSection orientation="right">
-                <TextHeader>CONTACT</TextHeader>
+                <TextHeadline>CONTACT</TextHeadline>
               </DividerSection>
-              <TextDescription>
-                My inbox is always open. I'll get back to you.
-              </TextDescription>
-            </Row>
-
-            <Row justify="end">
-              <a href="mailto:premkamon.work@gmail.com">
-                <TextLink>Email: premkamon.work@gmail.com</TextLink>
-              </a>
-            </Row>
-            <Row justify="end" style={{ marginTop: 6, marginBottom: 48 }}>
-              <TextBody>Tel: 084-297-4414</TextBody>
+              <TextCaption>
+                My inbox is always open. I'll get back to you 📱
+              </TextCaption>
             </Row>
             <Row justify="end" style={{ marginBottom: 8 }}>
-              <TextBody>or find me on</TextBody>
+              <TextBody>find me on</TextBody>
             </Row>
             <Row justify="end" gutter={16} align="middle">
               <Col>
-                <a target={"_blank"} href={"https://github.com/yokpkm"}>
+                <a
+                  target={"_blank"}
+                  href={"mailto:premkamon.work@gmail.com"}
+                  rel="noreferrer"
+                >
+                  <ButtonIcon type="link">
+                    <MailFilled />
+                  </ButtonIcon>
+                </a>
+              </Col>
+              <Col>
+                <a
+                  target={"_blank"}
+                  href={"https://www.linkedin.com/in/yokpkm"}
+                  rel="noreferrer"
+                >
+                  <ButtonIcon type="link">
+                    <LinkedinFilled />
+                  </ButtonIcon>
+                </a>
+              </Col>
+              <Col>
+                <a
+                  target={"_blank"}
+                  href={"https://github.com/yokpkm"}
+                  rel="noreferrer"
+                >
                   <ButtonIcon type="link">
                     <GithubFilled />
                   </ButtonIcon>
@@ -63,27 +73,11 @@ const ContactSection = () => {
               <Col>
                 <a
                   target={"_blank"}
-                  href={"https://www.instagram.com/junepiter26_"}
+                  href={"https://www.instagram.com/yokxpkm"}
+                  rel="noreferrer"
                 >
                   <ButtonIcon type="link">
                     <InstagramFilled />
-                  </ButtonIcon>
-                </a>
-              </Col>
-              <Col>
-                <a target={"_blank"} href={"https://wwww.facebook.com/yok.pkm"}>
-                  <ButtonIcon type="link">
-                    <FacebookFilled />
-                  </ButtonIcon>
-                </a>
-              </Col>
-              <Col>
-                <a
-                  target={"_blank"}
-                  href={"https://www.linkedin.com/in/yok-premkamon-343362233"}
-                >
-                  <ButtonIcon type="link">
-                    <LinkedinFilled />
                   </ButtonIcon>
                 </a>
               </Col>

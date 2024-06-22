@@ -48,18 +48,18 @@ const lightTheme = {
 
   //new TypeScript
   layout: {
-    background: "#FCFCFD",
-    divider: "#DEE0E3",
+    background: "#F9FAFA",
+    divider: "#C8CBD0",
   },
   primaryBtn: {
     default: "#131416", //bg color
     hover: "#383C42", //bg color
-    foreground: "#FFFFFF", //font color
+    foreground: "#FCFCFD", //font color
   },
   secondaryBtn: {
     default: "#C8CBD0", //border color
     hover: "#9CA2AB", //border color
-    foreground: "#000000", //font color
+    foreground: "#131416", //font color
   },
   iconBtn: {
     default: "#131416",
@@ -69,7 +69,7 @@ const lightTheme = {
     default: "#B2B6BD",
     hover: "#868D98",
   },
-  swith: {
+  switch: {
     default: "#D5D6D8",
   },
   card: {
@@ -78,13 +78,13 @@ const lightTheme = {
     shadow: "0px 16px 48px rgba(200, 203, 208, 0.2)",
   },
   tag: {
-    background: "rgba(220, 24, 77, 0.08)",
-    border: "#DC184D", //border include foreground
+    background: "rgba(223, 32, 131, 0.05)",
+    border: "#E8308C", //border include foreground
   },
   textColor: {
-    primary: "rgba(0, 0, 0, 0.87)",
-    secondary: "rgba(0, 0, 0, 0.60)",
-    link: "#DC184D",
+    primary: "rgba(19, 20, 22, 0.87)",
+    secondary: "rgba(19, 20, 22, 0.65)",
+    link: "#E8308C",
   },
   textSize: {
     headline: "1.5rem", //24px

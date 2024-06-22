@@ -1,13 +1,14 @@
 import React from "react";
-import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
-import { ContainerDesktop } from "./components/desktop/Container";
-import { ContainerMobile } from "./components/mobile/Container";
+import { Grid } from "antd";
+import { ContainerDesktop } from "./components/desktop/container";
+import { ContainerMobile } from "./components/mobile/container";
 
 interface Props {
   children: any;
 }
 
 export const MainLayout: React.FC<Props> = ({ children }) => {
+  const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 
   return (

@@ -1,39 +1,37 @@
-import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
-import React from "react";
+import { Image } from "@nextui-org/image";
+import { Grid, Row, Col } from "antd";
 import { StyledModal } from "../../../../../components/modal";
-import { CloseCircleFilled } from "@ant-design/icons";
-import { Col, Image, Row } from "antd";
-import { TextHeader, TextModal } from "../../../../../components/text";
-import { StyledTagDesign } from "../../../../../components/tag";
+import { StyledTag } from "@/app/components/tag";
+import { TextHeadline, TextModal } from "../../../../../components/text";
 
 interface Props {
-  visible: boolean;
-  setVisible: (visible: boolean) => void;
+  open: boolean;
+  setOpen: (open: boolean) => void;
 }
 
-export const WebAppDesignModal: React.FC<Props> = ({ visible, setVisible }) => {
+export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
+  const { useBreakpoint } = Grid;
   const { xs, sm } = useBreakpoint();
 
   return (
     <>
       <StyledModal
-        visible={visible}
-        onCancel={() => setVisible(false)}
-        width={"100%"}
+        title={null}
         footer={null}
-        closeIcon={<CloseCircleFilled />}
-        destroyOnClose={true}
+        open={open}
+        onCancel={() => setOpen(false)}
+        destroyOnClose
       >
-        <Row justify="center" style={{ marginBottom: 24 }}>
+        <Row justify="center" style={{ marginTop: 32, marginBottom: 32 }}>
           <Col xs={20} sm={20} md={16} lg={12} xl={10} xxl={8}>
             <Row align="middle" gutter={[8, 8]} style={{ marginBottom: 40 }}>
               <Col flex="auto">
-                <TextHeader>Progress Tracking Web Application</TextHeader>
+                <TextHeadline>Progress Tracking Web Application</TextHeadline>
               </Col>
               <Col>
                 <Row gutter={[8, 16]}>
                   <Col>
-                    <StyledTagDesign>UI Design</StyledTagDesign>
+                    <StyledTag>UI Design</StyledTag>
                   </Col>
                 </Row>
               </Col>
@@ -43,7 +41,8 @@ export const WebAppDesignModal: React.FC<Props> = ({ visible, setVisible }) => {
                 <Row justify="center">
                   <Image
                     src="/image/card/imgCard01.jpg"
-                    preview={false}
+                    alt="false"
+                    width="100%"
                     style={{ borderRadius: 16 }}
                   />
                 </Row>
@@ -65,7 +64,8 @@ export const WebAppDesignModal: React.FC<Props> = ({ visible, setVisible }) => {
                 <Row justify="center">
                   <Image
                     src="/image/modal/01-thesis/img01.jpg"
-                    preview={false}
+                    alt="false"
+                    width="100%"
                     style={{ borderRadius: 16 }}
                   />
                 </Row>
@@ -86,7 +86,8 @@ export const WebAppDesignModal: React.FC<Props> = ({ visible, setVisible }) => {
                 <Row justify="center">
                   <Image
                     src="/image/modal/01-thesis/img02.jpg"
-                    preview={false}
+                    alt="false"
+                    width="100%"
                     style={{ borderRadius: 16 }}
                   />
                 </Row>
@@ -102,7 +103,8 @@ export const WebAppDesignModal: React.FC<Props> = ({ visible, setVisible }) => {
                 <Row justify="center">
                   <Image
                     src="/image/modal/01-thesis/img03.jpg"
-                    preview={false}
+                    alt="false"
+                    width="100%"
                     style={{ borderRadius: 16 }}
                   />
                 </Row>
@@ -118,7 +120,8 @@ export const WebAppDesignModal: React.FC<Props> = ({ visible, setVisible }) => {
                 <Row justify="center">
                   <Image
                     src="/image/modal/01-thesis/img04.jpg"
-                    preview={false}
+                    alt="false"
+                    width="100%"
                     style={{ borderRadius: 16 }}
                   />
                 </Row>
@@ -135,7 +138,8 @@ export const WebAppDesignModal: React.FC<Props> = ({ visible, setVisible }) => {
                 <Row justify="center">
                   <Image
                     src="/image/modal/01-thesis/img05.jpg"
-                    preview={false}
+                    alt="false"
+                    width="100%"
                     style={{ borderRadius: 16 }}
                   />
                 </Row>

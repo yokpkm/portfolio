@@ -1,32 +1,21 @@
-import { Button, Col, Image, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
-
-import { StyledSwitch } from "../../../switch";
-import { TextMenu } from "../../../text";
+import { PropsTheme } from "@/app/theme";
+import { ThemeType } from "@/app/constants";
 import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
-import { PropsTheme } from "@/theme";
-import { ThemeType } from "@/utils/constants";
-
-const WrapperNavbar = styled.div`
-  padding: 12px 80px 12px 80px;
-  background-color: ${(props: PropsTheme) =>
-    props.theme.backgroundColors.default};
-  z-index: 10;
-  backdrop-filter: blur(6px);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-`;
+import { Image } from "@nextui-org/image";
+import { Row, Col, Button } from "antd";
+import { StyledSwitch } from "../../../switch";
+import { TextMenu } from "../../../text";
+import { MoonFilled } from "@ant-design/icons";
 
 interface Props {
-  themeToggle: () => void;
   theme: ThemeType;
+  themeToggle: () => void;
 }
 
-export const NavbarDesktop: React.FC<Props> = ({ themeToggle, theme }) => {
+export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
   return (
     <WrapperNavbar>
       <Row justify="center" align="middle">
@@ -37,17 +26,15 @@ export const NavbarDesktop: React.FC<Props> = ({ themeToggle, theme }) => {
                 <Image
                   width={40}
                   height={40}
-                  src="/logo/normal_lightTheme.svg"
-                  preview={false}
-                  style={{ display: "flex" }}
+                  src="/logo/logo-lightTheme.svg"
+                  alt="false"
                 />
               ) : (
                 <Image
                   width={40}
                   height={40}
-                  src="/logo/normal_darkTheme.svg"
-                  preview={false}
-                  style={{ display: "flex" }}
+                  src="/logo/logo-darkTheme.svg"
+                  alt="false"
                 />
               )
             }
@@ -63,8 +50,8 @@ export const NavbarDesktop: React.FC<Props> = ({ themeToggle, theme }) => {
               </Link>
             </Col>
             <Col>
-              <Link to="project" smooth={true} duration={1000} offset={-160}>
-                <TextMenu>Project</TextMenu>
+              <Link to="design" smooth={true} duration={1000} offset={-160}>
+                <TextMenu>Design</TextMenu>
               </Link>
             </Col>
             <Col>
@@ -80,22 +67,8 @@ export const NavbarDesktop: React.FC<Props> = ({ themeToggle, theme }) => {
             <Col>
               <StyledSwitch
                 onClick={() => themeToggle()}
-                checkedChildren={
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/icon/moon-white.svg"
-                    preview={false}
-                  />
-                }
-                unCheckedChildren={
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/icon/moon-white.svg"
-                    preview={false}
-                  />
-                }
+                checkedChildren={<MoonFilled />}
+                unCheckedChildren={<MoonFilled />}
               />
             </Col>
           </Row>
@@ -104,3 +77,14 @@ export const NavbarDesktop: React.FC<Props> = ({ themeToggle, theme }) => {
     </WrapperNavbar>
   );
 };
+
+const WrapperNavbar = styled.div<PropsTheme>`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding: 12px 80px 12px 80px;
+  background-color: ${(props: PropsTheme) => props.theme.layout.background};
+  backdrop-filter: blur(6px);
+`;

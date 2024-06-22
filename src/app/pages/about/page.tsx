@@ -1,14 +1,12 @@
-import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
-import React from "react";
 import { Link } from "react-scroll";
-
 import { animateScroll } from "react-scroll";
-import { Col, Row } from "antd";
-import { DividerSection } from "@/app/components/divider";
-import { TextBody, TextDescription, TextHeader } from "@/app/components/text";
+import { Grid, Row, Col } from "antd";
 import { ButtonPrimary, ButtonSecondary } from "@/app/components/button";
+import { DividerSection } from "@/app/components/divider";
+import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
 
 const AboutSection = () => {
+  const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 
   return (
@@ -25,17 +23,17 @@ const AboutSection = () => {
               }
             >
               <DividerSection orientation="left">
-                <TextHeader>ABOUT</TextHeader>
+                <TextHeadline>ABOUT</TextHeadline>
               </DividerSection>
-              <TextDescription>
-                Hello! I'm Yok Premkamon, a UX/UI Designer.
-              </TextDescription>
+              <TextCaption>
+                Hello! I'm Yok Premkamon, a UX/UI Designer ✨
+              </TextCaption>
             </Row>
 
             <Row justify="start">
               <TextBody>
-                I work as a UX/UI Designer. My goal is to design useful products
-                for users.
+                I work as a UX/UI Designer. My purpose is to design useful
+                products for users.
               </TextBody>
             </Row>
             <Row justify="start" style={{ marginTop: 6 }}>
@@ -47,7 +45,7 @@ const AboutSection = () => {
             <Row justify="start" style={{ marginTop: 6 }}>
               <TextBody>
                 So, I'd like to improve my skills for provide a good user
-                experience.
+                experience to the target group.
               </TextBody>
             </Row>
 
@@ -55,34 +53,34 @@ const AboutSection = () => {
               <>
                 <Row justify="start" gutter={[16, 8]} style={{ marginTop: 40 }}>
                   <Col xs={12}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>Figma</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col xs={12}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>Adobe XD</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col xs={12}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>Styled Components</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col xs={12}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>React Typescript</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col xs={12}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>React Native</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col xs={12}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>MongoDB</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                 </Row>
               </>
@@ -90,36 +88,36 @@ const AboutSection = () => {
               <>
                 <Row justify="start" gutter={16} style={{ marginTop: 40 }}>
                   <Col sm={8} md={6} lg={6} xl={5} xxl={4}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>Figma</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col sm={8} md={6} lg={6} xl={5} xxl={4}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>Adobe XD</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col sm={8} md={6} lg={6} xl={5} xxl={4}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>Styled Components</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                 </Row>
                 <Row justify="start" gutter={16} style={{ marginTop: 8 }}>
                   <Col sm={8} md={6} lg={6} xl={5} xxl={4}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>React Typescript</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col sm={8} md={6} lg={6} xl={5} xxl={4}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>React Native</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                   <Col sm={8} md={6} lg={6} xl={5} xxl={4}>
-                    <TextDescription>
+                    <TextCaption>
                       <li>MongoDB</li>
-                    </TextDescription>
+                    </TextCaption>
                   </Col>
                 </Row>
               </>

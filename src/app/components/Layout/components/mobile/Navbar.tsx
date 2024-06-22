@@ -1,45 +1,31 @@
-import { Button, Col, Image, Row } from "antd";
-import React, { useContext, useState } from "react";
-import styled, { ThemeContext } from "styled-components";
-
-import { TextMenu } from "../../../text";
-import { StyledDrawer } from "../../../drawer";
-import { DividerMenu } from "../../../divider";
-import { StyledSwitch } from "../../../switch";
+import React, { useState } from "react";
+import styled from "styled-components";
+import { PropsTheme } from "@/app/theme";
+import { ThemeType } from "@/app/constants";
 import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
-
+import { Image } from "@nextui-org/image";
+import { Row, Col, Button } from "antd";
 import { ButtonIcon } from "../../../button";
+import { DividerMenu } from "../../../divider";
+import { StyledDrawer } from "../../../drawer";
+import { StyledSwitch } from "../../../switch";
+import { TextMenu } from "../../../text";
 import {
-  GithubFilled,
+  MoonFilled,
+  MailFilled,
   LinkedinFilled,
-  FacebookFilled,
+  GithubFilled,
   InstagramFilled,
 } from "@ant-design/icons";
-import { DarkTheme, LightTheme, PropsTheme } from "@/theme";
-import { ThemeType } from "@/utils/constants";
-
-const WrapperNavbar = styled.div`
-  padding: 12px 16px 12px 16px;
-  background-color: ${(props: PropsTheme) =>
-    props.theme.backgroundColors.default};
-  z-index: 10;
-  backdrop-filter: blur(6px);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-`;
 
 interface Props {
-  themeToggle: () => void;
   theme: ThemeType;
+  themeToggle: () => void;
 }
 
-export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
-  const [showMenu, setShowMenu] = useState(false);
-  const themeContext = useContext(ThemeContext) as LightTheme | DarkTheme;
+export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <>
@@ -52,17 +38,15 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
                   <Image
                     width={36}
                     height={36}
-                    src="/logo/normal_lightTheme.svg"
-                    preview={false}
-                    style={{ display: "flex" }}
+                    src="/logo/logo-lightTheme.svg"
+                    alt="false"
                   />
                 ) : (
                   <Image
                     width={36}
                     height={36}
-                    src="/logo/normal_darkTheme.svg"
-                    preview={false}
-                    style={{ display: "flex" }}
+                    src="/logo/logo-darkTheme.svg"
+                    alt="false"
                   />
                 )
               }
@@ -73,22 +57,8 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
           <Col>
             <StyledSwitch
               onClick={() => themeToggle()}
-              checkedChildren={
-                <Image
-                  width={16}
-                  height={16}
-                  src="/icon/moon-white.svg"
-                  preview={false}
-                />
-              }
-              unCheckedChildren={
-                <Image
-                  width={16}
-                  height={16}
-                  src="/icon/moon-white.svg"
-                  preview={false}
-                />
-              }
+              checkedChildren={<MoonFilled />}
+              unCheckedChildren={<MoonFilled />}
             />
           </Col>
           <Col>
@@ -99,7 +69,6 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
                     width={24}
                     height={24}
                     src="/icon/menu-black.svg"
-                    preview={false}
                     style={{ display: "flex" }}
                   />
                 ) : (
@@ -107,23 +76,21 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
                     width={24}
                     height={24}
                     src="/icon/menu-white.svg"
-                    preview={false}
                     style={{ display: "flex" }}
                   />
                 )
               }
               type="text"
-              onClick={() => setShowMenu(true)}
-              style={{ color: themeContext.logo.default }}
+              onClick={() => setOpenMenu(true)}
             />
           </Col>
         </Row>
       </WrapperNavbar>
       <StyledDrawer
         placement="top"
-        visible={showMenu}
+        open={openMenu}
         closable={false}
-        onClose={() => setShowMenu(false)}
+        onClose={() => setOpenMenu(false)}
       >
         <Row justify="center" style={{ marginBottom: 32 }}>
           <Link
@@ -131,20 +98,20 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
             smooth={true}
             duration={1000}
             offset={-120}
-            onClick={() => setShowMenu(false)}
+            onClick={() => setOpenMenu(false)}
           >
             <TextMenu>About</TextMenu>
           </Link>
         </Row>
         <Row justify="center" style={{ marginBottom: 32 }}>
           <Link
-            to="project"
+            to="design"
             smooth={true}
             duration={1000}
             offset={-120}
-            onClick={() => setShowMenu(false)}
+            onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>Project</TextMenu>
+            <TextMenu>Design</TextMenu>
           </Link>
         </Row>
         <Row justify="center">
@@ -153,13 +120,35 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
             smooth={true}
             duration={1000}
             offset={0}
-            onClick={() => setShowMenu(false)}
+            onClick={() => setOpenMenu(false)}
           >
             <TextMenu>Contact</TextMenu>
           </Link>
         </Row>
         <DividerMenu />
         <Row justify="center" gutter={16} align="middle">
+          <Col>
+            <a
+              target={"_blank"}
+              href={"mailto:premkamon.work@gmail.com"}
+              rel="noreferrer"
+            >
+              <ButtonIcon type="link">
+                <MailFilled />
+              </ButtonIcon>
+            </a>
+          </Col>
+          <Col>
+            <a
+              target={"_blank"}
+              href={"https://www.linkedin.com/in/yokpkm"}
+              rel="noreferrer"
+            >
+              <ButtonIcon type="link">
+                <LinkedinFilled />
+              </ButtonIcon>
+            </a>
+          </Col>
           <Col>
             <a
               target={"_blank"}
@@ -174,33 +163,11 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
           <Col>
             <a
               target={"_blank"}
-              href={"https://www.instagram.com/junepiter26_"}
+              href={"https://www.instagram.com/yokxpkm"}
               rel="noreferrer"
             >
               <ButtonIcon type="link">
                 <InstagramFilled />
-              </ButtonIcon>
-            </a>
-          </Col>
-          <Col>
-            <a
-              target={"_blank"}
-              href={"https://wwww.facebook.com/yok.pkm"}
-              rel="noreferrer"
-            >
-              <ButtonIcon type="link">
-                <FacebookFilled />
-              </ButtonIcon>
-            </a>
-          </Col>
-          <Col>
-            <a
-              target={"_blank"}
-              href={"https://www.linkedin.com/in/yok-premkamon-343362233"}
-              rel="noreferrer"
-            >
-              <ButtonIcon type="link">
-                <LinkedinFilled />
               </ButtonIcon>
             </a>
           </Col>
@@ -209,3 +176,15 @@ export const NavbarMobile: React.FC<Props> = ({ themeToggle, theme }) => {
     </>
   );
 };
+
+const WrapperNavbar = styled.div<PropsTheme>`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding: 12px 16px 12px 16px;
+  background-color: ${(props: PropsTheme) =>
+    props.theme.backgroundColors.default};
+  backdrop-filter: blur(6px);
+`;
