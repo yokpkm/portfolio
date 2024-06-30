@@ -9,7 +9,7 @@ import {
   StyledTagDatabase,
   StyledTagDesign,
 } from "../../../../components/tag";
-import { TextContent, TextTitle } from "../../../../components/text";
+import { TextHeading, TextTitle } from "../../../../components/text";
 
 import { SaleOrderPageModal } from "./components/SaleOrderPageModal";
 import { DarkTheme, LightTheme } from "@/app/theme";
@@ -41,7 +41,7 @@ export const SaleOrderPage: React.FC<Props> = ({ visible, setVisible }) => {
               <TextTitle>Sale Order Page</TextTitle>
             </Row>
             <Row style={{ marginTop: 2 }}>
-              <TextContent>Features of sales management.</TextContent>
+              <TextHeading>Features of sales management.</TextHeading>
             </Row>
             <Row gutter={[8, 16]} align="middle" style={{ marginTop: 32 }}>
               <Col>

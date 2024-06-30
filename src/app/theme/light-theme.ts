@@ -63,32 +63,31 @@ const lightTheme = {
   },
   iconBtn: {
     default: "#131416",
-    hover: "#717984",
+    hover: "#5E646E",
   },
   closeBtn: {
-    default: "#B2B6BD",
-    hover: "#868D98",
+    default: "#9CA1AA",
+    hover: "#C8CBD0",
   },
   switch: {
-    default: "#D5D6D8",
+    default: "#CFD1D3",
   },
   card: {
-    background: "#FCFCFD",
-    border: "rgba(134, 141, 152, 0.1)",
-    shadow: "0px 16px 48px rgba(200, 203, 208, 0.2)",
+    border: "#E8308C",
   },
   tag: {
-    background: "rgba(223, 32, 131, 0.05)",
-    border: "#E8308C", //border include foreground
+    background: "rgba(235, 96, 165, 0.06)",
+    foreground: "#EB60A5",
   },
   textColor: {
     primary: "rgba(19, 20, 22, 0.87)",
-    secondary: "rgba(19, 20, 22, 0.65)",
+    secondary: "rgba(19, 20, 22, 0.67)",
     link: "#E8308C",
   },
   textSize: {
     headline: "1.5rem", //24px
     title: "1rem", //16px
+    cta: "0.9rem", // about 14.5 px
     body: "0.875rem", //14px: include cta
     caption: "0.8rem", //about 12.8px
   },

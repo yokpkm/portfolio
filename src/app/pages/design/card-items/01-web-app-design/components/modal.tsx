@@ -33,6 +33,9 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
                   <Col>
                     <StyledTag>UI Design</StyledTag>
                   </Col>
+                  <Col>
+                    <StyledTag>Coding</StyledTag>
+                  </Col>
                 </Row>
               </Col>
             </Row>

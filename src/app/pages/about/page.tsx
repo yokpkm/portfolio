@@ -36,13 +36,13 @@ const AboutSection: React.FC = () => {
                 products for users.
               </TextBody>
             </Row>
-            <Row justify="start" style={{ marginTop: 6 }}>
+            <Row justify="start" style={{ marginTop: 8 }}>
               <TextBody>
                 I've experience in front-end development on website and mobile
                 application.
               </TextBody>
             </Row>
-            <Row justify="start" style={{ marginTop: 6 }}>
+            <Row justify="start" style={{ marginTop: 8 }}>
               <TextBody>
                 So, I'd like to improve my skills for provide a good user
                 experience to the target group.

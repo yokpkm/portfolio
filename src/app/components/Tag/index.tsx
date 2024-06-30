@@ -3,11 +3,12 @@ import { PropsTheme } from "@/app/theme";
 import { Tag } from "antd";
 
 export const StyledTag = styled(Tag)<PropsTheme>`
-  background: transparent;
-  border: 1px solid ${(props) => props.theme.secondaryBtn.default};
+  background: ${(props) => props.theme.tag.background};
+  border: 1px solid transparent;
   border-radius: 4px;
-  color: ${(props) => props.theme.textColor.primary};
-  font-size: ${(props) => props.theme.textSize.caption};
-  font-weight: 400;
+  color: ${(props) => props.theme.tag.foreground};
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   margin-right: 0;
 `;

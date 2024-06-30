@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonCard } from "../../../../components/button";
 import { StyledTagDesign } from "../../../../components/tag";
-import { TextContent, TextTitle } from "../../../../components/text";
+import { TextHeading, TextTitle } from "../../../../components/text";
 
 import { FormDesignModal } from "./components/FormDesignModal";
 import { DarkTheme, LightTheme } from "@/app/theme";
@@ -37,9 +37,9 @@ export const FormDesign: React.FC<Props> = ({ visible, setVisible }) => {
               <TextTitle>Login / Registration Form</TextTitle>
             </Row>
             <Row style={{ marginTop: 2 }}>
-              <TextContent>
+              <TextHeading>
                 Travel website's login and registration form.
-              </TextContent>
+              </TextHeading>
             </Row>
             <Row gutter={[8, 16]} align="middle" style={{ marginTop: 32 }}>
               <Col flex="auto">

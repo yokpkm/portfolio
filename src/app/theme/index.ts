@@ -78,13 +78,11 @@ export interface LightTheme {
     default: string;
   };
   card: {
-    background: string;
     border: string;
-    shadow: string;
   };
   tag: {
     background: string;
-    border: string;
+    foreground: string;
   };
   textColor: {
     primary: string;
@@ -94,6 +92,7 @@ export interface LightTheme {
   textSize: {
     headline: string;
     title: string;
+    cta: string;
     body: string;
     caption: string;
   };
@@ -172,13 +171,11 @@ export interface DarkTheme {
     default: string;
   };
   card: {
-    background: string;
     border: string;
-    shadow: string;
   };
   tag: {
     background: string;
-    border: string;
+    foreground: string;
   };
   textColor: {
     primary: string;
@@ -188,6 +185,7 @@ export interface DarkTheme {
   textSize: {
     headline: string;
     title: string;
+    cta: string;
     body: string;
     caption: string;
   };

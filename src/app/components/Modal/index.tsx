@@ -17,8 +17,14 @@ export const StyledModal = styled(Modal)<PropsTheme>`
   }
 
   .ant-modal-close-x {
-    color: ${(props) => props.theme.closeColor.default};
+    color: ${(props) => props.theme.closeBtn.default};
     font-size: 18px;
+
+    :hover,
+    :active,
+    :focus {
+      color: ${(props) => props.theme.closeBtn.hover};
+    }
   }
 
   .ant-modal-content {
@@ -27,7 +33,7 @@ export const StyledModal = styled(Modal)<PropsTheme>`
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: ${(props) => props.theme.card.background};
+    background-color: ${(props) => props.theme.layout.background};
     border-radius: 16px 16px 0px 0px;
   }
 `;

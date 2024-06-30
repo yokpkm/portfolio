@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonCard } from "../../../../components/button";
 import { StyledTagCoding, StyledTagDesign } from "../../../../components/tag";
-import { TextContent, TextTitle } from "../../../../components/text";
+import { TextHeading, TextTitle } from "../../../../components/text";
 import { ProductPageModal } from "./components/ProductPageModal";
 import { DarkTheme, LightTheme } from "@/app/theme";
 
@@ -35,7 +35,7 @@ export const ProductPage: React.FC<Props> = ({ visible, setVisible }) => {
               <TextTitle>Product Page</TextTitle>
             </Row>
             <Row style={{ marginTop: 2 }}>
-              <TextContent>Features of inventory management.</TextContent>
+              <TextHeading>Features of inventory management.</TextHeading>
             </Row>
             <Row gutter={[8, 16]} align="middle" style={{ marginTop: 32 }}>
               <Col>

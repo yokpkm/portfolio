@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonCard } from "../../../../components/button";
 import { StyledTagDesign } from "../../../../components/tag";
-import { TextContent, TextTitle } from "../../../../components/text";
+import { TextHeading, TextTitle } from "../../../../components/text";
 import { BagDesignModal } from "./components/BagDesignModal";
 import { DarkTheme, LightTheme } from "@/app/theme";
 
@@ -35,7 +35,7 @@ export const BagDesign: React.FC<Props> = ({ visible, setVisible }) => {
               <TextTitle>Bag Pattern Design</TextTitle>
             </Row>
             <Row style={{ marginTop: 2 }}>
-              <TextContent>Pattern's concept offers the greatness.</TextContent>
+              <TextHeading>Pattern's concept offers the greatness.</TextHeading>
             </Row>
             <Row gutter={[8, 16]} align="middle" style={{ marginTop: 32 }}>
               <Col flex="auto">

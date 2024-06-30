@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonCard } from "../../../../components/button";
 import { StyledTagDesign } from "../../../../components/tag";
-import { TextContent, TextTitle } from "../../../../components/text";
+import { TextHeading, TextTitle } from "../../../../components/text";
 import { LogoDesignModal } from "./components/LogoDesignModal";
 import { DarkTheme, LightTheme } from "@/app/theme";
 
@@ -35,9 +35,9 @@ export const LogoDesign: React.FC<Props> = ({ visible, setVisible }) => {
               <TextTitle>Coffee Shop Logo Design</TextTitle>
             </Row>
             <Row style={{ marginTop: 2 }}>
-              <TextContent>
+              <TextHeading>
                 Logo's concept offers both coffee and nature.
-              </TextContent>
+              </TextHeading>
             </Row>
             <Row gutter={[8, 16]} align="middle" style={{ marginTop: 32 }}>
               <Col flex="auto">

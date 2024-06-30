@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonCard } from "../../../../components/button";
 import { StyledTagCoding, StyledTagDesign } from "../../../../components/tag";
-import { TextContent, TextTitle } from "../../../../components/text";
+import { TextHeading, TextTitle } from "../../../../components/text";
 
 import { ProductionOrderPageModal } from "./components/ProductionOrderPageModal";
 import { DarkTheme, LightTheme } from "@/app/theme";
@@ -40,7 +40,7 @@ export const ProductionOrderPage: React.FC<Props> = ({
               <TextTitle>Production Order Page</TextTitle>
             </Row>
             <Row style={{ marginTop: 2 }}>
-              <TextContent>Features of manufacturing industry.</TextContent>
+              <TextHeading>Features of manufacturing industry.</TextHeading>
             </Row>
             <Row gutter={[8, 16]} align="middle" style={{ marginTop: 32 }}>
               <Col>

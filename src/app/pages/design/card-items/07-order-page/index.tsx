@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { ButtonCard } from "../../../../components/button";
 import { StyledTagCoding, StyledTagDesign } from "../../../../components/tag";
-import { TextContent, TextTitle } from "../../../../components/text";
+import { TextHeading, TextTitle } from "../../../../components/text";
 
 import { OrderPageModal } from "./components/OrderPageModal";
 import { DarkTheme, LightTheme } from "@/app/theme";
@@ -36,7 +36,7 @@ export const OrderPage: React.FC<Props> = ({ visible, setVisible }) => {
               <TextTitle>Order Page</TextTitle>
             </Row>
             <Row style={{ marginTop: 2 }}>
-              <TextContent>Features of order management.</TextContent>
+              <TextHeading>Features of order management.</TextHeading>
             </Row>
             <Row gutter={[8, 16]} align="middle" style={{ marginTop: 32 }}>
               <Col>
