@@ -13,9 +13,9 @@ export const TextHeadline = styled(Typography)<PropsTheme>`
 
 // menu
 export const TextMenu = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.cta};
-  font-weight: 400;
-  letter-spacing: 0.05em;
+  font-size: ${(props) => props.theme.textSize.caption};
+  font-weight: 500;
+  letter-spacing: 0.04em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 
@@ -50,7 +50,7 @@ export const TextCaption = styled(Typography)<PropsTheme>`
 export const TextHeading = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   /* line-height: 22px; */
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;

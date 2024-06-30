@@ -24,21 +24,22 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
             icon={
               theme === ThemeType.LIGHT ? (
                 <Image
-                  width={40}
-                  height={40}
+                  width={42}
+                  height={42}
                   src="/logo/logo-lightTheme.svg"
                   alt="false"
                 />
               ) : (
                 <Image
-                  width={40}
-                  height={40}
+                  width={42}
+                  height={42}
                   src="/logo/logo-darkTheme.svg"
                   alt="false"
                 />
               )
             }
-            type="text"
+            type="link"
+            style={{ height: 42 }}
             onClick={() => animateScroll.scrollToTop()}
           />
         </Col>
@@ -46,12 +47,12 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
           <Row gutter={[40, 0]} align="middle">
             <Col>
               <Link to="about" smooth={true} duration={1000} offset={-160}>
-                <TextMenu>About</TextMenu>
+                <TextMenu>ABOUT</TextMenu>
               </Link>
             </Col>
             <Col>
               <Link to="design" smooth={true} duration={1000} offset={-160}>
-                <TextMenu>Design</TextMenu>
+                <TextMenu>DESIGN</TextMenu>
               </Link>
             </Col>
             <Col>
@@ -61,7 +62,7 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
                 duration={1000}
                 onClick={() => animateScroll.scrollToBottom}
               >
-                <TextMenu>Contact</TextMenu>
+                <TextMenu>CONTACT</TextMenu>
               </Link>
             </Col>
             <Col>
@@ -84,7 +85,7 @@ const WrapperNavbar = styled.div<PropsTheme>`
   right: 0;
   left: 0;
   z-index: 10;
-  padding: 12px 80px 12px 80px;
+  padding: 8px 80px 8px 80px;
   background-color: ${(props: PropsTheme) => props.theme.layout.background};
   backdrop-filter: blur(6px);
 `;

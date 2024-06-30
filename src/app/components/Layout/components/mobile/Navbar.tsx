@@ -30,31 +30,32 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
   return (
     <>
       <WrapperNavbar>
-        <Row gutter={[8, 0]} justify="center" align="middle">
+        <Row justify="center" align="middle">
           <Col flex="auto">
             <Button
               icon={
                 theme === ThemeType.LIGHT ? (
                   <Image
-                    width={36}
-                    height={36}
+                    width={42}
+                    height={42}
                     src="/logo/logo-lightTheme.svg"
                     alt="false"
                   />
                 ) : (
                   <Image
-                    width={36}
-                    height={36}
+                    width={42}
+                    height={42}
                     src="/logo/logo-darkTheme.svg"
                     alt="false"
                   />
                 )
               }
-              type="text"
+              type="link"
+              style={{ height: 42 }}
               onClick={() => animateScroll.scrollToTop()}
             />
           </Col>
-          <Col>
+          <Col style={{ paddingRight: 8, paddingLeft: 8 }}>
             <StyledSwitch
               onClick={() => themeToggle()}
               checkedChildren={<MoonFilled />}
@@ -68,15 +69,13 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
                   <Image
                     width={24}
                     height={24}
-                    src="/icon/menu-black.svg"
-                    style={{ display: "flex" }}
+                    src="/icon/ic-menu-lightTheme.svg"
                   />
                 ) : (
                   <Image
                     width={24}
                     height={24}
-                    src="/icon/menu-white.svg"
-                    style={{ display: "flex" }}
+                    src="/icon/ic-menu-darkTheme.svg"
                   />
                 )
               }
@@ -100,7 +99,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={-120}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>About</TextMenu>
+            <TextMenu>ABOUT</TextMenu>
           </Link>
         </Row>
         <Row justify="center" style={{ marginBottom: 32 }}>
@@ -111,7 +110,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={-120}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>Design</TextMenu>
+            <TextMenu>DESIGN</TextMenu>
           </Link>
         </Row>
         <Row justify="center">
@@ -122,7 +121,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={0}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>Contact</TextMenu>
+            <TextMenu>CONTACT</TextMenu>
           </Link>
         </Row>
         <DividerMenu />
@@ -183,8 +182,7 @@ const WrapperNavbar = styled.div<PropsTheme>`
   right: 0;
   left: 0;
   z-index: 10;
-  padding: 12px 16px 12px 16px;
-  background-color: ${(props: PropsTheme) =>
-    props.theme.backgroundColors.default};
+  padding: 8px 16px 8px 16px;
+  background-color: ${(props: PropsTheme) => props.theme.layout.background};
   backdrop-filter: blur(6px);
 `;

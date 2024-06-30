@@ -89,7 +89,7 @@ const darkTheme = {
     headline: "1.5rem", //24px
     title: "1rem", //16px
     cta: "0.9rem", // about 14.4 px
-    body: "0.875rem", //14px: include cta
+    body: "0.875rem", //14px
     caption: "0.8rem", //about 12.8px
   },
 } as DarkTheme;
