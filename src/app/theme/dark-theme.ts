@@ -49,7 +49,7 @@ const darkTheme = {
   //new TypeScript
   layout: {
     background: "#1A1C1E",
-    divider: "#C8CBD0",
+    divider: "#4B5058",
   },
   primaryBtn: {
     default: "#FCFCFD", //bg color

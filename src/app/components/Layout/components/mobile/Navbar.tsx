@@ -90,6 +90,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
         open={openMenu}
         closable={false}
         onClose={() => setOpenMenu(false)}
+        style={{ height: "auto" }}
       >
         <Row justify="center" style={{ marginBottom: 32 }}>
           <Link

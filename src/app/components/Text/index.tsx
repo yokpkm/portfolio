@@ -15,7 +15,7 @@ export const TextHeadline = styled(Typography)<PropsTheme>`
 export const TextMenu = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 

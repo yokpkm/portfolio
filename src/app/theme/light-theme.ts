@@ -49,7 +49,7 @@ const lightTheme = {
   //new TypeScript
   layout: {
     background: "#F9FAFA",
-    divider: "#C8CBD0",
+    divider: "#DEE0E3",
   },
   primaryBtn: {
     default: "#131416", //bg color

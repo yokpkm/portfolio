@@ -30,11 +30,11 @@ const ContactSection: React.FC = () => {
                 <TextHeadline>CONTACT</TextHeadline>
               </DividerSection>
               <TextCaption>
-                My inbox is always open. I'll get back to you 📱
+                My inbox is always open, I'll get back to you 📱
               </TextCaption>
             </Row>
             <Row justify="end" style={{ marginBottom: 8 }}>
-              <TextBody>find me on</TextBody>
+              <TextBody>Find me on</TextBody>
             </Row>
             <Row justify="end" gutter={16} align="middle">
               <Col>
