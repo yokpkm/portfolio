@@ -17,14 +17,11 @@ export const StyledModal = styled(Modal)<PropsTheme>`
   }
 
   .ant-modal-close-x {
-    color: ${(props) => props.theme.closeBtn.default};
-    font-size: 18px;
+    opacity: 0.8;
+  }
 
-    :hover,
-    :active,
-    :focus {
-      color: ${(props) => props.theme.closeBtn.hover};
-    }
+  .ant-modal-close-x:hover {
+    opacity: 1;
   }
 
   .ant-modal-content {

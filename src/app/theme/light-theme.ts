@@ -82,6 +82,7 @@ const lightTheme = {
   textColor: {
     primary: "rgba(19, 20, 22, 0.87)",
     secondary: "rgba(19, 20, 22, 0.67)",
+    tertiary: "rgba(19, 20, 22, 0.82)",
     link: "#E8308C",
   },
   textSize: {

@@ -1,5 +1,5 @@
 import { Image } from "@nextui-org/image";
-import { Grid, Row, Col } from "antd";
+import { Grid, Row, Col, Button } from "antd";
 import { StyledModal } from "../../../../../components/modal";
 import { StyledTag } from "@/app/components/tag";
 import { TextHeadline, TextModal } from "../../../../../components/text";
@@ -21,6 +21,19 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
         open={open}
         onCancel={() => setOpen(false)}
         destroyOnClose
+        closeIcon={
+          <Button
+            icon={
+              <Image
+                width={20}
+                height={20}
+                src="/icon/ic-close-default.svg"
+                alt="false"
+              />
+            }
+            type="link"
+          />
+        }
       >
         <Row justify="center" style={{ marginTop: 32, marginBottom: 32 }}>
           <Col xs={20} sm={20} md={16} lg={12} xl={10} xxl={8}>

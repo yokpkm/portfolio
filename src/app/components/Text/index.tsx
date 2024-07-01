@@ -16,7 +16,7 @@ export const TextMenu = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 500;
   letter-spacing: 0.03em;
-  color: ${(props) => props.theme.textColor.primary};
+  color: ${(props) => props.theme.textColor.tertiary};
   margin-bottom: 0;
 
   &&.ant-typography:hover,
@@ -92,7 +92,7 @@ export const TextModal = styled(Typography)<PropsTheme>`
 export const TextLink = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 400;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   color: ${(props) => props.theme.textColor.link};
   margin-bottom: 0;
 

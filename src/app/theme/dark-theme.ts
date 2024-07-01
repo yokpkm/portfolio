@@ -83,6 +83,7 @@ const darkTheme = {
   textColor: {
     primary: "rgba(252, 252, 253, 0.95)",
     secondary: "rgba(252, 252, 253, 0.75)",
+    tertiary: "rgba(252, 252, 253, 0.9)",
     link: "#F5A4CC",
   },
   textSize: {

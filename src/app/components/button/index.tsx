@@ -12,7 +12,7 @@ export const ButtonPrimary = styled(Button)<PropsTheme>`
   border: unset;
   border-radius: 360px;
   box-shadow: unset;
-  font-size: ${(props) => props.theme.textSize.cta};
+  font-size: ${(props) => props.theme.textSize.button};
   font-weight: 600;
   letter-spacing: 0.08em;
   color: ${(props) => props.theme.primaryBtn.foreground} !important;
@@ -37,7 +37,7 @@ export const ButtonSecondary = styled(Button)<PropsTheme>`
   border-radius: 360px;
   box-shadow: unset;
   color: ${(props) => props.theme.secondaryBtn.foreground} !important;
-  font-size: ${(props) => props.theme.textSize.cta};
+  font-size: ${(props) => props.theme.textSize.button};
   font-weight: 600;
   letter-spacing: 0.08em;
 
