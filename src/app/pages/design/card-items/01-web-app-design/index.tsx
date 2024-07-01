@@ -14,7 +14,7 @@ export const WebAppDesign: React.FC<Props> = ({ open, setOpen }) => {
   return (
     <>
       <ModalDetail01 open={open} setOpen={setOpen} />
-      <Col xs={22} sm={22} md={12} lg={12} xl={8} xxl={12}>
+      <Col xs={22} sm={12} md={12} lg={12} xl={8} xxl={8}>
         <StyledCard
           cover={
             <Image

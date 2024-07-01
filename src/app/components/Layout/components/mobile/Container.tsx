@@ -15,12 +15,10 @@ export const ContainerMobile: React.FC<Props> = ({ children }) => {
 };
 
 const WrapperContainer = styled.div`
-  margin-left: 24px;
-  margin-right: 24px;
+  padding: 0px 24px;
 `;
 
 const StyledContainer = styled.div`
-  margin: 120px auto;
+  margin: 96px 0px;
   max-width: 991px;
-  /* min-width: 320px; */
 `;

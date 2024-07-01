@@ -22,7 +22,7 @@ const ContactSection: React.FC = () => {
               justify="end"
               style={
                 (xs || sm || md) && !lg
-                  ? { marginTop: 120, marginBottom: 48 }
+                  ? { marginTop: 96, marginBottom: 32 }
                   : { marginTop: 160, marginBottom: 48 }
               }
             >

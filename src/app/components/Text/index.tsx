@@ -16,7 +16,7 @@ export const TextMenu = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 500;
   letter-spacing: 0.03em;
-  color: ${(props) => props.theme.textColor.tertiary};
+  color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 
   &&.ant-typography:hover,

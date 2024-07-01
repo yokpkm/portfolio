@@ -5,7 +5,7 @@ import { Divider } from "antd";
 export const DividerSection = styled(Divider)<PropsTheme>`
   &&.ant-divider-horizontal.ant-divider-with-text {
     border: ${(props) => props.theme.layout.divider};
-    margin: 6px 0px;
+    margin: 0px 0px 6px 0;
   }
 `;
 

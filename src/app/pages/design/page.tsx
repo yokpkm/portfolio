@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Grid, Row } from "antd";
+import { Grid, Row, Col } from "antd";
 import { DividerSection } from "../../components/divider";
 import { TextHeadline, TextCaption } from "../../components/text";
 
@@ -19,6 +19,11 @@ const DesignSection: React.FC = () => {
   const { xs, sm, md, lg } = useBreakpoint();
 
   const [open01Modal, setOpen01Modal] = useState(false);
+  const [open02Modal, setOpen02Modal] = useState(false);
+  const [open03Modal, setOpen03Modal] = useState(false);
+  const [open04Modal, setOpen04Modal] = useState(false);
+  const [open05Modal, setOpen05Modal] = useState(false);
+
   const [visibleModal02, setVisibleModal02] = useState(false);
   const [visibleModal03, setVisibleModal03] = useState(false);
   const [visibleModal04, setVisibleModal04] = useState(false);
@@ -36,8 +41,8 @@ const DesignSection: React.FC = () => {
           justify="center"
           style={
             (xs || sm || md) && !lg
-              ? { marginTop: 120, marginBottom: 56 }
-              : { marginTop: 160, marginBottom: 64 }
+              ? { marginTop: 96, marginBottom: 32 }
+              : { marginTop: 160, marginBottom: 56 }
           }
         >
           <DividerSection>
@@ -45,11 +50,16 @@ const DesignSection: React.FC = () => {
           </DividerSection>
           <TextCaption>Some projects that created by me 🎨</TextCaption>
         </Row>
+
         <Row
-          justify="start"
-          gutter={(xs || sm || md) && !lg ? [32, 32] : [16, 32]}
+          justify={xs && !sm ? "center" : "start"}
+          gutter={(xs || sm || md) && !lg ? [16, 16] : [16, 32]}
         >
           <WebAppDesign open={open01Modal} setOpen={setOpen01Modal} />
+          <WebAppDesign open={open02Modal} setOpen={setOpen02Modal} />
+          <WebAppDesign open={open03Modal} setOpen={setOpen03Modal} />
+          <WebAppDesign open={open04Modal} setOpen={setOpen05Modal} />
+          <WebAppDesign open={open04Modal} setOpen={setOpen05Modal} />
 
           {/* <AppDesign visible={visibleModal02} setVisible={setVisibleModal02} />
           <SaleOrderPage

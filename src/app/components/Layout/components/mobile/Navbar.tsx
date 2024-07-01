@@ -100,7 +100,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={-120}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>ABOUT</TextMenu>
+            <TextMenu>About</TextMenu>
           </Link>
         </Row>
         <Row justify="center" style={{ marginBottom: 32 }}>
@@ -111,7 +111,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={-120}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>DESIGN</TextMenu>
+            <TextMenu>Design</TextMenu>
           </Link>
         </Row>
         <Row justify="center">
@@ -122,7 +122,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={0}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>CONTACT</TextMenu>
+            <TextMenu>Contact</TextMenu>
           </Link>
         </Row>
         <DividerMenu />
@@ -183,7 +183,7 @@ const WrapperNavbar = styled.div<PropsTheme>`
   right: 0;
   left: 0;
   z-index: 10;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 24px 8px 24px;
   background-color: ${(props: PropsTheme) => props.theme.layout.background};
-  backdrop-filter: blur(6px);
+  opacity: 0.95;
 `;

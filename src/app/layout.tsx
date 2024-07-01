@@ -7,6 +7,7 @@ const RootLayout = ({ children }: React.PropsWithChildren) => (
   <html lang="en">
     <title>Portfolio</title>
     <body className={inter.className}>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <AntdRegistry>{children}</AntdRegistry>
     </body>
   </html>
