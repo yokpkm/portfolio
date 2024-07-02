@@ -58,8 +58,8 @@ const DesignSection: React.FC = () => {
           <WebAppDesign open={open01Modal} setOpen={setOpen01Modal} />
           <WebAppDesign open={open02Modal} setOpen={setOpen02Modal} />
           <WebAppDesign open={open03Modal} setOpen={setOpen03Modal} />
-          <WebAppDesign open={open04Modal} setOpen={setOpen05Modal} />
-          <WebAppDesign open={open04Modal} setOpen={setOpen05Modal} />
+          <WebAppDesign open={open04Modal} setOpen={setOpen04Modal} />
+          <WebAppDesign open={open05Modal} setOpen={setOpen05Modal} />
 
           {/* <AppDesign visible={visibleModal02} setVisible={setVisibleModal02} />
           <SaleOrderPage

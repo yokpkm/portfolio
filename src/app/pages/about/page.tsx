@@ -24,14 +24,13 @@ const AboutSection: React.FC = () => {
             <TextHeadline>ABOUT</TextHeadline>
           </DividerSection>
           <TextCaption>
-            Hello! I'm Yok Premkamon, a UX/UI Designer ✨
+            Yok Premkamon, a UX/UI Creative Design Specialist ✨
           </TextCaption>
         </Row>
 
         <Row justify="start">
           <TextBody>
-            I work as a UX/UI Designer. My purpose is to design useful products
-            for users.
+            I work as a UX/UI designer with experience in UI development for
           </TextBody>
         </Row>
         <Row
@@ -39,18 +38,14 @@ const AboutSection: React.FC = () => {
           style={xs || !sm ? { marginTop: 16 } : { marginTop: 6 }}
         >
           <TextBody>
-            I've experience in front-end development on website and mobile
-            application.
+            mobile application and responsive website, I'd like to enhance
           </TextBody>
         </Row>
         <Row
           justify="start"
           style={xs || !sm ? { marginTop: 16 } : { marginTop: 6 }}
         >
-          <TextBody>
-            So, I'd like to improve my skills for provide a good user experience
-            to the target group.
-          </TextBody>
+          <TextBody>my skills to design outstanding user experiences.</TextBody>
         </Row>
 
         {xs || !sm ? (
@@ -133,7 +128,7 @@ const AboutSection: React.FC = () => {
           style={(xs || sm) && !md ? { marginTop: 40 } : { marginTop: 48 }}
         >
           <Col>
-            <a href="/PremkamonResume.pdf" target="_blank">
+            <a href="/premkamon-resume.pdf" target="_blank">
               <ButtonPrimary>View my resume</ButtonPrimary>
             </a>
           </Col>
