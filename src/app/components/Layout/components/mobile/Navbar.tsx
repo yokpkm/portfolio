@@ -4,7 +4,7 @@ import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
 import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
-import { Image } from "@nextui-org/image";
+import { Image } from "@heroui/react";
 import { Row, Col, Button } from "antd";
 import { ButtonIcon } from "../../../button";
 import { DividerMenu } from "../../../divider";

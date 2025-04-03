@@ -1,4 +1,4 @@
-import { Image } from "@nextui-org/image";
+import { Image } from "@heroui/react";
 import { Row, Col } from "antd";
 import { ModalDetail01 } from "./components/modal";
 import { StyledCard } from "@/app/components/card";

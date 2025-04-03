@@ -1,5 +1,5 @@
-import { Card, CardBody } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
+import { Card, CardBody } from "@heroui/react";
+import { Image } from "@heroui/react";
 import { Col, Row } from "antd";
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
