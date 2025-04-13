@@ -87,9 +87,9 @@ const lightTheme = {
   textSize: {
     headline: "1.5rem", //24px
     title: "1rem", //16px
-    cta: "0.9rem", //about 14.5px
     body: "0.875rem", //14px
-    caption: "0.8rem", //about 12.8px
+    caption: "0.8125rem", //13px
+    label: "0.75rem", //about 12px
   },
 } as LightTheme;
 

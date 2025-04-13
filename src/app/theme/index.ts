@@ -92,9 +92,9 @@ export interface LightTheme {
   textSize: {
     headline: string;
     title: string;
-    cta: string;
     body: string;
     caption: string;
+    label: string;
   };
 }
 
@@ -185,9 +185,9 @@ export interface DarkTheme {
   textSize: {
     headline: string;
     title: string;
-    cta: string;
     body: string;
     caption: string;
+    label: string;
   };
 }
 

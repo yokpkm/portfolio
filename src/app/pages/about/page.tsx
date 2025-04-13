@@ -30,7 +30,7 @@ const AboutSection: React.FC = () => {
 
         <Row justify="start">
           <TextBody>
-            I work as a UX/UI designer with experience in UI development for
+           UX/UI Designer with 4+ years of experience in visual design for
           </TextBody>
         </Row>
         <Row
@@ -38,14 +38,20 @@ const AboutSection: React.FC = () => {
           style={xs || !sm ? { marginTop: 16 } : { marginTop: 6 }}
         >
           <TextBody>
-            mobile application and responsive website, I'd like to enhance
+            mobile applications and responsive websites.
           </TextBody>
         </Row>
         <Row
           justify="start"
           style={xs || !sm ? { marginTop: 16 } : { marginTop: 6 }}
         >
-          <TextBody>my skills to design outstanding user experiences.</TextBody>
+          <TextBody>I turn complexity into clarity — through user-centered solutions:</TextBody>
+        </Row>
+        <Row
+          justify="start"
+          style={xs || !sm ? { marginTop: 16 } : { marginTop: 6 }}
+        >
+          <TextBody>simple, intuitive and meaningful.</TextBody>
         </Row>
 
         {xs || !sm ? (

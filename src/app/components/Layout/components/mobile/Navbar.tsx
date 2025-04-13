@@ -100,7 +100,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={-120}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>About</TextMenu>
+            <TextMenu>ABOUT</TextMenu>
           </Link>
         </Row>
         <Row justify="center" style={{ marginBottom: 32 }}>
@@ -111,7 +111,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={-120}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>Design</TextMenu>
+            <TextMenu>DESIGN</TextMenu>
           </Link>
         </Row>
         <Row justify="center">
@@ -122,7 +122,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             offset={0}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>Contact</TextMenu>
+            <TextMenu>CONTACT</TextMenu>
           </Link>
         </Row>
         <DividerMenu />

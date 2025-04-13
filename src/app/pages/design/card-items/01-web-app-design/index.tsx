@@ -3,7 +3,8 @@ import { Row, Col } from "antd";
 import { ModalDetail01 } from "./components/modal";
 import { StyledCard } from "@/app/components/card";
 import { StyledTag } from "../../../../components/tag";
-import { TextCard, TextHeading } from "../../../../components/text";
+import { TextCardTitle, TextCardContent} from "@/app/components/text";
+
 
 interface Props {
   open: boolean;
@@ -30,12 +31,12 @@ export const WebAppDesign: React.FC<Props> = ({ open, setOpen }) => {
         >
           <Row style={{ marginTop: 12 }}>
             <Col span={24}>
-              <TextHeading>PROGRESS TRACKING</TextHeading>
+              <TextCardTitle>PROGRESS TRACKING</TextCardTitle>
             </Col>
             <Col span={24}>
-              <TextCard>
+              <TextCardContent>
                 Web application for progress updating of project
-              </TextCard>
+              </TextCardContent>
             </Col>
           </Row>
           <Row gutter={[6, 6]} style={{ marginTop: 16 }}>

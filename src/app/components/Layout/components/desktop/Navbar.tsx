@@ -47,12 +47,12 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
           <Row gutter={[40, 0]} align="middle">
             <Col>
               <Link to="about" smooth={true} duration={1000} offset={-160}>
-                <TextMenu>About</TextMenu>
+                <TextMenu>ABOUT</TextMenu>
               </Link>
             </Col>
             <Col>
               <Link to="design" smooth={true} duration={1000} offset={-160}>
-                <TextMenu>Design</TextMenu>
+                <TextMenu>DESIGN</TextMenu>
               </Link>
             </Col>
             <Col>
@@ -62,7 +62,7 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
                 duration={1000}
                 onClick={() => animateScroll.scrollToBottom}
               >
-                <TextMenu>Contact</TextMenu>
+                <TextMenu>CONTACT</TextMenu>
               </Link>
             </Col>
             <Col>

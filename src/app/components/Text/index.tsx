@@ -2,20 +2,48 @@ import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { Typography } from "antd";
 
-// section name
+//  default of headline
 export const TextHeadline = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.headline};
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;
 
-// menu
+// default of body
+export const TextBody = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.body};
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 22px;
+  color: ${(props) => props.theme.textColor.secondary};
+  margin-bottom: 0;
+`;
+
+// default of caption
+export const TextCaption = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.caption};
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: ${(props) => props.theme.textColor.secondary};
+  margin-bottom: 0;
+`;
+
+// default of label
+export const TextLabel = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.label};
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: ${(props) => props.theme.textColor.link};
+  margin-bottom: 0;
+`;
+
+// adjust style for menu
 export const TextMenu = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
-  font-weight: 500;
-  letter-spacing: 0.03em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 
@@ -27,61 +55,41 @@ export const TextMenu = styled(Typography)<PropsTheme>`
   }
 `;
 
-// default of body
-export const TextBody = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.body};
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  line-height: 22px;
-  color: ${(props) => props.theme.textColor.secondary};
-  margin-bottom: 0;
-`;
-
-// default of caption
-export const TextCaption = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.caption};
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: ${(props) => props.theme.textColor.secondary};
-  margin-bottom: 0;
-`;
-
-// card title
-export const TextHeading = styled(Typography)<PropsTheme>`
+// adjust style for card title
+export const TextCardTitle = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 700;
   letter-spacing: 0.05em;
-  /* line-height: 22px; */
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;
 
-// card content
-export const TextCard = styled(Typography)<PropsTheme>`
+// adjust style for card content
+export const TextCardContent = styled(Typography)<PropsTheme>`
   overflow: hidden;
   width: auto;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: ${(props) => props.theme.textSize.caption};
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.05em;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
 `;
 
-// modal title
-export const TextTitle = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.body};
+// adjust style for modal title
+export const TextModalTitle = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.title};
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;
 
-// modal content
-export const TextModal = styled(Typography)<PropsTheme>`
+// adjust style for modal content
+export const TextModalContent = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.05em;
   line-height: 26px;
   color: ${(props) => props.theme.textColor.secondary};

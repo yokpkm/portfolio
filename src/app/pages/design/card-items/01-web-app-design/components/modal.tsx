@@ -2,7 +2,7 @@ import { Image } from "@heroui/react";
 import { Grid, Row, Col, Button } from "antd";
 import { StyledModal } from "../../../../../components/modal";
 import { StyledTag } from "@/app/components/tag";
-import { TextHeadline, TextModal } from "../../../../../components/text";
+import { TextHeadline, TextModalContent } from "../../../../../components/text";
 
 interface Props {
   open: boolean;
@@ -65,15 +65,15 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModal>
+                  <TextModalContent>
                     The web application purpose is to track progress of
                     projects.
-                  </TextModal>
+                  </TextModalContent>
                 </Row>
                 <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModal>
+                  <TextModalContent>
                     It's simple to use and responsive to all platforms.
-                  </TextModal>
+                  </TextModalContent>
                 </Row>
               </Col>
               <Col span={24}>
@@ -88,14 +88,14 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModal>
+                  <TextModalContent>
                     The teacher must create projects or subjects.
-                  </TextModal>
+                  </TextModalContent>
                 </Row>
                 <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModal>
+                  <TextModalContent>
                     After that, students joined and update the progress.
-                  </TextModal>
+                  </TextModalContent>
                 </Row>
               </Col>
               <Col span={24}>
@@ -110,9 +110,9 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModal>
+                  <TextModalContent>
                     Teachers can share information on the news tab.
-                  </TextModal>
+                  </TextModalContent>
                 </Row>
               </Col>
               <Col span={24}>
@@ -127,9 +127,9 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModal>
+                  <TextModalContent>
                     Students can respond to questionnaire on the files tab.
-                  </TextModal>
+                  </TextModalContent>
                 </Row>
               </Col>
               <Col span={24}>
@@ -144,10 +144,10 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModal>
+                  <TextModalContent>
                     Students can upload document or media files on the groups
                     tab.
-                  </TextModal>
+                  </TextModalContent>
                 </Row>
               </Col>
               <Col span={24}>
@@ -162,9 +162,9 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModal>
+                  <TextModalContent>
                     Last, they can make appointments on the progress tab.
-                  </TextModal>
+                  </TextModalContent>
                 </Row>
               </Col>
             </Row>
