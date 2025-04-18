@@ -48,7 +48,7 @@ const darkTheme = {
 
   //new TypeScript
   layout: {
-    background: "#1A1C1E",
+    background: "#131416",
     divider: "#4B5058",
   },
   primaryBtn: {
@@ -70,20 +70,19 @@ const darkTheme = {
     hover: "#C8CBD0",
   },
   switch: {
-    // default: "#3B3F45", //bg color
-    default: "#42464D", //bg color
+    default: "#42464D", 
   },
   card: {
-    border: "#F5A4CC",
+    border: "rgba(247, 182, 214, 0.15)",
   },
   tag: {
-    background: "rgba(245, 178, 211, 0.06)",
-    foreground: "#F5B2D3", //border include foreground
+    background: "rgba(247, 182, 214, 0.1)",
+    foreground: "#F7B6D6",
   },
   textColor: {
     primary: "rgba(252, 252, 253, 0.95)",
     secondary: "rgba(252, 252, 253, 0.75)",
-    link: "#F5A4CC",
+    tertiary: "#F5A4CC",
   },
   textSize: {
     headline: "1.5rem", //24px

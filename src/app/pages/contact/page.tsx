@@ -23,20 +23,20 @@ const ContactSection: React.FC = () => {
               style={
                 (xs || sm || md) && !lg
                   ? { marginTop: 96, marginBottom: 32 }
-                  : { marginTop: 160, marginBottom: 48 }
+                  : { marginTop: 160, marginBottom: 40 }
               }
             >
               <DividerSection orientation="right">
-                <TextHeadline>CONTACT</TextHeadline>
+                <TextHeadline>CONTACT 💬</TextHeadline>
               </DividerSection>
               <TextCaption>
-                My inbox is always open, I'll get back to you 📱
+                My inbox is always open, feel free to reach out
               </TextCaption>
             </Row>
             <Row justify="end" style={{ marginBottom: 8 }}>
               <TextBody>Find me on</TextBody>
             </Row>
-            <Row justify="end" gutter={16} align="middle">
+            <Row justify="end" gutter={[16, 16]} align="middle">
               <Col>
                 <a
                   target={"_blank"}

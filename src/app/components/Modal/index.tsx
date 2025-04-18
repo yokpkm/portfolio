@@ -4,10 +4,11 @@ import { Modal } from "antd";
 
 export const StyledModal = styled(Modal)<PropsTheme>`
   &&.ant-modal {
-    width: 100% !important;
-    max-width: 100%;
     top: 40px;
     padding: 0;
+    margin: 0;
+    width: 100% !important;
+    max-width: 100%;
   }
 
   .ant-modal-close {
@@ -27,10 +28,10 @@ export const StyledModal = styled(Modal)<PropsTheme>`
   .ant-modal-content {
     position: fixed;
     overflow-y: scroll;
-    height: 100%;
     padding: 0;
     margin: 0;
+    height: 100%;
     background-color: ${(props) => props.theme.layout.background};
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 24px 24px 0px 0px;
   }
 `;

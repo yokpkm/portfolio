@@ -5,8 +5,8 @@ import { Typography } from "antd";
 //  default of headline
 export const TextHeadline = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.headline};
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;
@@ -15,8 +15,8 @@ export const TextHeadline = styled(Typography)<PropsTheme>`
 export const TextBody = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 300;
-  letter-spacing: 0.05em;
-  line-height: 22px;
+  letter-spacing: 0.03em;
+  line-height: 26px;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
 `;
@@ -25,7 +25,7 @@ export const TextBody = styled(Typography)<PropsTheme>`
 export const TextCaption = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 300;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
 `;
@@ -34,23 +34,23 @@ export const TextCaption = styled(Typography)<PropsTheme>`
 export const TextLabel = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.label};
   font-weight: 400;
-  letter-spacing: 0.05em;
-  color: ${(props) => props.theme.textColor.link};
+  letter-spacing: 0.03em;
+  color: ${(props) => props.theme.textColor.tertiary};
   margin-bottom: 0;
 `;
 
 // adjust style for menu
 export const TextMenu = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.caption};
-  font-weight: 400;
-  letter-spacing: 0.05em;
+  font-size: ${(props) => props.theme.textSize.label};
+  font-weight: 500;
+  letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 
   &&.ant-typography:hover,
   .ant-typography:active,
   .ant-typography:focus {
-    color: ${(props) => props.theme.textColor.link};
+    color: ${(props) => props.theme.textColor.tertiary};
     cursor: pointer;
   }
 `;
@@ -59,7 +59,7 @@ export const TextMenu = styled(Typography)<PropsTheme>`
 export const TextCardTitle = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;
@@ -72,7 +72,7 @@ export const TextCardContent = styled(Typography)<PropsTheme>`
   white-space: nowrap;
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 300;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
 `;
@@ -90,7 +90,7 @@ export const TextModalTitle = styled(Typography)<PropsTheme>`
 export const TextModalContent = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 300;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   line-height: 26px;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
@@ -100,14 +100,14 @@ export const TextModalContent = styled(Typography)<PropsTheme>`
 export const TextLink = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 400;
-  letter-spacing: 0.05em;
-  color: ${(props) => props.theme.textColor.link};
+  letter-spacing: 0.03em;
+  color: ${(props) => props.theme.textColor.tertiary};
   margin-bottom: 0;
 
   &&.ant-typography:hover,
   .ant-typography:active,
   .ant-typography:focus {
-    color: ${(props) => props.theme.textColor.link};
+    color: ${(props) => props.theme.textColor.tertiary};
     cursor: pointer;
   }
 `;

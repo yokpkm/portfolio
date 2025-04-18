@@ -9,6 +9,6 @@ export const StyledTag = styled(Tag)<PropsTheme>`
   color: ${(props) => props.theme.tag.foreground};
   font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   margin-right: 0;
 `;

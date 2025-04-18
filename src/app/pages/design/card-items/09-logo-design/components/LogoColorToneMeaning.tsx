@@ -48,7 +48,7 @@ export const LogoColorToneMeaning = () => {
             </Row>
           </Col>
         </Row>
-        <Row align="middle" gutter={16}>
+        <Row align="middle" gutter={[16, 16]}>
           <Col xs={7} sm={7} md={8} lg={8} xl={8} xxl={8}>
             <Row justify="end" gutter={[8, 8]}>
               <Col>

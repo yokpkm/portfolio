@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
@@ -26,36 +26,60 @@ interface Props {
 
 export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 0) {
+        // scrolling down and past the navbar height
+        setVisible(false);
+      } else {
+        // scrolling up
+        setVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
     <>
-      <WrapperNavbar>
+      <WrapperNavbar visible={visible}>
         <Row justify="center" align="middle">
           <Col flex="auto">
             <Button
               icon={
                 theme === ThemeType.LIGHT ? (
                   <Image
-                    width={42}
-                    height={42}
+                    width={44}
+                    height={44}
                     src="/logo/logo-lightTheme.svg"
                     alt="false"
                   />
                 ) : (
                   <Image
-                    width={42}
-                    height={42}
+                    width={44}
+                    height={44}
                     src="/logo/logo-darkTheme.svg"
                     alt="false"
                   />
                 )
               }
               type="link"
-              style={{ height: 42 }}
+              style={{ height: 44 }}
               onClick={() => animateScroll.scrollToTop()}
             />
           </Col>
-          <Col style={{ paddingRight: 8, paddingLeft: 8 }}>
+          <Col style={{ paddingRight: 8, paddingLeft: 32 }}>
             <StyledSwitch
               onClick={() => themeToggle()}
               checkedChildren={<MoonFilled />}
@@ -108,7 +132,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             to="design"
             smooth={true}
             duration={1000}
-            offset={-120}
+            offset={-96}
             onClick={() => setOpenMenu(false)}
           >
             <TextMenu>DESIGN</TextMenu>
@@ -126,7 +150,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
           </Link>
         </Row>
         <DividerMenu />
-        <Row justify="center" gutter={16} align="middle">
+        <Row justify="center" gutter={[16, 16]} align="middle">
           <Col>
             <a
               target={"_blank"}
@@ -177,13 +201,21 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
   );
 };
 
-const WrapperNavbar = styled.div<PropsTheme>`
+const WrapperNavbar = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "visible",
+})<{ visible: boolean } & PropsTheme>`
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 10;
-  padding: 8px 24px 8px 24px;
+  padding: 0px 24px;
+  height: 64px;
+  align-content: center;
   background-color: ${(props: PropsTheme) => props.theme.layout.background};
-  opacity: 0.95;
+  border-bottom: 0.5px solid
+    ${(props: PropsTheme) => props.theme.layout.divider};
+  transition: transform 0.1s ease-in-out;
+  transform: ${({ visible }) =>
+    visible ? "translateY(0)" : "translateY(-100%)"};
 `;

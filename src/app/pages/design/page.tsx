@@ -41,19 +41,20 @@ const DesignSection: React.FC = () => {
           justify="center"
           style={
             (xs || sm || md) && !lg
-              ? { marginTop: 96, marginBottom: 32 }
-              : { marginTop: 160, marginBottom: 56 }
+              ? { marginTop: 120, marginBottom: 32 }
+              : { marginTop: 160, marginBottom: 40 }
           }
         >
           <DividerSection>
-            <TextHeadline>DESIGN</TextHeadline>
+            <TextHeadline>DESIGN 🎨</TextHeadline>
           </DividerSection>
-          <TextCaption>Some projects that created by me 🎨</TextCaption>
+          <TextCaption>Explore some projects I’ve worked on</TextCaption>
         </Row>
 
         <Row
           justify={xs && !sm ? "center" : "start"}
-          gutter={(xs || sm || md) && !lg ? [16, 16] : [16, 32]}
+          // gutter={(xs || sm || md) && !lg ? [16, 16] : [16, 16]}
+          gutter={[16, 16]}
         >
           <WebAppDesign open={open01Modal} setOpen={setOpen01Modal} />
           <WebAppDesign open={open02Modal} setOpen={setOpen02Modal} />

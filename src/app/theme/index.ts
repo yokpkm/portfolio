@@ -87,7 +87,7 @@ export interface LightTheme {
   textColor: {
     primary: string;
     secondary: string;
-    link: string;
+    tertiary: string;
   };
   textSize: {
     headline: string;
@@ -180,7 +180,7 @@ export interface DarkTheme {
   textColor: {
     primary: string;
     secondary: string;
-    link: string;
+    tertiary: string;
   };
   textSize: {
     headline: string;

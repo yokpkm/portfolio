@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { Button } from "antd";
 
-export const ButtonPrimary = styled(Button)<PropsTheme>`
+export const ButtonPrimary = styled(Button) <PropsTheme>`
   padding: 0px 24px;
   height: 40px;
   display: flex;
@@ -13,8 +13,8 @@ export const ButtonPrimary = styled(Button)<PropsTheme>`
   border-radius: 360px;
   box-shadow: unset;
   font-size: ${(props) => props.theme.textSize.body};
-  font-weight: 400;
-  letter-spacing: 0.08em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
   color: ${(props) => props.theme.primaryBtn.foreground} !important;
 
   &&.ant-btn:hover,
@@ -26,7 +26,7 @@ export const ButtonPrimary = styled(Button)<PropsTheme>`
   }
 `;
 
-export const ButtonSecondary = styled(Button)<PropsTheme>`
+export const ButtonSecondary = styled(Button) <PropsTheme>`
   padding: 0px 24px;
   height: 40px;
   display: flex;
@@ -38,8 +38,8 @@ export const ButtonSecondary = styled(Button)<PropsTheme>`
   box-shadow: unset;
   color: ${(props) => props.theme.secondaryBtn.foreground} !important;
   font-size: ${(props) => props.theme.textSize.body};
-  font-weight: 400;
-  letter-spacing: 0.08em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 
   &&.ant-btn:hover,
   .ant-btn:focus,
@@ -50,7 +50,7 @@ export const ButtonSecondary = styled(Button)<PropsTheme>`
   }
 `;
 
-export const ButtonIcon = styled(Button)<PropsTheme>`
+export const ButtonIcon = styled(Button) <PropsTheme>`
   padding: 0;
   height: auto;
   display: flex;

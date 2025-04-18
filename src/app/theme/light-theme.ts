@@ -48,8 +48,8 @@ const lightTheme = {
 
   //new TypeScript
   layout: {
-    background: "#F9FAFA",
-    divider: "#DEE0E3",
+    background: "#FCFCFD",
+    divider: "#C8CBD0",
   },
   primaryBtn: {
     default: "#131416", //bg color
@@ -70,19 +70,19 @@ const lightTheme = {
     hover: "#C8CBD0",
   },
   switch: {
-    default: "#CFD1D3",
+    default: "#CFD1D3", 
   },
   card: {
-    border: "#E8308C",
+    border: "rgba(237, 89, 163, 0.1)",
   },
   tag: {
-    background: "rgba(235, 96, 165, 0.06)",
-    foreground: "#EB60A5",
+    background: "rgba(237, 89, 163, 0.1)",
+    foreground: "#ED59A3",
   },
   textColor: {
     primary: "rgba(19, 20, 22, 0.87)",
     secondary: "rgba(19, 20, 22, 0.67)",
-    link: "#E8308C",
+    tertiary: "#E8308C",
   },
   textSize: {
     headline: "1.5rem", //24px
