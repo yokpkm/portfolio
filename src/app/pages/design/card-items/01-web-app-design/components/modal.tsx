@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
 import { StyledModal } from "../../../../../components/modal";

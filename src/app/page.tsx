@@ -8,6 +8,7 @@ import { ThemeType } from "./constants";
 import { LightTheme, DarkTheme, lightTheme, darkTheme } from "./theme";
 import customTheme from "./configs/theme-config";
 import { animateScroll } from "react-scroll";
+import { LoaderPage } from "./components/loader";
 import { MainLayout } from "./components/layout";
 import { NavbarDesktop } from "./components/layout/components/desktop/navbar";
 import { NavbarMobile } from "./components/layout/components/mobile/navbar";
@@ -40,9 +41,11 @@ const AppPage = () => {
   return (
     <>
       <ThemeProvider theme={theme === ThemeType.LIGHT ? lightTheme : darkTheme}>
-        {/* <GlobalStyle theme={themeContext} />
+        <ConfigProvider theme={customTheme}>
+          <GlobalStyle theme={themeContext} />
+
           {loading ? (
-            "loader"
+            <LoaderPage />
           ) : (
             <>
               {(xs || sm || md) && !lg ? (
@@ -53,25 +56,14 @@ const AppPage = () => {
                   theme={theme}
                 />
               )}
-              <MainLayout>test</MainLayout>
+
+              <MainLayout>
+                <AboutSection />
+                <DesignSection />
+                <ContactSection />
+              </MainLayout>
             </>
-          )} */}
-
-        <ConfigProvider theme={customTheme}>
-          <GlobalStyle theme={themeContext} />
-          <>
-            {(xs || sm || md) && !lg ? (
-              <NavbarMobile themeToggle={() => themeToggle()} theme={theme} />
-            ) : (
-              <NavbarDesktop themeToggle={() => themeToggle()} theme={theme} />
-            )}
-
-            <MainLayout>
-              <AboutSection />
-              <DesignSection />
-              <ContactSection />
-            </MainLayout>
-          </>
+          )}
         </ConfigProvider>
       </ThemeProvider>
     </>

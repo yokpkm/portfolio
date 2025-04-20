@@ -1,19 +1,19 @@
-// import { BounceLoader } from "react-spinners";
-// import styled from "styled-components";
+import { BounceLoader } from "react-spinners";
+import styled from "styled-components";
 
-// const ContainerSession = styled.div`
-//   height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
+export const LoaderPage = () => {
+  return (
+    <>
+      <ContainerLoader>
+        <BounceLoader color={"#F5A4C7"} speedMultiplier={1} />
+      </ContainerLoader>
+    </>
+  );
+};
 
-// export const LoadingSession = () => {
-//   return (
-//     <>
-//       <ContainerSession>
-//         <BounceLoader speedMultiplier={0.8} color={"#CCA300"} />
-//       </ContainerSession>
-//     </>
-//   );
-// };
+const ContainerLoader = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

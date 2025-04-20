@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { Button } from "antd";
 
-export const ButtonPrimary = styled(Button) <PropsTheme>`
+export const ButtonPrimary = styled(Button)<PropsTheme>`
   padding: 0px 24px;
   height: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: ${(props) => props.theme.primaryBtn.default} !important;
   border: unset;
   border-radius: 360px;
@@ -26,12 +26,12 @@ export const ButtonPrimary = styled(Button) <PropsTheme>`
   }
 `;
 
-export const ButtonSecondary = styled(Button) <PropsTheme>`
+export const ButtonSecondary = styled(Button)<PropsTheme>`
   padding: 0px 24px;
   height: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: unset !important;
   border: 1.5px solid ${(props) => props.theme.secondaryBtn.default};
   border-radius: 360px;
@@ -50,12 +50,12 @@ export const ButtonSecondary = styled(Button) <PropsTheme>`
   }
 `;
 
-export const ButtonIcon = styled(Button) <PropsTheme>`
+export const ButtonIcon = styled(Button)<PropsTheme>`
   padding: 0;
   height: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   svg {
     width: auto;
