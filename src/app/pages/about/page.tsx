@@ -2,8 +2,12 @@ import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
 import { Grid, Row, Col } from "antd";
 import { ButtonPrimary, ButtonSecondary } from "@/app/components/button";
-import { DividerSection } from "@/app/components/divider";
-import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
+import {
+  TextHeadline,
+  TextBody,
+  TextCaption,
+  TextNumber,
+} from "@/app/components/text";
 
 const AboutSection: React.FC = () => {
   const { useBreakpoint } = Grid;
@@ -12,10 +16,11 @@ const AboutSection: React.FC = () => {
   return (
     <>
       <section id="about">
-        <Row justify="start">
-          <DividerSection orientation="left">
-            <TextHeadline>ABOUT ✨</TextHeadline>
-          </DividerSection>
+        <Row align="middle">
+          <TextNumber>01.</TextNumber>
+          <TextHeadline>ABOUT</TextHeadline>
+        </Row>
+        <Row style={{ marginTop: 2 }}>
           <TextCaption>
             Yok Premkamon, a UX/UI Creative Design Specialist
           </TextCaption>
@@ -23,19 +28,22 @@ const AboutSection: React.FC = () => {
 
         {xs || !sm ? (
           <>
-            <Row justify="start" style={{ marginTop: 32 }}>
-              <TextBody>
-                UX/UI Designer with 4+ years of experience in visual design for
-                mobile applications and responsive websites.
-              </TextBody>
+            <Row style={{ marginTop: 32 }}>
+              <Col span={24}>
+                <TextBody>
+                  UX/UI Designer with 4+ years of experience in visual design
+                  for mobile applications and responsive websites.
+                </TextBody>
+              </Col>
+              <Col span={24} style={{ marginTop: 16 }}>
+                <TextBody>
+                  I turn complexity into clarity — through user-centered
+                  solutions: simple, intuitive and meaningful.
+                </TextBody>
+              </Col>
             </Row>
-            <Row justify="start" style={{ marginTop: 16 }}>
-              <TextBody>
-                I turn complexity into clarity — through user-centered
-                solutions: simple, intuitive and meaningful.
-              </TextBody>
-            </Row>
-            <Row justify="start" gutter={[16, 8]} style={{ marginTop: 32 }}>
+
+            <Row gutter={[16, 8]} style={{ marginTop: 32 }}>
               <Col xs={12}>
                 <TextCaption>
                   <li>Figma</li>
@@ -70,26 +78,29 @@ const AboutSection: React.FC = () => {
           </>
         ) : (
           <>
-            <Row justify="start" style={{ marginTop: 40 }}>
-              <TextBody>
-                UX/UI Designer with 4+ years of experience in visual design
-              </TextBody>
+            <Row style={{ marginTop: 40 }}>
+              <Col span={24}>
+                <TextBody>
+                  UX/UI Designer with 4+ years of experience in visual design
+                </TextBody>
+              </Col>
+              <Col span={24}>
+                <TextBody>
+                  for mobile applications and responsive websites.
+                </TextBody>
+              </Col>
+              <Col span={24}>
+                <TextBody>
+                  I turn complexity into clarity — through user-centered
+                  solutions:
+                </TextBody>
+              </Col>
+              <Col span={24}>
+                <TextBody>simple, intuitive and meaningful.</TextBody>
+              </Col>
             </Row>
-            <Row justify="start">
-              <TextBody>
-                for mobile applications and responsive websites.
-              </TextBody>
-            </Row>
-            <Row justify="start" style={{ marginTop: 16 }}>
-              <TextBody>
-                I turn complexity into clarity — through user-centered
-                solutions:
-              </TextBody>
-            </Row>
-            <Row justify="start">
-              <TextBody>simple, intuitive and meaningful.</TextBody>
-            </Row>
-            <Row justify="start" gutter={[16, 16]} style={{ marginTop: 40 }}>
+
+            <Row gutter={[16, 16]} style={{ marginTop: 40 }}>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
                   <li>Figma</li>
@@ -106,7 +117,7 @@ const AboutSection: React.FC = () => {
                 </TextCaption>
               </Col>
             </Row>
-            <Row justify="start" gutter={[16, 16]} style={{ marginTop: 8 }}>
+            <Row gutter={[16, 16]} style={{ marginTop: 8 }}>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
                   <li>UX Research</li>
@@ -125,10 +136,8 @@ const AboutSection: React.FC = () => {
             </Row>
           </>
         )}
-
         <Row
           gutter={[16, 16]}
-          justify="start"
           style={xs || !sm ? { marginTop: 40 } : { marginTop: 48 }}
         >
           <Col>

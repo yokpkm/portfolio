@@ -1,8 +1,15 @@
+import { useState, useEffect } from "react";
 import { Image } from "@heroui/react";
-import { Grid, Row, Col, Button } from "antd";
+import { Grid, Row, Col } from "antd";
 import { StyledModal } from "../../../../../components/modal";
-import { StyledTag } from "@/app/components/tag";
-import { TextHeadline, TextModalContent } from "../../../../../components/text";
+import {
+  TextHeadline,
+  TextCaption,
+  TextLabel,
+  TextModalTitle,
+  TextModalSubtitle,
+  TextModalContent,
+} from "../../../../../components/text";
 
 interface Props {
   open: boolean;
@@ -11,7 +18,20 @@ interface Props {
 
 export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
   const { useBreakpoint } = Grid;
-  const { xs, sm } = useBreakpoint();
+  const { xs, sm, md, lg } = useBreakpoint();
+
+  const [showCloseIcon, setShowCloseIcon] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      const timer = setTimeout(() => {
+        setShowCloseIcon(true);
+      }, 400);
+      return () => clearTimeout(timer);
+    } else {
+      setShowCloseIcon(false);
+    }
+  }, [open]);
 
   return (
     <>
@@ -22,41 +42,48 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
         onCancel={() => setOpen(false)}
         destroyOnClose
         closeIcon={
-          <Button
-            icon={
-              <Image
-                width={20}
-                height={20}
-                src="/icon/ic-close-default.svg"
-                alt="false"
-              />
-            }
-            type="link"
-          />
+          showCloseIcon && (
+            <Image
+              width={20}
+              height={20}
+              src="/icon/ic-close-default.svg"
+              alt="Close"
+              style={{ display: "flex", cursor: "pointer" }}
+            />
+          )
         }
       >
-        <Row justify="center" style={{ marginTop: 32, marginBottom: 32 }}>
-          <Col xs={20} sm={20} md={16} lg={12} xl={10} xxl={8}>
-            <Row align="middle" gutter={[8, 8]} style={{ marginBottom: 40 }}>
-              <Col flex="auto">
+        <Row
+          justify="center"
+          style={
+            (xs || sm || md) && !lg
+              ? { marginTop: 40, marginBottom: 88 }
+              : { marginTop: 48, marginBottom: 112 }
+          }
+        >
+          <Col span={24} style={{ maxWidth: 920 }}>
+            <Row gutter={(xs || sm || md) && !lg ? [0, 24] : [0, 40]}>
+              <Col span={24}>
                 <TextHeadline>Progress Tracking Web Application</TextHeadline>
               </Col>
-              <Col>
-                <Row gutter={[8, 16]}>
-                  <Col>
-                    <StyledTag>UI Design</StyledTag>
-                  </Col>
-                  <Col>
-                    <StyledTag>Coding</StyledTag>
-                  </Col>
-                </Row>
+              <Col xs={24} sm={8} md={8} lg={8} xl={8} xxl={8}>
+                <TextModalSubtitle>Role</TextModalSubtitle>
+                <TextCaption style={{ marginTop: 2 }}>
+                  UX/UI Designer
+                </TextCaption>
               </Col>
-            </Row>
-            <Row gutter={[0, 24]}>
+              <Col xs={24} sm={8} md={8} lg={8} xl={8} xxl={8}>
+                <TextModalSubtitle>Project Type</TextModalSubtitle>
+                <TextCaption style={{ marginTop: 2 }}>Thesis</TextCaption>
+              </Col>
+              <Col xs={24} sm={8} md={8} lg={8} xl={8} xxl={8}>
+                <TextModalSubtitle>Year</TextModalSubtitle>
+                <TextCaption style={{ marginTop: 2 }}>2021</TextCaption>
+              </Col>
               <Col span={24}>
                 <Row justify="center">
                   <Image
-                    src="/image/card/imgCard01.jpg"
+                    src="/image/card/imgCard04.jpg"
                     alt="false"
                     width="100%"
                     style={{ borderRadius: 16 }}
@@ -64,108 +91,58 @@ export const ModalDetail01: React.FC<Props> = ({ open, setOpen }) => {
                 </Row>
               </Col>
               <Col span={24}>
-                <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModalContent>
-                    The web application purpose is to track progress of
-                    projects.
-                  </TextModalContent>
-                </Row>
-                <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModalContent>
-                    It's simple to use and responsive to all platforms.
-                  </TextModalContent>
-                </Row>
+                <TextLabel style={{ marginTop: 24 }}>OVERVIEW</TextLabel>
+                <TextModalTitle>Target Group</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Web application for progress updating, Web application for
+                  progress updating updating Web application for progress
+                  updating, Web application for progress updating updating
+                </TextModalContent>
+              </Col>
+              <Col span={24}>
+                <TextLabel style={{ marginTop: 24 }}>BACKGROUND</TextLabel>
+                <TextModalTitle>Target Group</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Web application for progress updating, Web application for
+                  progress updating updating Web application for progress
+                  updating, Web application for progress updating updating
+                </TextModalContent>
+              </Col>
+              <Col span={24}>
+                <TextModalTitle>Target Group</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Web application for progress updating, Web application for
+                  progress updating updating Web application for progress
+                  updating, Web application for progress updating updating
+                </TextModalContent>
               </Col>
               <Col span={24}>
                 <Row justify="center">
                   <Image
-                    src="/image/modal/01-thesis/img01.jpg"
+                    src="/image/card/imgCard04.jpg"
                     alt="false"
-                    width="100%"
+                    width="200px"
                     style={{ borderRadius: 16 }}
                   />
                 </Row>
               </Col>
               <Col span={24}>
-                <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModalContent>
-                    The teacher must create projects or subjects.
-                  </TextModalContent>
-                </Row>
-                <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModalContent>
-                    After that, students joined and update the progress.
-                  </TextModalContent>
-                </Row>
+                <TextLabel style={{ marginTop: 24 }}>SOLUTIONS</TextLabel>
+                <TextModalTitle>Target Group</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Web application for progress updating, Web application for
+                  progress updating updating Web application for progress
+                  updating, Web application for progress updating updating
+                </TextModalContent>
               </Col>
               <Col span={24}>
-                <Row justify="center">
-                  <Image
-                    src="/image/modal/01-thesis/img02.jpg"
-                    alt="false"
-                    width="100%"
-                    style={{ borderRadius: 16 }}
-                  />
-                </Row>
-              </Col>
-              <Col span={24}>
-                <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModalContent>
-                    Teachers can share information on the news tab.
-                  </TextModalContent>
-                </Row>
-              </Col>
-              <Col span={24}>
-                <Row justify="center">
-                  <Image
-                    src="/image/modal/01-thesis/img03.jpg"
-                    alt="false"
-                    width="100%"
-                    style={{ borderRadius: 16 }}
-                  />
-                </Row>
-              </Col>
-              <Col span={24}>
-                <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModalContent>
-                    Students can respond to questionnaire on the files tab.
-                  </TextModalContent>
-                </Row>
-              </Col>
-              <Col span={24}>
-                <Row justify="center">
-                  <Image
-                    src="/image/modal/01-thesis/img04.jpg"
-                    alt="false"
-                    width="100%"
-                    style={{ borderRadius: 16 }}
-                  />
-                </Row>
-              </Col>
-              <Col span={24}>
-                <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModalContent>
-                    Students can upload document or media files on the groups
-                    tab.
-                  </TextModalContent>
-                </Row>
-              </Col>
-              <Col span={24}>
-                <Row justify="center">
-                  <Image
-                    src="/image/modal/01-thesis/img05.jpg"
-                    alt="false"
-                    width="100%"
-                    style={{ borderRadius: 16 }}
-                  />
-                </Row>
-              </Col>
-              <Col span={24}>
-                <Row justify={xs && !sm ? "start" : "center"}>
-                  <TextModalContent>
-                    Last, they can make appointments on the progress tab.
-                  </TextModalContent>
-                </Row>
+                <TextLabel style={{ marginTop: 24 }}>WHATS'NEXT</TextLabel>
+                <TextModalTitle>Target Group</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Web application for progress updating, Web application for
+                  progress updating updating Web application for progress
+                  updating, Web application for progress updating updating
+                </TextModalContent>
               </Col>
             </Row>
           </Col>

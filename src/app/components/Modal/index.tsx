@@ -4,11 +4,15 @@ import { Modal } from "antd";
 
 export const StyledModal = styled(Modal)<PropsTheme>`
   &&.ant-modal {
+    position: fixed;
     top: 40px;
-    padding: 0;
-    margin: 0;
-    width: 100% !important;
-    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .ant-modal-close {
@@ -26,11 +30,12 @@ export const StyledModal = styled(Modal)<PropsTheme>`
   }
 
   .ant-modal-content {
-    position: fixed;
-    overflow-y: scroll;
-    padding: 0;
-    margin: 0;
+    position: relative;
+    overflow-y: auto;
+    padding: 0 24px;
+    width: 100vw !important;
     height: 100%;
+    max-height: 100vh;
     background-color: ${(props) => props.theme.layout.background};
     border-radius: 24px 24px 0px 0px;
   }

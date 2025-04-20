@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Grid, Row, Col } from "antd";
-import { DividerSection } from "../../components/divider";
-import { TextHeadline, TextCaption } from "../../components/text";
+import { TextHeadline, TextCaption, TextNumber } from "../../components/text";
 
 import { WebAppDesign } from "./card-items/01-web-app-design";
 import { AppDesign } from "./card-items/02-app-design";
@@ -39,28 +38,29 @@ const DesignSection: React.FC = () => {
       <section id="design">
         <Row
           justify="center"
+          align="middle"
           style={
-            (xs || sm || md) && !lg
-              ? { marginTop: 120, marginBottom: 32 }
-              : { marginTop: 160, marginBottom: 40 }
+            (xs || sm || md) && !lg ? { marginTop: 120 } : { marginTop: 160 }
           }
         >
-          <DividerSection>
-            <TextHeadline>DESIGN 🎨</TextHeadline>
-          </DividerSection>
+          <TextNumber>02.</TextNumber>
+          <TextHeadline>DESIGN</TextHeadline>
+        </Row>
+        <Row justify="center" style={{ marginTop: 2 }}>
           <TextCaption>Explore some projects I’ve worked on</TextCaption>
         </Row>
 
         <Row
           justify={xs && !sm ? "center" : "start"}
-          // gutter={(xs || sm || md) && !lg ? [16, 16] : [16, 16]}
-          gutter={[16, 16]}
+          gutter={(xs || sm || md) && !lg ? [24, 48] : [32, 64]}
+          style={
+            (xs || sm || md) && !lg ? { marginTop: 40 } : { marginTop: 64 }
+          }
         >
           <WebAppDesign open={open01Modal} setOpen={setOpen01Modal} />
           <WebAppDesign open={open02Modal} setOpen={setOpen02Modal} />
-          <WebAppDesign open={open03Modal} setOpen={setOpen03Modal} />
-          <WebAppDesign open={open04Modal} setOpen={setOpen04Modal} />
-          <WebAppDesign open={open05Modal} setOpen={setOpen05Modal} />
+          <AppDesign open={open03Modal} setOpen={setOpen03Modal} />
+          <AppDesign open={open04Modal} setOpen={setOpen04Modal} />
 
           {/* <AppDesign visible={visibleModal02} setVisible={setVisibleModal02} />
           <SaleOrderPage

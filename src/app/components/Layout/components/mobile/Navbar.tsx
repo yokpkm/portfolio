@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
@@ -10,7 +10,7 @@ import { ButtonIcon } from "../../../button";
 import { DividerMenu } from "../../../divider";
 import { StyledDrawer } from "../../../drawer";
 import { StyledSwitch } from "../../../switch";
-import { TextMenu } from "../../../text";
+import { TextMenuName, TextMenuNumber } from "@/app/components/text";
 import {
   MoonFilled,
   MailFilled,
@@ -26,34 +26,10 @@ interface Props {
 
 export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [visible, setVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 0) {
-        // scrolling down and past the navbar height
-        setVisible(false);
-      } else {
-        // scrolling up
-        setVisible(true);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
 
   return (
     <>
-      <WrapperNavbar visible={visible}>
+      <WrapperNavbar>
         <Row justify="center" align="middle">
           <Col flex="auto">
             <Button
@@ -120,33 +96,54 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
           <Link
             to="about"
             smooth={true}
-            duration={1000}
+            duration={1500}
             offset={-120}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>ABOUT</TextMenu>
+            <Row>
+              <Col>
+                <TextMenuNumber>01.</TextMenuNumber>
+              </Col>
+              <Col>
+                <TextMenuName>ABOUT</TextMenuName>
+              </Col>
+            </Row>
           </Link>
         </Row>
         <Row justify="center" style={{ marginBottom: 32 }}>
           <Link
             to="design"
             smooth={true}
-            duration={1000}
+            duration={1500}
             offset={-96}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>DESIGN</TextMenu>
+            <Row>
+              <Col>
+                <TextMenuNumber>02.</TextMenuNumber>
+              </Col>
+              <Col>
+                <TextMenuName>DESIGN</TextMenuName>
+              </Col>
+            </Row>
           </Link>
         </Row>
         <Row justify="center">
           <Link
             to="contact"
             smooth={true}
-            duration={1000}
+            duration={1500}
             offset={0}
             onClick={() => setOpenMenu(false)}
           >
-            <TextMenu>CONTACT</TextMenu>
+            <Row>
+              <Col>
+                <TextMenuNumber>03.</TextMenuNumber>
+              </Col>
+              <Col>
+                <TextMenuName>CONTACT</TextMenuName>
+              </Col>
+            </Row>
           </Link>
         </Row>
         <DividerMenu />
@@ -201,9 +198,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
   );
 };
 
-const WrapperNavbar = styled.div.withConfig({
-  shouldForwardProp: (prop) => prop !== "visible",
-})<{ visible: boolean } & PropsTheme>`
+const WrapperNavbar = styled.div<PropsTheme>`
   position: fixed;
   top: 0;
   right: 0;
@@ -215,7 +210,4 @@ const WrapperNavbar = styled.div.withConfig({
   background-color: ${(props: PropsTheme) => props.theme.layout.background};
   border-bottom: 0.5px solid
     ${(props: PropsTheme) => props.theme.layout.divider};
-  transition: transform 0.1s ease-in-out;
-  transform: ${({ visible }) =>
-    visible ? "translateY(0)" : "translateY(-100%)"};
 `;

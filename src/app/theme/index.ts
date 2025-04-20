@@ -51,7 +51,7 @@ export interface LightTheme {
     default: string;
   };
 
-  //new TypeScript
+  // new TypeScript
   layout: {
     background: string;
     divider: string;
@@ -144,7 +144,7 @@ export interface DarkTheme {
     default: string;
   };
 
-  //new TypeScript
+  // new TypeScript
   layout: {
     background: string;
     divider: string;

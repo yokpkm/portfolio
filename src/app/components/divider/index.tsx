@@ -15,7 +15,14 @@ export const DividerSection = styled(Divider)<PropsTheme>`
 
 export const DividerMenu = styled(Divider)<PropsTheme>`
   &&.ant-divider {
-    border-top: 0.5px solid ${(props) => props.theme.layout.divider};
     margin: 32px 0px !important;
+    border-top: 0.5px solid ${(props) => props.theme.layout.divider};
+  }
+`;
+
+export const DividerInfo = styled(Divider)<PropsTheme>`
+  &&.ant-divider {
+    margin: 0 !important;
+    border-top: 0.5px solid ${(props) => props.theme.layout.divider};
   }
 `;

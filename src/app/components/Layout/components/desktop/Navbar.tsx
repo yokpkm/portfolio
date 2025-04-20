@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
@@ -7,7 +7,7 @@ import { animateScroll } from "react-scroll";
 import { Image } from "@heroui/react";
 import { Row, Col, Button } from "antd";
 import { StyledSwitch } from "../../../switch";
-import { TextMenu } from "../../../text";
+import { TextMenuName, TextMenuNumber } from "../../../text";
 import { MoonFilled } from "@ant-design/icons";
 
 interface Props {
@@ -16,33 +16,8 @@ interface Props {
 }
 
 export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
-  const [visible, setVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 0) {
-        // scrolling down and past the navbar height
-        setVisible(false);
-      } else {
-        // scrolling up
-        setVisible(true);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
-
   return (
-    <WrapperNavbar visible={visible}>
+    <WrapperNavbar>
       <StyledNavbar>
         <Row justify="center" align="middle">
           <Col flex="auto">
@@ -72,23 +47,44 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
           <Col>
             <Row gutter={[40, 0]} align="middle">
               <Col>
-                <Link to="about" smooth={true} duration={1000} offset={-160}>
-                  <TextMenu>ABOUT</TextMenu>
+                <Link to="about" smooth={true} duration={1500} offset={-160}>
+                  <Row>
+                    <Col>
+                      <TextMenuNumber>01.</TextMenuNumber>
+                    </Col>
+                    <Col>
+                      <TextMenuName>ABOUT</TextMenuName>
+                    </Col>
+                  </Row>
                 </Link>
               </Col>
               <Col>
-                <Link to="design" smooth={true} duration={1000} offset={-120}>
-                  <TextMenu>DESIGN</TextMenu>
+                <Link to="design" smooth={true} duration={1500} offset={-120}>
+                  <Row>
+                    <Col>
+                      <TextMenuNumber>02.</TextMenuNumber>
+                    </Col>
+                    <Col>
+                      <TextMenuName>DESIGN</TextMenuName>
+                    </Col>
+                  </Row>
                 </Link>
               </Col>
               <Col>
                 <Link
                   to="contact"
                   smooth={true}
-                  duration={1000}
+                  duration={1500}
                   onClick={() => animateScroll.scrollToBottom}
                 >
-                  <TextMenu>CONTACT</TextMenu>
+                  <Row>
+                    <Col>
+                      <TextMenuNumber>03.</TextMenuNumber>
+                    </Col>
+                    <Col>
+                      <TextMenuName>CONTACT</TextMenuName>
+                    </Col>
+                  </Row>
                 </Link>
               </Col>
               <Col>
@@ -106,9 +102,7 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
   );
 };
 
-const WrapperNavbar = styled.div.withConfig({
-  shouldForwardProp: (prop) => prop !== "visible",
-})<{ visible: boolean } & PropsTheme>`
+const WrapperNavbar = styled.div<PropsTheme>`
   position: fixed;
   top: 0;
   right: 0;
@@ -120,9 +114,6 @@ const WrapperNavbar = styled.div.withConfig({
   background-color: ${(props: PropsTheme) => props.theme.layout.background};
   border-bottom: 0.5px solid
     ${(props: PropsTheme) => props.theme.layout.divider};
-  transition: transform 0.1s ease-in-out;
-  transform: ${({ visible }) =>
-    visible ? "translateY(0)" : "translateY(-100%)"};
 `;
 
 const StyledNavbar = styled.div`

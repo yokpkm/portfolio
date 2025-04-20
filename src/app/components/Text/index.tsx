@@ -33,16 +33,26 @@ export const TextCaption = styled(Typography)<PropsTheme>`
 // default of label
 export const TextLabel = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.label};
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: ${(props) => props.theme.textColor.tertiary};
+  margin-bottom: 24px;
+`;
+
+//  adjust style for headline number
+export const TextNumber = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.title};
+  font-weight: 500;
   letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.tertiary};
+  margin-right: 12px;
   margin-bottom: 0;
 `;
 
 // adjust style for menu
-export const TextMenu = styled(Typography)<PropsTheme>`
+export const TextMenuName = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.label};
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
@@ -55,16 +65,24 @@ export const TextMenu = styled(Typography)<PropsTheme>`
   }
 `;
 
-// adjust style for card title
+export const TextMenuNumber = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.label};
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: ${(props) => props.theme.textColor.tertiary};
+  margin-right: 4px;
+  margin-bottom: 0;
+`;
+
+// adjust style for card
 export const TextCardTitle = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.caption};
+  font-size: ${(props) => props.theme.textSize.body};
   font-weight: 700;
   letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;
 
-// adjust style for card content
 export const TextCardContent = styled(Typography)<PropsTheme>`
   overflow: hidden;
   width: auto;
@@ -77,16 +95,23 @@ export const TextCardContent = styled(Typography)<PropsTheme>`
   margin-bottom: 0;
 `;
 
-// adjust style for modal title
+// adjust style for modal
 export const TextModalTitle = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.title};
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;
 
-// adjust style for modal content
+export const TextModalSubtitle = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.caption};
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: ${(props) => props.theme.textColor.primary};
+  margin-bottom: 0;
+`;
+
 export const TextModalContent = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 300;
@@ -94,20 +119,4 @@ export const TextModalContent = styled(Typography)<PropsTheme>`
   line-height: 26px;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
-`;
-
-// text for link (none use)
-export const TextLink = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.body};
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  color: ${(props) => props.theme.textColor.tertiary};
-  margin-bottom: 0;
-
-  &&.ant-typography:hover,
-  .ant-typography:active,
-  .ant-typography:focus {
-    color: ${(props) => props.theme.textColor.tertiary};
-    cursor: pointer;
-  }
 `;

@@ -1,6 +1,7 @@
 import { LightTheme } from ".";
 
 const lightTheme = {
+  // old TypeScript, waiting for remove
   logo: {
     default: "#000000",
   },
@@ -46,20 +47,20 @@ const lightTheme = {
     default: "0px 8px 48px rgba(235, 237, 255, 0.8)",
   },
 
-  //new TypeScript
+  // new TypeScript
   layout: {
     background: "#FCFCFD",
     divider: "#C8CBD0",
   },
   primaryBtn: {
-    default: "#131416", //bg color
-    hover: "#383C42", //bg color
-    foreground: "#FCFCFD", //font color
+    default: "#131416", // bg
+    hover: "#383C42", // bg
+    foreground: "#FCFCFD", // font
   },
   secondaryBtn: {
-    default: "#C8CBD0", //border color
-    hover: "#9CA2AB", //border color
-    foreground: "#131416", //font color
+    default: "#C8CBD0", // border
+    hover: "#9CA2AB", // border
+    foreground: "#131416", // font
   },
   iconBtn: {
     default: "#131416",
@@ -72,24 +73,26 @@ const lightTheme = {
   switch: {
     default: "#CFD1D3", 
   },
+  // waiting for remove card
   card: {
     border: "rgba(237, 89, 163, 0.1)",
   },
+  // waiting for remove tag
   tag: {
-    background: "rgba(237, 89, 163, 0.1)",
-    foreground: "#ED59A3",
+    background: "rgba(237, 89, 153, 0.1)",
+    foreground: "#ED5999",
   },
   textColor: {
     primary: "rgba(19, 20, 22, 0.87)",
     secondary: "rgba(19, 20, 22, 0.67)",
-    tertiary: "#E8308C",
+    tertiary: "#ED5999",
   },
   textSize: {
-    headline: "1.5rem", //24px
-    title: "1rem", //16px
-    body: "0.875rem", //14px
-    caption: "0.8125rem", //13px
-    label: "0.75rem", //about 12px
+    headline: "1.5rem", // 24px
+    title: "1rem", // 16px
+    body: "0.875rem", // 14px
+    caption: "0.8125rem", // 13px
+    label: "0.75rem", // 12px
   },
 } as LightTheme;
 
