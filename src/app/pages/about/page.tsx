@@ -31,7 +31,7 @@ const AboutSection: React.FC = () => {
             <Row style={{ marginTop: 32 }}>
               <Col span={24}>
                 <TextBody>
-                  UX/UI Designer with 4+ years of experience in visual design
+                  UX/UI Designer with 5+ years of experience in visual design
                   for mobile applications and responsive websites.
                 </TextBody>
               </Col>
@@ -81,7 +81,7 @@ const AboutSection: React.FC = () => {
             <Row style={{ marginTop: 40 }}>
               <Col span={24}>
                 <TextBody>
-                  UX/UI Designer with 4+ years of experience in visual design
+                  UX/UI Designer with 5+ years of experience in visual design
                 </TextBody>
               </Col>
               <Col span={24}>
@@ -141,7 +141,7 @@ const AboutSection: React.FC = () => {
           style={xs || !sm ? { marginTop: 40 } : { marginTop: 48 }}
         >
           <Col>
-            <a href="/premkamon-resume.pdf" target="_blank">
+            <a href="/Premkamon-UXUI-resume.pdf" target="_blank">
               <ButtonPrimary>View my resume</ButtonPrimary>
             </a>
           </Col>

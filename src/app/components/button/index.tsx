@@ -14,7 +14,7 @@ export const ButtonPrimary = styled(Button)<PropsTheme>`
   box-shadow: unset;
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: ${(props) => props.theme.primaryBtn.foreground} !important;
 
   &&.ant-btn:hover,
@@ -39,7 +39,7 @@ export const ButtonSecondary = styled(Button)<PropsTheme>`
   color: ${(props) => props.theme.secondaryBtn.foreground} !important;
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 
   &&.ant-btn:hover,
   .ant-btn:focus,

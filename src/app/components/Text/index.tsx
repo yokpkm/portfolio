@@ -15,7 +15,7 @@ export const TextHeadline = styled(Typography)<PropsTheme>`
 export const TextBody = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 300;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.035em;
   line-height: 26px;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
@@ -25,7 +25,7 @@ export const TextBody = styled(Typography)<PropsTheme>`
 export const TextCaption = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 300;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.035em;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
 `;
@@ -106,7 +106,7 @@ export const TextModalSubtitle = styled(Typography)<PropsTheme>`
 export const TextModalContent = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 300;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.035em;
   line-height: 26px;
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
