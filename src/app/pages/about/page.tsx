@@ -22,7 +22,7 @@ const AboutSection: React.FC = () => {
         </Row>
         <Row style={{ marginTop: 2 }}>
           <TextCaption>
-            Yok Premkamon, a UX/UI Creative Design Specialist
+            Yok Premkamon, UX/UI Creative Design Specialist
           </TextCaption>
         </Row>
 
@@ -35,10 +35,10 @@ const AboutSection: React.FC = () => {
                   for mobile applications and responsive websites.
                 </TextBody>
               </Col>
-              <Col span={24} style={{ marginTop: 16 }}>
+              <Col span={24} style={{ marginTop: 12 }}>
                 <TextBody>
-                  I turn complexity into clarity — through user-centered
-                  solutions: simple, intuitive and meaningful.
+                  I turn complexity into clarity through user-centered
+                  solutions: simple, intuitive and empathy-driven.
                 </TextBody>
               </Col>
             </Row>
@@ -90,13 +90,13 @@ const AboutSection: React.FC = () => {
                 </TextBody>
               </Col>
               <Col span={24}>
-                <TextBody>
-                  I turn complexity into clarity — through user-centered
+                <TextBody style={{ marginTop: 12 }}>
+                  I turn complexity into clarity through user-centered
                   solutions:
                 </TextBody>
               </Col>
               <Col span={24}>
-                <TextBody>simple, intuitive and meaningful.</TextBody>
+                <TextBody>simple, intuitive and empathy-driven.</TextBody>
               </Col>
             </Row>
 

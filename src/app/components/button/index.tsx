@@ -21,7 +21,7 @@ export const ButtonPrimary = styled(Button)<PropsTheme>`
   .ant-btn:focus,
   .ant-btn:active {
     background: ${(props) => props.theme.primaryBtn.hover} !important;
-    border: unset;
+    border: unset !important;
     color: ${(props) => props.theme.primaryBtn.foreground} !important;
   }
 `;
@@ -44,7 +44,7 @@ export const ButtonSecondary = styled(Button)<PropsTheme>`
   &&.ant-btn:hover,
   .ant-btn:focus,
   .ant-btn:active {
-    border: 1.5px solid ${(props) => props.theme.secondaryBtn.hover};
+    border: 1.5px solid ${(props) => props.theme.secondaryBtn.hover}!important;
     background: unset !important;
     color: ${(props) => props.theme.secondaryBtn.foreground} !important;
   }
