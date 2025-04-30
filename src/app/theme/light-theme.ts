@@ -50,7 +50,7 @@ const lightTheme = {
   // new TypeScript
   layout: {
     background: "#FCFCFD",
-    divider: "#C8CBD0",
+    divider: "#D3D5D9",
   },
   primaryBtn: {
     default: "#131416", // bg
@@ -85,7 +85,8 @@ const lightTheme = {
   textColor: {
     primary: "rgba(19, 20, 22, 0.87)",
     secondary: "rgba(19, 20, 22, 0.67)",
-    tertiary: "#ED5999",
+    tertiary: "#F66FC9",
+    highlight: "#F452BE"
   },
   textSize: {
     headline: "1.5rem", // 24px

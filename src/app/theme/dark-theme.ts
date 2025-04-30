@@ -50,7 +50,7 @@ const darkTheme = {
   // new TypeScript
   layout: {
     background: "#131416",
-    divider: "#4B5058",
+    divider: "#42464D",
   },
   primaryBtn: {
     default: "#FCFCFD", // bg
@@ -85,7 +85,8 @@ const darkTheme = {
   textColor: {
     primary: "rgba(252, 252, 253, 0.95)",
     secondary: "rgba(252, 252, 253, 0.75)",
-    tertiary: "#F7B6D2",
+    tertiary: "#F5A3DA", 
+    highlight: "#F28CD0",
   },
   textSize: {
     headline: "1.5rem", // 24px

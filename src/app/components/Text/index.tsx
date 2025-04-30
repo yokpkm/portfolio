@@ -33,26 +33,16 @@ export const TextCaption = styled(Typography)<PropsTheme>`
 // default of label
 export const TextLabel = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.label};
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.08em;
-  color: ${(props) => props.theme.textColor.tertiary};
+  color: ${(props) => props.theme.textColor.highlight};
   margin-bottom: 24px;
 `;
 
-//  adjust style for headline number
-export const TextNumber = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.title};
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  color: ${(props) => props.theme.textColor.tertiary};
-  margin-right: 12px;
-  margin-bottom: 0;
-`;
-
 // adjust style for menu
-export const TextMenuName = styled(Typography)<PropsTheme>`
+export const TextMenu = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.label};
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
@@ -65,12 +55,13 @@ export const TextMenuName = styled(Typography)<PropsTheme>`
   }
 `;
 
-export const TextMenuNumber = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.label};
-  font-weight: 500;
+//  adjust style for headline number
+export const TextNumber = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.title};
+  font-weight: 600;
   letter-spacing: 0.03em;
   color: ${(props) => props.theme.textColor.tertiary};
-  margin-right: 4px;
+  margin-right: 12px;
   margin-bottom: 0;
 `;
 
@@ -78,7 +69,7 @@ export const TextMenuNumber = styled(Typography)<PropsTheme>`
 export const TextCardTitle = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.body};
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;
@@ -107,7 +98,7 @@ export const TextModalTitle = styled(Typography)<PropsTheme>`
 export const TextModalSubtitle = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.caption};
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: ${(props) => props.theme.textColor.primary};
   margin-bottom: 0;
 `;

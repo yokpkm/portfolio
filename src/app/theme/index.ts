@@ -88,6 +88,8 @@ export interface LightTheme {
     primary: string;
     secondary: string;
     tertiary: string;
+    highlight: string;
+    
   };
   textSize: {
     headline: string;
@@ -181,6 +183,7 @@ export interface DarkTheme {
     primary: string;
     secondary: string;
     tertiary: string;
+    highlight: string;
   };
   textSize: {
     headline: string;

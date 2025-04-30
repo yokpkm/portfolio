@@ -7,7 +7,7 @@ import { animateScroll } from "react-scroll";
 import { Image } from "@heroui/react";
 import { Row, Col, Button } from "antd";
 import { StyledSwitch } from "../../../switch";
-import { TextMenuName, TextMenuNumber } from "../../../text";
+import { TextMenu } from "../../../text";
 import { MoonFilled } from "@ant-design/icons";
 
 interface Props {
@@ -45,15 +45,12 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
             />
           </Col>
           <Col>
-            <Row gutter={[40, 0]} align="middle">
+            <Row gutter={[44, 0]} align="middle">
               <Col>
                 <Link to="about" smooth={true} duration={1500} offset={-160}>
                   <Row>
                     <Col>
-                      <TextMenuNumber>01.</TextMenuNumber>
-                    </Col>
-                    <Col>
-                      <TextMenuName>ABOUT</TextMenuName>
+                      <TextMenu>ABOUT</TextMenu>
                     </Col>
                   </Row>
                 </Link>
@@ -62,10 +59,7 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
                 <Link to="design" smooth={true} duration={1500} offset={-120}>
                   <Row>
                     <Col>
-                      <TextMenuNumber>02.</TextMenuNumber>
-                    </Col>
-                    <Col>
-                      <TextMenuName>DESIGN</TextMenuName>
+                      <TextMenu>DESIGN</TextMenu>
                     </Col>
                   </Row>
                 </Link>
@@ -79,10 +73,7 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
                 >
                   <Row>
                     <Col>
-                      <TextMenuNumber>03.</TextMenuNumber>
-                    </Col>
-                    <Col>
-                      <TextMenuName>CONTACT</TextMenuName>
+                      <TextMenu>CONTACT</TextMenu>
                     </Col>
                   </Row>
                 </Link>

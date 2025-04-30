@@ -10,7 +10,7 @@ import { ButtonIcon } from "../../../button";
 import { DividerMenu } from "../../../divider";
 import { StyledDrawer } from "../../../drawer";
 import { StyledSwitch } from "../../../switch";
-import { TextMenuName, TextMenuNumber } from "@/app/components/text";
+import { TextMenu } from "@/app/components/text";
 import {
   MoonFilled,
   MailFilled,
@@ -102,10 +102,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
           >
             <Row>
               <Col>
-                <TextMenuNumber>01.</TextMenuNumber>
-              </Col>
-              <Col>
-                <TextMenuName>ABOUT</TextMenuName>
+                <TextMenu>ABOUT</TextMenu>
               </Col>
             </Row>
           </Link>
@@ -120,10 +117,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
           >
             <Row>
               <Col>
-                <TextMenuNumber>02.</TextMenuNumber>
-              </Col>
-              <Col>
-                <TextMenuName>DESIGN</TextMenuName>
+                <TextMenu>DESIGN</TextMenu>
               </Col>
             </Row>
           </Link>
@@ -138,10 +132,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
           >
             <Row>
               <Col>
-                <TextMenuNumber>03.</TextMenuNumber>
-              </Col>
-              <Col>
-                <TextMenuName>CONTACT</TextMenuName>
+                <TextMenu>CONTACT</TextMenu>
               </Col>
             </Row>
           </Link>

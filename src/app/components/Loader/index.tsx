@@ -5,7 +5,7 @@ export const LoaderPage = () => {
   return (
     <>
       <ContainerLoader>
-        <BounceLoader color={"#F5A4C7"} speedMultiplier={1} />
+        <BounceLoader color={"#F99FDB"} speedMultiplier={1} />
       </ContainerLoader>
     </>
   );
