@@ -1,37 +1,17 @@
 import { useState } from "react";
-import { Grid, Row, Col } from "antd";
+import { Grid, Row } from "antd";
 import { TextHeadline, TextCaption, TextNumber } from "../../components/text";
-
-import { WebAppDesign } from "./card-items/01-web-app-design";
+import { CardThesis } from "./card-items/thesis";
 import { AppDesign } from "./card-items/02-app-design";
-import { SaleOrderPage } from "./card-items/03-sale-order-page";
-import { ProductionOrderPage } from "./card-items/04-production-order-page";
-import { FormDesign } from "./card-items/05-form-design";
-import { LandingPage } from "./card-items/06-landing-page";
-import { OrderPage } from "./card-items/07-order-page";
-import { ProductPage } from "./card-items/08-product-page";
-import { LogoDesign } from "./card-items/09-logo-design";
-import { BagDesign } from "./card-items/10-bag-design";
 
 const DesignSection: React.FC = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 
-  const [open01Modal, setOpen01Modal] = useState(false);
-  const [open02Modal, setOpen02Modal] = useState(false);
-  const [open03Modal, setOpen03Modal] = useState(false);
-  const [open04Modal, setOpen04Modal] = useState(false);
-  const [open05Modal, setOpen05Modal] = useState(false);
-
-  const [visibleModal02, setVisibleModal02] = useState(false);
-  const [visibleModal03, setVisibleModal03] = useState(false);
-  const [visibleModal04, setVisibleModal04] = useState(false);
-  const [visibleModal05, setVisibleModal05] = useState(false);
-  const [visibleModal06, setVisibleModal06] = useState(false);
-  const [visibleModal07, setVisibleModal07] = useState(false);
-  const [visibleModal08, setVisibleModal08] = useState(false);
-  const [visibleModal09, setVisibleModal09] = useState(false);
-  const [visibleModal10, setVisibleModal10] = useState(false);
+  const [openCrypto, setOpenCrypto] = useState(false);
+  const [openERP, setOpenERP] = useState(false);
+  const [openThesis, setOpenThesis] = useState(false);
+  const [openPerfume, setOpenPerfume] = useState(false);
 
   return (
     <>
@@ -46,7 +26,7 @@ const DesignSection: React.FC = () => {
           <TextNumber>02.</TextNumber>
           <TextHeadline>DESIGN</TextHeadline>
         </Row>
-        <Row justify="center" style={{ marginTop: 2 }}>
+        <Row justify="center" style={{ marginTop: 4 }}>
           <TextCaption>Explore some projects I’ve worked on</TextCaption>
         </Row>
 
@@ -57,32 +37,10 @@ const DesignSection: React.FC = () => {
             (xs || sm || md) && !lg ? { marginTop: 40 } : { marginTop: 64 }
           }
         >
-          <WebAppDesign open={open01Modal} setOpen={setOpen01Modal} />
-          <WebAppDesign open={open02Modal} setOpen={setOpen02Modal} />
-          <AppDesign open={open03Modal} setOpen={setOpen03Modal} />
-          <AppDesign open={open04Modal} setOpen={setOpen04Modal} />
-
-          {/* <AppDesign visible={visibleModal02} setVisible={setVisibleModal02} />
-          <SaleOrderPage
-            visible={visibleModal03}
-            setVisible={setVisibleModal03}
-          />
-          <ProductionOrderPage
-            visible={visibleModal04}
-            setVisible={setVisibleModal04}
-          />
-          <FormDesign visible={visibleModal05} setVisible={setVisibleModal05} />
-          <LandingPage
-            visible={visibleModal06}
-            setVisible={setVisibleModal06}
-          />
-          <OrderPage visible={visibleModal07} setVisible={setVisibleModal07} />
-          <ProductPage
-            visible={visibleModal08}
-            setVisible={setVisibleModal08}
-          />
-          <LogoDesign visible={visibleModal09} setVisible={setVisibleModal09} />
-          <BagDesign visible={visibleModal10} setVisible={setVisibleModal10} /> */}
+          <CardThesis open={openThesis} setOpen={setOpenThesis} />
+          <CardThesis open={openThesis} setOpen={setOpenThesis} />
+          <AppDesign open={openThesis} setOpen={setOpenThesis} />
+          <AppDesign open={openThesis} setOpen={setOpenThesis} />
         </Row>
       </section>
     </>

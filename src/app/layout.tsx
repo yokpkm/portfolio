@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const RootLayout = ({ children }: React.PropsWithChildren) => (
   <html lang="en">
-    <title>Yok Premkamon | UX/UI Designer</title>
+    <title>Portfolio | Yok Premkamon | UX/UI Designer</title>
     <body className={inter.className}>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <AntdRegistry>{children}</AntdRegistry>

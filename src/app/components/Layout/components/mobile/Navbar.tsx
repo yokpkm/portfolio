@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
-import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
 import { Image } from "@heroui/react";
 import { Row, Col, Button } from "antd";
@@ -10,7 +9,7 @@ import { ButtonIcon } from "../../../button";
 import { DividerMenu } from "../../../divider";
 import { StyledDrawer } from "../../../drawer";
 import { StyledSwitch } from "../../../switch";
-import { TextMenu } from "@/app/components/text";
+import { TextMenu } from "../../../text";
 import {
   MoonFilled,
   MailFilled,
@@ -36,22 +35,22 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
               icon={
                 theme === ThemeType.LIGHT ? (
                   <Image
-                    width={44}
-                    height={44}
+                    width={40}
+                    height={40}
                     src="/logo/logo-lightTheme.svg"
                     alt="false"
                   />
                 ) : (
                   <Image
-                    width={44}
-                    height={44}
+                    width={40}
+                    height={40}
                     src="/logo/logo-darkTheme.svg"
                     alt="false"
                   />
                 )
               }
               type="link"
-              style={{ height: 44 }}
+              style={{ height: 40 }}
               onClick={() => animateScroll.scrollToTop()}
             />
           </Col>
@@ -93,49 +92,37 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
         style={{ height: "auto" }}
       >
         <Row justify="center" style={{ marginBottom: 32 }}>
-          <Link
+          <TextMenu
             to="about"
             smooth={true}
             duration={1500}
             offset={-120}
             onClick={() => setOpenMenu(false)}
           >
-            <Row>
-              <Col>
-                <TextMenu>ABOUT</TextMenu>
-              </Col>
-            </Row>
-          </Link>
+            ABOUT
+          </TextMenu>
         </Row>
         <Row justify="center" style={{ marginBottom: 32 }}>
-          <Link
+          <TextMenu
             to="design"
             smooth={true}
             duration={1500}
             offset={-96}
             onClick={() => setOpenMenu(false)}
           >
-            <Row>
-              <Col>
-                <TextMenu>DESIGN</TextMenu>
-              </Col>
-            </Row>
-          </Link>
+            DESIGN
+          </TextMenu>
         </Row>
         <Row justify="center">
-          <Link
+          <TextMenu
             to="contact"
             smooth={true}
             duration={1500}
             offset={0}
             onClick={() => setOpenMenu(false)}
           >
-            <Row>
-              <Col>
-                <TextMenu>CONTACT</TextMenu>
-              </Col>
-            </Row>
-          </Link>
+            CONTACT
+          </TextMenu>
         </Row>
         <DividerMenu />
         <Row justify="center" gutter={[16, 16]} align="middle">
@@ -196,9 +183,8 @@ const WrapperNavbar = styled.div<PropsTheme>`
   left: 0;
   z-index: 10;
   padding: 0px 24px;
-  height: 64px;
+  height: 56px;
   align-content: center;
-  background-color: ${(props: PropsTheme) => props.theme.layout.background};
-  border-bottom: 0.5px solid
-    ${(props: PropsTheme) => props.theme.layout.divider};
+  background: ${(props: PropsTheme) => props.theme.layout.filter};
+  backdrop-filter: blur(16px);
 `;

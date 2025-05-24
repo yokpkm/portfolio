@@ -55,6 +55,7 @@ export interface LightTheme {
   layout: {
     background: string;
     divider: string;
+    filter: string;
   };
   primaryBtn: {
     default: string;
@@ -150,6 +151,7 @@ export interface DarkTheme {
   layout: {
     background: string;
     divider: string;
+    filter: string;
   };
   primaryBtn: {
     default: string;

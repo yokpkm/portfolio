@@ -1,6 +1,6 @@
 import { Image } from "@heroui/react";
 import { Row, Col } from "antd";
-import { ModalDetail01 } from "./components/modal";
+import { ModalThesis } from "./components/modal";
 import { StyledCard } from "@/app/components/card";
 import { TextCardTitle, TextCardContent } from "@/app/components/text";
 
@@ -9,10 +9,10 @@ interface Props {
   setOpen: (open: boolean) => void;
 }
 
-export const WebAppDesign: React.FC<Props> = ({ open, setOpen }) => {
+export const CardThesis: React.FC<Props> = ({ open, setOpen }) => {
   return (
     <>
-      <ModalDetail01 open={open} setOpen={setOpen} />
+      <ModalThesis open={open} setOpen={setOpen} />
       <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
         <StyledCard
           cover={
@@ -26,12 +26,12 @@ export const WebAppDesign: React.FC<Props> = ({ open, setOpen }) => {
           hoverable
           onClick={() => setOpen(true)}
         >
-          <Row gutter={[0, 4]} style={{ marginTop: 8 }}>
+          <Row gutter={[0, 4]} style={{ marginTop: 12 }}>
             <Col span={24}>
-              <TextCardTitle>Progress Tracking Web Application</TextCardTitle>
+              <TextCardTitle>Tracking Progress Web Application</TextCardTitle>
             </Col>
             <Col span={24}>
-              <TextCardContent>Thesis - 2021</TextCardContent>
+              <TextCardContent>Education | Thesis - 2019</TextCardContent>
             </Col>
           </Row>
         </StyledCard>

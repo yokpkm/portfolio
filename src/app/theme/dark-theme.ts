@@ -50,7 +50,8 @@ const darkTheme = {
   // new TypeScript
   layout: {
     background: "#131416",
-    divider: "#42464D",
+    divider: "#383C42",
+    filter: "rgba(19, 20, 22, 0.8)",
   },
   primaryBtn: {
     default: "#FCFCFD", // bg
@@ -79,7 +80,7 @@ const darkTheme = {
   },
   // waiting for remove tag
   tag: {
-    background: "rgba(247, 182, 210, 0.1)",
+    background: "rgba(19, 20, 22, 0.8)",
     foreground: "#F7B6D2",
   },
   textColor: {

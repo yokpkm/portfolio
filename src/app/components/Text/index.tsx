@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { Typography } from "antd";
+import { Link } from "react-scroll";
 
 //  default of headline
 export const TextHeadline = styled(Typography)<PropsTheme>`
@@ -40,18 +41,18 @@ export const TextLabel = styled(Typography)<PropsTheme>`
 `;
 
 // adjust style for menu
-export const TextMenu = styled(Typography)<PropsTheme>`
+export const TextMenu = styled(Link)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.label};
-  font-weight: 500;
-  letter-spacing: 0.03em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   color: ${(props) => props.theme.textColor.primary};
-  margin-bottom: 0;
 
-  &&.ant-typography:hover,
-  .ant-typography:active,
-  .ant-typography:focus {
+  &:hover,
+  &:focus,
+  &:active {
     color: ${(props) => props.theme.textColor.tertiary};
     cursor: pointer;
+    transition: color 0.2s;
   }
 `;
 
@@ -59,7 +60,7 @@ export const TextMenu = styled(Typography)<PropsTheme>`
 export const TextNumber = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.title};
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: ${(props) => props.theme.textColor.tertiary};
   margin-right: 12px;
   margin-bottom: 0;

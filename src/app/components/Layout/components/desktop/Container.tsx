@@ -19,6 +19,6 @@ const WrapperContainer = styled.div`
 `;
 
 const StyledContainer = styled.div`
-  margin: 160px auto;
-  width: 920px;
+  margin: 160px auto 200px auto;
+  width: 944px;
 `;

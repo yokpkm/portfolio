@@ -11,7 +11,7 @@ import {
 
 const AboutSection: React.FC = () => {
   const { useBreakpoint } = Grid;
-  const { xs, sm } = useBreakpoint();
+  const { xs, sm, md, lg } = useBreakpoint();
 
   return (
     <>
@@ -20,7 +20,7 @@ const AboutSection: React.FC = () => {
           <TextNumber>01.</TextNumber>
           <TextHeadline>ABOUT</TextHeadline>
         </Row>
-        <Row style={{ marginTop: 2 }}>
+        <Row style={{ marginTop: 4 }}>
           <TextCaption>
             Yok Premkamon, UX/UI Creative Design Specialist
           </TextCaption>
@@ -28,7 +28,7 @@ const AboutSection: React.FC = () => {
 
         {xs || !sm ? (
           <>
-            <Row style={{ marginTop: 32 }}>
+            <Row style={{ marginTop: 24 }}>
               <Col span={24}>
                 <TextBody>
                   UX/UI Designer with 5+ years of experience in visual design
@@ -46,39 +46,87 @@ const AboutSection: React.FC = () => {
             <Row gutter={[16, 8]} style={{ marginTop: 32 }}>
               <Col xs={12}>
                 <TextCaption>
-                  <li>Figma</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  Figma
                 </TextCaption>
               </Col>
               <Col xs={12}>
                 <TextCaption>
-                  <li>UI Design</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  UI Design
                 </TextCaption>
               </Col>
               <Col xs={12}>
                 <TextCaption>
-                  <li>Design System</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  Design System
                 </TextCaption>
               </Col>
               <Col xs={12}>
                 <TextCaption>
-                  <li>UX Writing</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  UX Writing
                 </TextCaption>
               </Col>
               <Col xs={12}>
                 <TextCaption>
-                  <li>UX Research</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  UX Research
                 </TextCaption>
               </Col>
               <Col xs={12}>
                 <TextCaption>
-                  <li>React Typescript</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  React Typescript
                 </TextCaption>
               </Col>
             </Row>
           </>
         ) : (
           <>
-            <Row style={{ marginTop: 40 }}>
+            <Row style={{ marginTop: 32 }}>
               <Col span={24}>
                 <TextBody>
                   UX/UI Designer with 5+ years of experience in visual design
@@ -103,34 +151,82 @@ const AboutSection: React.FC = () => {
             <Row gutter={[16, 16]} style={{ marginTop: 40 }}>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
-                  <li>Figma</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  Figma
                 </TextCaption>
               </Col>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
-                  <li>UI Design</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  UI Design
                 </TextCaption>
               </Col>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
-                  <li>Design System</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  Design System
                 </TextCaption>
               </Col>
             </Row>
             <Row gutter={[16, 16]} style={{ marginTop: 8 }}>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
-                  <li>UX Research</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  UX Research
                 </TextCaption>
               </Col>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
-                  <li>UX Writing</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  UX Writing
                 </TextCaption>
               </Col>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
-                  <li>React Typescript</li>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  React Typescript
                 </TextCaption>
               </Col>
             </Row>
@@ -141,7 +237,7 @@ const AboutSection: React.FC = () => {
           style={xs || !sm ? { marginTop: 40 } : { marginTop: 48 }}
         >
           <Col>
-            <a href="/Premkamon-UXUI-resume.pdf" target="_blank">
+            <a href="/Resume-Premkamon-UXUI.pdf" target="_blank">
               <ButtonPrimary>View my resume</ButtonPrimary>
             </a>
           </Col>
@@ -150,7 +246,7 @@ const AboutSection: React.FC = () => {
               to="contact"
               smooth={true}
               duration={1000}
-              onClick={() => animateScroll.scrollToBottom}
+              onClick={() => animateScroll.scrollToBottom()}
             >
               <ButtonSecondary>Get in touch</ButtonSecondary>
             </Link>

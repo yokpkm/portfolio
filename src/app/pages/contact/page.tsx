@@ -30,7 +30,7 @@ const ContactSection: React.FC = () => {
           <TextNumber>03.</TextNumber>
           <TextHeadline>CONTACT</TextHeadline>
         </Row>
-        <Row justify="end" style={{ marginTop: 2 }}>
+        <Row justify="end" style={{ marginTop: 4 }}>
           <TextCaption>
             My inbox is always open, feel free to reach out
           </TextCaption>
