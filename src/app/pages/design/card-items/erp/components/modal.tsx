@@ -16,7 +16,7 @@ interface Props {
   setOpen: (open: boolean) => void;
 }
 
-export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
+export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
   const { useBreakpoint } = Grid;
   const { xs, sm, md, lg, xl, xxl } = useBreakpoint();
 
@@ -65,25 +65,25 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
           <Col span={24} style={{ maxWidth: 864 }}>
             <Row gutter={(xs || sm || md) && !lg ? [0, 32] : [0, 48]}>
               <Col span={24}>
-                <TextHeadline>Tracking Progress Web Application</TextHeadline>
+                <TextHeadline>Order Management Website</TextHeadline>
               </Col>
               <Col xs={24} sm={11} md={11} lg={9} xl={9} xxl={9}>
                 <TextModalSubtitle>Project Info</TextModalSubtitle>
                 <TextCaption style={{ marginTop: 4 }}>
-                  Education | Thesis - 2019
+                  E-commerce | ERP - 2022
                 </TextCaption>
               </Col>
               <Col xs={24} sm={11} md={11} lg={9} xl={9} xxl={9}>
                 <TextModalSubtitle>Skills & Tools</TextModalSubtitle>
                 <TextCaption style={{ marginTop: 4 }}>
-                  Visual Design, UX Research, Adobe XD
+                  Visual Design, UX Research, Coding, Figma
                 </TextCaption>
               </Col>
 
               <Col span={24}>
                 <Row justify="center">
                   <Image
-                    src="/image/card/imgCard04.jpg"
+                    src="/image/card/imgCard03.jpg"
                     alt="false"
                     width="100%"
                     style={{ borderRadius: 16 }}

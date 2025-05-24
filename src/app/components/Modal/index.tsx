@@ -15,10 +15,6 @@ export const StyledModal = styled(Modal)<PropsTheme>`
     align-items: center;
   }
 
-  &&.ant-modal-root .ant-modal-mask {
-    background-color: rgba(0, 0, 0, 0.4) !important;
-  }
-
   .ant-modal-close {
     position: fixed;
     top: 4px;

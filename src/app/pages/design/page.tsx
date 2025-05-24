@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Grid, Row } from "antd";
 import { TextHeadline, TextCaption, TextNumber } from "../../components/text";
 import { CardThesis } from "./card-items/thesis";
-import { AppDesign } from "./card-items/02-app-design";
+import { CardERP } from "./card-items/erp";
 
 const DesignSection: React.FC = () => {
   const { useBreakpoint } = Grid;
@@ -37,10 +37,8 @@ const DesignSection: React.FC = () => {
             (xs || sm || md) && !lg ? { marginTop: 40 } : { marginTop: 64 }
           }
         >
+          <CardERP open={openERP} setOpen={setOpenERP} />
           <CardThesis open={openThesis} setOpen={setOpenThesis} />
-          <CardThesis open={openThesis} setOpen={setOpenThesis} />
-          <AppDesign open={openThesis} setOpen={setOpenThesis} />
-          <AppDesign open={openThesis} setOpen={setOpenThesis} />
         </Row>
       </section>
     </>
