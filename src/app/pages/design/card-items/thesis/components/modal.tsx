@@ -76,7 +76,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
               <Col xs={24} sm={11} md={11} lg={9} xl={9} xxl={9}>
                 <TextModalSubtitle>Skills & Tools</TextModalSubtitle>
                 <TextCaption style={{ marginTop: 4 }}>
-                  Visual Design, UX Research, Adobe XD
+                  UI Design, UX Research, Adobe XD
                 </TextCaption>
               </Col>
 
@@ -95,11 +95,11 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 <TextLabel style={{ marginTop: 24 }}>BACKGROUND</TextLabel>
                 <TextModalTitle>Overview</TextModalTitle>
                 <TextModalContent style={{ marginTop: 8 }}>
-                  This project is a web application developed to assist teachers
+                  This thesis is a web application developed to assist teachers
                   and students in the Applied Computer Science-Multimedia field
                   create a tracking progress system, communicate in real time
                   and manage related documents in a shared system. The goal is
-                  to ensure all users can efficiently organize and easily access
+                  to ensure all users can effectively organize and easily access
                   project information.
                 </TextModalContent>
               </Col>
@@ -356,9 +356,9 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
               <Col span={24}>
                 <TextModalTitle>Goals</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
-                  To develop a shared system that assist teachers and students
-                  track project progress, manage documents and communicate in
-                  real-time, ensuring they can efficiently organize and easily
+                  To develop a shared system that assists teachers and students
+                  to track project progress, manage documents and communicate in
+                  real-time, ensuring they can effectively organize and easily
                   access project information.
                 </TextModalContent>
               </Col>
@@ -536,8 +536,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 <TextModalTitle>Style Guide</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
                   The style guide for this project ensures consistency in
-                  colors, typography, and UI elements across the web
-                  application.
+                  colors, typography and UI elements across the web application.
                 </TextModalContent>
               </Col>
               <Col span={24}>
@@ -823,7 +822,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
               </Col>
 
               <Col span={24}>
-                <TextModalTitle>What's Next</TextModalTitle>
+                <TextModalTitle>Next Steps</TextModalTitle>
                 <Row align="middle" style={{ marginTop: 12 }}>
                   <TextModalContent>
                     <b

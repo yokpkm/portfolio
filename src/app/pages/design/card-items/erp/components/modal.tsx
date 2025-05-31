@@ -76,7 +76,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
               <Col xs={24} sm={11} md={11} lg={9} xl={9} xxl={9}>
                 <TextModalSubtitle>Skills & Tools</TextModalSubtitle>
                 <TextCaption style={{ marginTop: 4 }}>
-                  Visual Design, UX Research, Coding, Figma
+                  UI Design, UX Research, Coding, Figma
                 </TextCaption>
               </Col>
 
@@ -95,181 +95,97 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 <TextLabel style={{ marginTop: 24 }}>BACKGROUND</TextLabel>
                 <TextModalTitle>Overview</TextModalTitle>
                 <TextModalContent style={{ marginTop: 8 }}>
-                  This project is a web application developed to assist teachers
-                  and students in the Applied Computer Science-Multimedia field
-                  create a tracking progress system, communicate in real time
-                  and manage related documents in a shared system. The goal is
-                  to ensure all users can efficiently organize and easily access
-                  project information.
+                  This ERP system supports e-commerce operations by managing
+                  products, orders, and sales processes through 3 key features:
                 </TextModalContent>
+                <Row align="middle" style={{ marginTop: 12 }}>
+                  <TextModalContent>
+                    <b
+                      style={{
+                        fontWeight: 900,
+                        marginRight: 8,
+                        marginLeft: 4,
+                      }}
+                    >
+                      •
+                    </b>
+                    <b
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      Product Feature{" "}
+                    </b>
+                    – Manages product data such as name, pricing, and inventory,
+                    allowing users to add or edit items to keep product
+                    information consistent and up-to-date across the platform.
+                  </TextModalContent>
+                </Row>
+                <Row align="middle" style={{ marginTop: 12 }}>
+                  <TextModalContent>
+                    <b
+                      style={{
+                        fontWeight: 900,
+                        marginRight: 8,
+                        marginLeft: 4,
+                      }}
+                    >
+                      •
+                    </b>
+                    <b
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      Order Feature{" "}
+                    </b>
+                    – Handles orders by creating, tracking, and updating order
+                    statuses to support smoother workflows and improve team
+                    collaboration.
+                  </TextModalContent>
+                </Row>
+                <Row align="middle" style={{ marginTop: 12 }}>
+                  <TextModalContent>
+                    <b
+                      style={{
+                        fontWeight: 900,
+                        marginRight: 8,
+                        marginLeft: 4,
+                      }}
+                    >
+                      •
+                    </b>
+                    <b
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      Sale Order Feature{" "}
+                    </b>
+                    – Gathers sales inquiries and customer contact information
+                    before purchases to help the team track leads and follow up
+                    with personalized interactions.
+                  </TextModalContent>
+                </Row>
               </Col>
               <Col span={24}>
                 <TextModalTitle>Project Process</TextModalTitle>
                 <TextModalContent style={{ marginTop: 8 }}>
-                  I applied the Design Thinking process to design the web
-                  application using Adobe XD for wireframes and prototypes,
-                  collaborating closely with users to define the design and
-                  ensure it met their expectations.
+                  Requirements are gathered directly from real users, and
+                  on-site observations help clarify the actual delivery
+                  workflow. These insights are used to design the UI and create
+                  a prototype for usability testing before development.
                 </TextModalContent>
               </Col>
-
-              {/* design thinking process */}
-              {(md || lg || xl || xxl) && (
-                <Col span={24}>
-                  <Row justify="center">
-                    <Image
-                      src="/image/modal/thesis/process.svg"
-                      alt="false"
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
-                  </Row>
-                  <Row justify="center">
-                    <Col span={24} style={{ maxWidth: 800 }}>
-                      <Row justify="center" gutter={[10, 0]}>
-                        <Col flex={"20%"}>
-                          <TextCaption style={{ marginTop: 12 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Interview
-                          </TextCaption>
-                          <TextCaption style={{ marginTop: 4 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Pain Points
-                          </TextCaption>
-                        </Col>
-                        <Col flex={"20%"}>
-                          <TextCaption style={{ marginTop: 12 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Problem Statement
-                          </TextCaption>
-                          <TextCaption style={{ marginTop: 4 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Goals
-                          </TextCaption>
-                        </Col>
-                        <Col flex={"20%"}>
-                          <TextCaption style={{ marginTop: 12 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Key Features
-                          </TextCaption>
-                          <TextCaption style={{ marginTop: 4 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Website Structure
-                          </TextCaption>
-                        </Col>
-                        <Col flex={"20%"}>
-                          <TextCaption style={{ marginTop: 12 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            UI Mockups
-                          </TextCaption>
-                          <TextCaption style={{ marginTop: 4 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Prototype
-                          </TextCaption>
-                        </Col>
-                        <Col flex={"20%"}>
-                          <TextCaption style={{ marginTop: 12 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Demo Testing
-                          </TextCaption>
-                          <TextCaption style={{ marginTop: 4 }}>
-                            <b
-                              style={{
-                                fontWeight: 700,
-                                marginRight: 4,
-                                marginLeft: 2,
-                              }}
-                            >
-                              •
-                            </b>
-                            Feedback Form
-                          </TextCaption>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Col>
-              )}
 
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>UX RESEARCH</TextLabel>
                 <TextModalTitle>Interview</TextModalTitle>
                 <TextModalContent style={{ marginTop: 8 }}>
-                  I conducted semi-structured, open-ended interviews with 6
-                  teachers from Applied Computer Science-Multimedia field to
-                  understand their pain points when advising student projects.
+                  As part of the UX research, I conducted contextual inquiry
+                  interviews through on-site observations and conversations with
+                  the sales, warehouse and business teams to understand their
+                  workflows related to order management.
                 </TextModalContent>
               </Col>
               <Col span={24}>
@@ -291,9 +207,9 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                           fontWeight: 500,
                         }}
                       >
-                        Tracking Progress{" "}
+                        Order Visibility{" "}
                       </b>
-                      – Difficulty in tracking ongoing student progress manually
+                      – Lack of real-time order status visibility across teams
                     </TextModalContent>
                   </Col>
                 </Row>
@@ -313,10 +229,9 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                         fontWeight: 500,
                       }}
                     >
-                      Document Management{" "}
+                      Order Prioritization{" "}
                     </b>
-                    – No shared system for storing project files, leading to
-                    disorganization
+                    – No prioritization system for urgent or high-value orders
                   </TextModalContent>
                 </Row>
                 <Row align="middle" style={{ marginTop: 12 }}>
@@ -335,9 +250,31 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                         fontWeight: 500,
                       }}
                     >
-                      Communication{" "}
+                      Automated Updates{" "}
                     </b>
-                    – Lack of real-time updates, causing delays in feedback
+                    – No automated updates for order status or inventory
+                  </TextModalContent>
+                </Row>
+                <Row align="middle" style={{ marginTop: 12 }}>
+                  <TextModalContent>
+                    <b
+                      style={{
+                        fontWeight: 900,
+                        marginRight: 8,
+                        marginLeft: 4,
+                      }}
+                    >
+                      •
+                    </b>
+                    <b
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      Data Entry{" "}
+                    </b>
+                    – Manual data entry causing delays in reporting and
+                    decision-making
                   </TextModalContent>
                 </Row>
               </Col>
@@ -346,265 +283,120 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 <TextLabel style={{ marginTop: 24 }}>PROJECT SCOPE</TextLabel>
                 <TextModalTitle>Problem Statement</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
-                  Teachers and students have difficulty tracking project
-                  progress, managing documents efficiently without a shared
-                  system and lacking real-time communication. These challenges
-                  lead to disorganization and make project information harder to
-                  access.
+                  The order management process lacks real-time visibility,
+                  making tracking difficult. There is no system to prioritize
+                  urgent orders or automate status and inventory updates.
+                  Additionally, manual data entry slows reporting and delays
+                  decisions.
                 </TextModalContent>
               </Col>
               <Col span={24}>
                 <TextModalTitle>Goals</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
-                  To develop a shared system that assist teachers and students
-                  track project progress, manage documents and communicate in
-                  real-time, ensuring they can efficiently organize and easily
-                  access project information.
+                  To develop the order management website that delivers
+                  real-time order status visibility, prioritizes urgent orders,
+                  automates status updates and reduces manual data entry for
+                  efficient order management.
                 </TextModalContent>
-              </Col>
-
-              {/* key features */}
-              <Col span={24}>
-                <TextLabel style={{ marginTop: 24 }}>STRUCTURE</TextLabel>
-                <TextModalTitle>Key Features</TextModalTitle>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <Col>
-                    <TextModalContent>
-                      <b
-                        style={{
-                          fontWeight: 900,
-                          marginRight: 8,
-                          marginLeft: 4,
-                        }}
-                      >
-                        •
-                      </b>
-                      <b
-                        style={{
-                          fontWeight: 500,
-                        }}
-                      >
-                        Project{" "}
-                      </b>
-                      – View a quick overview and navigate easily to the main
-                      project sections
-                    </TextModalContent>
-                  </Col>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <Col>
-                    <TextModalContent>
-                      <b
-                        style={{
-                          fontWeight: 900,
-                          marginRight: 8,
-                          marginLeft: 4,
-                        }}
-                      >
-                        •
-                      </b>
-                      <b
-                        style={{
-                          fontWeight: 500,
-                        }}
-                      >
-                        News{" "}
-                      </b>
-                      – Stay informed with updates, announcements and important
-                      project news
-                    </TextModalContent>
-                  </Col>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <Col>
-                    <TextModalContent>
-                      <b
-                        style={{
-                          fontWeight: 900,
-                          marginRight: 8,
-                          marginLeft: 4,
-                        }}
-                      >
-                        •
-                      </b>
-                      <b
-                        style={{
-                          fontWeight: 500,
-                        }}
-                      >
-                        Document{" "}
-                      </b>
-                      – Access all documents in one organized place
-                    </TextModalContent>
-                  </Col>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <Col>
-                    <TextModalContent>
-                      <b
-                        style={{
-                          fontWeight: 900,
-                          marginRight: 8,
-                          marginLeft: 4,
-                        }}
-                      >
-                        •
-                      </b>
-                      <b
-                        style={{
-                          fontWeight: 500,
-                        }}
-                      >
-                        Group{" "}
-                      </b>
-                      – Manage group members and upload progress files from
-                      students
-                    </TextModalContent>
-                  </Col>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <Col>
-                    <TextModalContent>
-                      <b
-                        style={{
-                          fontWeight: 900,
-                          marginRight: 8,
-                          marginLeft: 4,
-                        }}
-                      >
-                        •
-                      </b>
-                      <b
-                        style={{
-                          fontWeight: 500,
-                        }}
-                      >
-                        Progress{" "}
-                      </b>
-                      – Schedule meetings and update progress based on
-                      appointments
-                    </TextModalContent>
-                  </Col>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <Col>
-                    <TextModalContent>
-                      <b
-                        style={{
-                          fontWeight: 900,
-                          marginRight: 8,
-                          marginLeft: 4,
-                        }}
-                      >
-                        •
-                      </b>
-                      <b
-                        style={{
-                          fontWeight: 500,
-                        }}
-                      >
-                        Login System{" "}
-                      </b>
-                      – Secure login for teachers and students using their
-                      university email
-                    </TextModalContent>
-                  </Col>
-                </Row>
-              </Col>
-              <Col span={24}>
-                <TextModalTitle>Website Structure</TextModalTitle>
-                <TextModalContent style={{ marginTop: 8 }}>
-                  This web application follows a hierarchical structure, where
-                  each project branches into key sections like news, document,
-                  group and progress. This ensures clear and organized
-                  navigation.
-                </TextModalContent>
-              </Col>
-              <Col span={24}>
-                <Row justify="center">
-                  <Image
-                    src="/image/modal/thesis/web-structure.svg"
-                    alt="false"
-                    width="100%"
-                    style={{ display: "flex" }}
-                  />
-                </Row>
               </Col>
 
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>UI DESIGN</TextLabel>
-                <TextModalTitle>Style Guide</TextModalTitle>
+                <TextModalTitle>Visual Design</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
-                  The style guide for this project ensures consistency in
-                  colors, typography, and UI elements across the web
-                  application.
+                  The design applies primary and neutral colors for a clean
+                  look, while semantic colors clearly communicate statuses and
+                  Noto Sans is used as the primary typeface to ensure
+                  readability for content.
                 </TextModalContent>
               </Col>
               <Col span={24}>
                 <Row justify="center">
                   <Image
-                    src="/image/modal/thesis/style-guide.svg"
+                    src="/image/modal/erp/style-guide.svg"
                     alt="false"
                     width="100%"
                     style={{ display: "flex" }}
                   />
                 </Row>
               </Col>
-
-              {/* high-fidelity mockups */}
               <Col span={24}>
-                <TextModalTitle>High-Fidelity Mockups</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
-                  High-fidelity mockup examples showcasing key features for
-                  teachers:
+                  The layout follows an{" "}
+                  <b
+                    style={{
+                      fontWeight: 500,
+                    }}
+                  >
+                    8pt grid system
+                  </b>{" "}
+                  to ensure consistent spacing and alignment, fully{" "}
+                  <b
+                    style={{
+                      fontWeight: 500,
+                    }}
+                  >
+                    responsive
+                  </b>{" "}
+                  and adapting smoothly to various screen sizes and devices.
+                </TextModalContent>
+              </Col>
+
+              {/* product feature */}
+              <Col span={24}>
+                <TextModalTitle>Product Feature</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Users can add new product items and sync product data from
+                  marketplaces such as Shopee and Lazada, ensuring consistent
+                  details and inventory across platforms.
                 </TextModalContent>
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
                   <Image
-                    src="/image/modal/thesis/01-project.svg"
+                    src="/image/modal/erp/product/01-list.svg"
                     alt="false"
                     width="100%"
                     style={{ display: "flex" }}
                   />
                   <TextCaption style={{ marginTop: 12 }}>
-                    🗂️{" "}
+                    📋{" "}
                     <b
                       style={{
                         fontWeight: 500,
                       }}
                     >
-                      Project
+                      Product List
                     </b>{" "}
-                    – Get an overview and access key project sections
+                    – View an overview and manage all product items
                   </TextCaption>
                 </Row>
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
                   <Image
-                    src="/image/modal/thesis/02-news.svg"
+                    src="/image/modal/erp/product/02-details.svg"
                     alt="false"
                     width="100%"
                     style={{ display: "flex" }}
                   />
                   <TextCaption style={{ marginTop: 12 }}>
-                    📰{" "}
+                    🔍{" "}
                     <b
                       style={{
                         fontWeight: 500,
                       }}
                     >
-                      News
+                      Product Details
                     </b>{" "}
-                    – Share and announce important project updates
+                    – Access full product information and sync with marketplace
                   </TextCaption>
                 </Row>
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
                   <Image
-                    src="/image/modal/thesis/03-form.svg"
+                    src="/image/modal/erp/product/03-form.svg"
                     alt="false"
                     width="100%"
                     style={{ display: "flex" }}
@@ -616,214 +408,214 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                         fontWeight: 500,
                       }}
                     >
-                      Form
+                      Product Form
                     </b>{" "}
-                    – Manage and view all response forms submitted
+                    – Add or update product information
+                  </TextCaption>
+                </Row>
+              </Col>
+
+              {/* order feature */}
+              <Col span={24}>
+                <TextModalTitle>Order Feature</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Users can create, view and update order information in
+                  real-time from marketplaces. They can also track order status
+                  and resolve order issues efficiently, ensuring smooth
+                  workflows and improved team collaboration.
+                </TextModalContent>
+              </Col>
+              <Col span={24}>
+                <Row justify={xs && !sm ? "start" : "center"}>
+                  <Image
+                    src="/image/modal/erp/order/01-list.svg"
+                    alt="false"
+                    width="100%"
+                    style={{ display: "flex" }}
+                  />
+                  <TextCaption style={{ marginTop: 12 }}>
+                    📋{" "}
+                    <b
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      Order List
+                    </b>{" "}
+                    – Stay on top of incoming and processed orders from
+                    marketplaces
                   </TextCaption>
                 </Row>
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
                   <Image
-                    src="/image/modal/thesis/04-folder.svg"
+                    src="/image/modal/erp/order/02-details.svg"
                     alt="false"
                     width="100%"
                     style={{ display: "flex" }}
                   />
                   <TextCaption style={{ marginTop: 12 }}>
-                    📁{" "}
+                    🔍{" "}
                     <b
                       style={{
                         fontWeight: 500,
                       }}
                     >
-                      Folder
+                      Order Details
                     </b>{" "}
-                    – View progress documents and media files
+                    - Review order information, tracking status and any related
+                    issues
                   </TextCaption>
                 </Row>
               </Col>
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
                   <Image
-                    src="/image/modal/thesis/05-progress.svg"
+                    src="/image/modal/erp/order/03-form.svg"
                     alt="false"
                     width="100%"
                     style={{ display: "flex" }}
                   />
                   <TextCaption style={{ marginTop: 12 }}>
-                    🗓️{" "}
+                    📝{" "}
                     <b
                       style={{
                         fontWeight: 500,
                       }}
                     >
-                      Progress
+                      Order Form
                     </b>{" "}
-                    – Schedule appointments and review project progress
+                    – Create or edit order information
+                  </TextCaption>
+                </Row>
+              </Col>
+
+              {/* sale order feature */}
+              <Col span={24}>
+                <TextModalTitle>Sale Order Feature</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Users can efficiently track leads from sales inquiries by
+                  customer ID through sales channels and gather customer contact
+                  information for personalized follow-up before purchases.
+                </TextModalContent>
+              </Col>
+              <Col span={24}>
+                <Row justify={xs && !sm ? "start" : "center"}>
+                  <Image
+                    src="/image/modal/erp/sale-order/01-list.svg"
+                    alt="false"
+                    width="100%"
+                    style={{ display: "flex" }}
+                  />
+                  <TextCaption style={{ marginTop: 12 }}>
+                    📋{" "}
+                    <b
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      Sale Order List
+                    </b>{" "}
+                    – Get an overview of leads tracking
+                  </TextCaption>
+                </Row>
+              </Col>
+              <Col span={24}>
+                <Row justify={xs && !sm ? "start" : "center"}>
+                  <Image
+                    src="/image/modal/erp/sale-order/02-form.svg"
+                    alt="false"
+                    width="100%"
+                    style={{ display: "flex" }}
+                  />
+                  <TextCaption style={{ marginTop: 12 }}>
+                    📝{" "}
+                    <b
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      Sale Order Form
+                    </b>{" "}
+                    - Create sale order details
                   </TextCaption>
                 </Row>
               </Col>
 
               <Col span={24}>
-                <TextLabel style={{ marginTop: 24 }}>OUTCOME</TextLabel>
-                <TextModalTitle>Feedback</TextModalTitle>
+                <TextLabel style={{ marginTop: 24 }}>WHAT I LEARNED</TextLabel>
+                <TextModalTitle>Design & Coding</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
-                  Feedback is gathered from teachers and students through demo
-                  testing and Google Form evaluation. The summary of user
-                  satisfaction is as follows:
+                  This project enhanced my skills in design thinking and UI
+                  design, with a focus on creating intuitive and responsive
+                  interfaces across platforms. I had the opportunity to
+                  implement UI for responsive layouts and build components using
+                  React TypeScript.
                 </TextModalContent>
               </Col>
 
-              {(md || lg || xl || xxl) && (
-                <Col span={24}>
-                  <Row justify="center">
-                    <Image
-                      src="/image/modal/thesis/feedback.svg"
-                      alt="false"
-                      width="100%"
-                      style={{ borderRadius: 16 }}
-                    />
-                  </Row>
-                </Col>
-              )}
-
-              {/* satisfaction */}
               <Col span={24}>
-                <Row align="middle" style={{ marginTop: 0 }}>
-                  <TextModalContent>
-                    <b
-                      style={{
-                        fontWeight: 900,
-                        marginRight: 8,
-                        marginLeft: 4,
-                      }}
-                    >
-                      •
-                    </b>
-                    <b
-                      style={{
-                        fontWeight: 500,
-                      }}
-                    >
-                      Expectation{" "}
-                    </b>
-                    – Quick, accurate data verification and dependable data
-                    collection
-                  </TextModalContent>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <TextModalContent>
-                    <b
-                      style={{
-                        fontWeight: 900,
-                        marginRight: 8,
-                        marginLeft: 4,
-                      }}
-                    >
-                      •
-                    </b>
+                <Row justify={xs && !sm ? "start" : "center"}>
+                  <Image
+                    src="/image/modal/erp/mobile-responsive.svg"
+                    alt="false"
+                    width="100%"
+                    style={{ display: "flex" }}
+                  />
+                  <TextCaption style={{ marginTop: 12 }}>
+                    📱{" "}
                     <b
                       style={{
                         fontWeight: 500,
                       }}
                     >
-                      Functionality{" "}
-                    </b>
-                    – Intuitive system with sufficient and reliable features
-                  </TextModalContent>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <TextModalContent>
-                    <b
-                      style={{
-                        fontWeight: 900,
-                        marginRight: 8,
-                        marginLeft: 4,
-                      }}
-                    >
-                      •
-                    </b>
-                    <b
-                      style={{
-                        fontWeight: 500,
-                      }}
-                    >
-                      Security{" "}
-                    </b>
-                    – Trusted login via university email with proper access
-                    control
-                  </TextModalContent>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <TextModalContent>
-                    <b
-                      style={{
-                        fontWeight: 900,
-                        marginRight: 8,
-                        marginLeft: 4,
-                      }}
-                    >
-                      •
-                    </b>
-                    <b
-                      style={{
-                        fontWeight: 500,
-                      }}
-                    >
-                      Compatibility{" "}
-                    </b>
-                    – Responsive layout across screen sizes and operating
-                    systems
-                  </TextModalContent>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <TextModalContent>
-                    <b
-                      style={{
-                        fontWeight: 900,
-                        marginRight: 8,
-                        marginLeft: 4,
-                      }}
-                    >
-                      •
-                    </b>
-                    <b
-                      style={{
-                        fontWeight: 500,
-                      }}
-                    >
-                      Benefits{" "}
-                    </b>
-                    – Improved project management and reduced resource usage
-                  </TextModalContent>
-                </Row>
-                <Row align="middle" style={{ marginTop: 12 }}>
-                  <TextModalContent>
-                    <b
-                      style={{
-                        fontWeight: 900,
-                        marginRight: 8,
-                        marginLeft: 4,
-                      }}
-                    >
-                      •
-                    </b>
-                    <b
-                      style={{
-                        fontWeight: 500,
-                      }}
-                    >
-                      Usability{" "}
-                    </b>
-                    – Clear layout, accessible typography and consistent
-                    elements
-                  </TextModalContent>
+                      Responsive
+                    </b>{" "}
+                    – Example mobile responsive for product feature
+                  </TextCaption>
                 </Row>
               </Col>
 
               <Col span={24}>
+                <TextModalTitle>Database</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  I also designed database diagrams to support API development,
+                  which deepened my understanding of how design decisions
+                  connect to back-end logic.
+                </TextModalContent>
+              </Col>
+
+              <Col span={24}>
+                <Row justify={xs && !sm ? "start" : "center"}>
+                  <Image
+                    src="/image/modal/erp/sale-order/03-database.svg"
+                    alt="false"
+                    width="100%"
+                    style={{ display: "flex" }}
+                  />
+                  <TextCaption style={{ marginTop: 12 }}>
+                    🗄️{" "}
+                    <b
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      Database
+                    </b>{" "}
+                    – Example database diagram for sale order
+                  </TextCaption>
+                </Row>
+              </Col>
+
+              <Col span={24}>
+                <TextLabel style={{ marginTop: 24 }}>CONCLUSION</TextLabel>
                 <TextModalTitle>What's Next</TextModalTitle>
+                <TextModalContent style={{ marginTop: 4 }}>
+                  Following the demo testing, I gathered user feedback to
+                  identify areas for improvement. The following features are
+                  planned for the next phase:
+                </TextModalContent>
                 <Row align="middle" style={{ marginTop: 12 }}>
                   <TextModalContent>
                     <b
@@ -835,7 +627,8 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                     >
                       •
                     </b>
-                    Apply file size limits for uploads
+                    Summarize product sales by category to support better
+                    business insights
                   </TextModalContent>
                 </Row>
                 <Row align="middle" style={{ marginTop: 12 }}>
@@ -849,8 +642,8 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                     >
                       •
                     </b>
-                    Add web notification for progress updates between teachers
-                    and students
+                    Track production stages to improve planning and ensure
+                    product availability
                   </TextModalContent>
                 </Row>
                 <Row align="middle" style={{ marginTop: 12 }}>
@@ -864,8 +657,8 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                     >
                       •
                     </b>
-                    Optimize data display for high user volumes by limiting
-                    visible comments
+                    Develop a workspace system to define user roles and
+                    responsibilities
                   </TextModalContent>
                 </Row>
               </Col>
