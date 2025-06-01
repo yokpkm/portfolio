@@ -79,18 +79,16 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   UI Design, UX Research, Adobe XD
                 </TextCaption>
               </Col>
-
               <Col span={24}>
                 <Row justify="center">
                   <Image
-                    src="/image/card/imgCard04.jpg"
+                    src="/image/card/imgCard02.jpg"
                     alt="false"
                     width="100%"
                     style={{ borderRadius: 16 }}
                   />
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>BACKGROUND</TextLabel>
                 <TextModalTitle>Overview</TextModalTitle>
@@ -176,7 +174,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                             >
                               •
                             </b>
-                            Goals
+                            Goal
                           </TextCaption>
                         </Col>
                         <Col flex={"20%"}>
@@ -262,7 +260,6 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   </Row>
                 </Col>
               )}
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>UX RESEARCH</TextLabel>
                 <TextModalTitle>Interview</TextModalTitle>
@@ -341,7 +338,6 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   </TextModalContent>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>PROJECT SCOPE</TextLabel>
                 <TextModalTitle>Problem Statement</TextModalTitle>
@@ -354,7 +350,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </TextModalContent>
               </Col>
               <Col span={24}>
-                <TextModalTitle>Goals</TextModalTitle>
+                <TextModalTitle>Goal</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
                   To develop a shared system that assists teachers and students
                   to track project progress, manage documents and communicate in
@@ -530,7 +526,6 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   />
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>UI DESIGN</TextLabel>
                 <TextModalTitle>Style Guide</TextModalTitle>
@@ -663,7 +658,6 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   </TextCaption>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>OUTCOME</TextLabel>
                 <TextModalTitle>Feedback</TextModalTitle>
@@ -820,7 +814,6 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   </TextModalContent>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextModalTitle>Next Steps</TextModalTitle>
                 <Row align="middle" style={{ marginTop: 12 }}>

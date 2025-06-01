@@ -29,8 +29,8 @@ const AboutSection: React.FC = () => {
             <Row style={{ marginTop: 24 }}>
               <Col span={24}>
                 <TextBody>
-                  UX/UI Designer with 5 years of experience in visual design for
-                  mobile applications and responsive websites.
+                  UX/UI Designer with 4+ years of experience in visual design
+                  for mobile applications and responsive websites.
                 </TextBody>
               </Col>
               <Col span={24} style={{ marginTop: 12 }}>
@@ -117,7 +117,7 @@ const AboutSection: React.FC = () => {
                   >
                     •
                   </b>
-                  React Typescript
+                  React TypeScript
                 </TextCaption>
               </Col>
             </Row>
@@ -127,7 +127,7 @@ const AboutSection: React.FC = () => {
             <Row style={{ marginTop: 32 }}>
               <Col span={24}>
                 <TextBody>
-                  UX/UI Designer with 5 years of experience in visual design
+                  UX/UI Designer with 4+ years of experience in visual design
                 </TextBody>
               </Col>
               <Col span={24}>
@@ -224,7 +224,7 @@ const AboutSection: React.FC = () => {
                   >
                     •
                   </b>
-                  React Typescript
+                  React TypeScript
                 </TextCaption>
               </Col>
             </Row>

@@ -17,7 +17,7 @@ export const CardThesis: React.FC<Props> = ({ open, setOpen }) => {
         <StyledCard
           cover={
             <Image
-              src="/image/card/imgCard04.jpg"
+              src="/image/card/imgCard02.jpg"
               alt="false"
               width="100%"
               style={{ borderRadius: 16 }}

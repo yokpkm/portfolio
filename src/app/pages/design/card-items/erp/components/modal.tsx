@@ -18,7 +18,7 @@ interface Props {
 
 export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
   const { useBreakpoint } = Grid;
-  const { xs, sm, md, lg, xl, xxl } = useBreakpoint();
+  const { xs, sm, md, lg } = useBreakpoint();
 
   const [showCloseIcon, setShowCloseIcon] = useState(false);
 
@@ -79,7 +79,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   UI Design, UX Research, Coding, Figma
                 </TextCaption>
               </Col>
-
               <Col span={24}>
                 <Row justify="center">
                   <Image
@@ -90,7 +89,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   />
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>BACKGROUND</TextLabel>
                 <TextModalTitle>Overview</TextModalTitle>
@@ -177,7 +175,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   a prototype for usability testing before development.
                 </TextModalContent>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>UX RESEARCH</TextLabel>
                 <TextModalTitle>Interview</TextModalTitle>
@@ -278,7 +275,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   </TextModalContent>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>PROJECT SCOPE</TextLabel>
                 <TextModalTitle>Problem Statement</TextModalTitle>
@@ -291,7 +287,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </TextModalContent>
               </Col>
               <Col span={24}>
-                <TextModalTitle>Goals</TextModalTitle>
+                <TextModalTitle>Goal</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
                   To develop the order management website that delivers
                   real-time order status visibility, prioritizes urgent orders,
@@ -299,7 +295,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   efficient order management.
                 </TextModalContent>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>UI DESIGN</TextLabel>
                 <TextModalTitle>Visual Design</TextModalTitle>
@@ -542,7 +537,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   </TextCaption>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>WHAT I LEARNED</TextLabel>
                 <TextModalTitle>Design & Coding</TextModalTitle>
@@ -554,7 +548,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   React TypeScript.
                 </TextModalContent>
               </Col>
-
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
                   <Image
@@ -576,7 +569,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   </TextCaption>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextModalTitle>Database</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
@@ -585,11 +577,10 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   connect to back-end logic.
                 </TextModalContent>
               </Col>
-
               <Col span={24}>
                 <Row justify={xs && !sm ? "start" : "center"}>
                   <Image
-                    src="/image/modal/erp/sale-order/03-database.svg"
+                    src="/image/modal/erp/database.svg"
                     alt="false"
                     width="100%"
                     style={{ display: "flex" }}
@@ -607,7 +598,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   </TextCaption>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>CONCLUSION</TextLabel>
                 <TextModalTitle>What's Next</TextModalTitle>
