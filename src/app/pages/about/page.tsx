@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
 import { Grid, Row, Col } from "antd";
@@ -17,11 +18,14 @@ const AboutSection: React.FC = () => {
     <>
       <section id="about">
         <Row align="middle">
-          <TextNumber>01.</TextNumber>
+          {/* <TextNumber>01.</TextNumber> */}
           <TextHeadline>ABOUT</TextHeadline>
         </Row>
         <Row style={{ marginTop: 4 }}>
-          <TextCaption>Yok Premkamon, UX/UI Designer</TextCaption>
+          <TextCaption>
+            Hello, I'm <b style={{ fontWeight: 600 }}>Yok Premkamon</b> – UX/UI
+            Designer
+          </TextCaption>
         </Row>
 
         {xs || !sm ? (
@@ -29,14 +33,14 @@ const AboutSection: React.FC = () => {
             <Row style={{ marginTop: 24 }}>
               <Col span={24}>
                 <TextBody>
-                  UX/UI Designer with 4+ years of experience in visual design
-                  for mobile applications and responsive websites.
+                  UX/UI Designer with 5 years of experience in visual design for
+                  mobile applications and responsive websites.
                 </TextBody>
               </Col>
               <Col span={24} style={{ marginTop: 12 }}>
                 <TextBody>
-                  I turn complexity into clarity through user-centered
-                  solutions: simple, intuitive and empathy-driven.
+                  I turn complexity into clarity through human-centered
+                  solutions with empathy, intuition and simple design.
                 </TextBody>
               </Col>
             </Row>
@@ -127,7 +131,7 @@ const AboutSection: React.FC = () => {
             <Row style={{ marginTop: 32 }}>
               <Col span={24}>
                 <TextBody>
-                  UX/UI Designer with 4+ years of experience in visual design
+                  UX/UI Designer with 5 years of experience in visual design
                 </TextBody>
               </Col>
               <Col span={24}>
@@ -137,12 +141,12 @@ const AboutSection: React.FC = () => {
               </Col>
               <Col span={24}>
                 <TextBody style={{ marginTop: 12 }}>
-                  I turn complexity into clarity through user-centered
-                  solutions:
+                  I turn complexity into clarity through human-centered
+                  solutions
                 </TextBody>
               </Col>
               <Col span={24}>
-                <TextBody>simple, intuitive and empathy-driven.</TextBody>
+                <TextBody>with empathy, intuition and simple design.</TextBody>
               </Col>
             </Row>
 

@@ -24,10 +24,10 @@ const ContactSection: React.FC = () => {
           justify="end"
           align="middle"
           style={
-            (xs || sm || md) && !lg ? { marginTop: 120 } : { marginTop: 160 }
+            (xs || sm || md) && !lg ? { marginTop: 128 } : { marginTop: 192 }
           }
         >
-          <TextNumber>03.</TextNumber>
+          {/* <TextNumber>03.</TextNumber> */}
           <TextHeadline>CONTACT</TextHeadline>
         </Row>
         <Row justify="end" style={{ marginTop: 4 }}>

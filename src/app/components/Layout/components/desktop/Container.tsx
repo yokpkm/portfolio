@@ -15,10 +15,11 @@ export const ContainerDesktop: React.FC<Props> = ({ children }) => {
 };
 
 const WrapperContainer = styled.div`
-  padding: 0 24px;
+  padding: 24px;
+  height: 100%;
 `;
 
 const StyledContainer = styled.div`
-  margin: 160px auto 200px auto;
-  width: 944px;
+  margin: 144px auto 192px auto;
+  width: 864px;
 `;

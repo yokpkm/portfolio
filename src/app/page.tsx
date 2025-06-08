@@ -13,8 +13,8 @@ import { MainLayout } from "./components/layout";
 import { NavbarDesktop } from "./components/layout/components/desktop/navbar";
 import { NavbarMobile } from "./components/layout/components/mobile/navbar";
 import AboutSection from "./pages/about/page";
+import PortfolioSection from "./pages/portfolio/page";
 import ContactSection from "./pages/contact/page";
-import DesignSection from "./pages/design/page";
 
 const AppPage = () => {
   const { useBreakpoint } = Grid;
@@ -51,15 +51,17 @@ const AppPage = () => {
               {(xs || sm || md) && !lg ? (
                 <NavbarMobile themeToggle={() => themeToggle()} theme={theme} />
               ) : (
-                <NavbarDesktop
-                  themeToggle={() => themeToggle()}
-                  theme={theme}
-                />
+                <>
+                  <NavbarDesktop
+                    themeToggle={() => themeToggle()}
+                    theme={theme}
+                  />
+                </>
               )}
 
               <MainLayout>
                 <AboutSection />
-                <DesignSection />
+                <PortfolioSection />
                 <ContactSection />
               </MainLayout>
             </>

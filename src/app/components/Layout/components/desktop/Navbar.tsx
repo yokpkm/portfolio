@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
 import { animateScroll } from "react-scroll";
-import { Image } from "@heroui/react";
 import { Row, Col, Button } from "antd";
 import { StyledSwitch } from "../../../switch";
 import { TextMenu } from "../../../text";
 import { MoonFilled } from "@ant-design/icons";
+import { Image } from "@heroui/react";
 
 interface Props {
   theme: ThemeType;
@@ -20,6 +20,33 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
       <StyledNavbar>
         <Row justify="space-between" align="middle">
           <Col>
+            {/* <Button
+              icon={
+                theme === ThemeType.LIGHT ? (
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/logo/logo-lightTheme.svg"
+                    alt="false"
+                  />
+                ) : (
+                  <Image
+                    width={44}
+                    height={44}
+                    src="/logo/logo-darkTheme.svg"
+                    alt="false"
+                  />
+                )
+              }
+              type="link"
+              style={{ height: 44 }}
+              onClick={() => animateScroll.scrollToTop()}
+            /> */}
+          </Col>
+
+          <Col>
+            <Row gutter={[56, 0]} align="middle">
+              {/* <Col>
             <Button
               icon={
                 theme === ThemeType.LIGHT ? (
@@ -42,15 +69,13 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
               style={{ height: 44 }}
               onClick={() => animateScroll.scrollToTop()}
             />
-          </Col>
-          <Col>
-            <Row gutter={[64, 0]} align="middle">
+          </Col> */}
               <Col>
                 <TextMenu
                   to="about"
                   smooth={true}
                   duration={1500}
-                  offset={-160}
+                  offset={-192}
                 >
                   ABOUT
                 </TextMenu>
@@ -58,12 +83,12 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
 
               <Col>
                 <TextMenu
-                  to="design"
+                  to="portfolio"
                   smooth={true}
                   duration={1500}
-                  offset={-120}
+                  offset={-144}
                 >
-                  DESIGN
+                  PORTFOLIO
                 </TextMenu>
               </Col>
               <Col>
@@ -106,5 +131,5 @@ const WrapperNavbar = styled.div<PropsTheme>`
 
 const StyledNavbar = styled.div`
   margin: 0 auto;
-  width: 944px;
+  width: 864px;
 `;

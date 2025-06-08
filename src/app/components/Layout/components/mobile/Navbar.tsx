@@ -29,8 +29,8 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
   return (
     <>
       <WrapperNavbar>
-        <Row justify="center" align="middle">
-          <Col flex="auto">
+        <Row justify="end" align="middle">
+          {/* <Col flex="auto">
             <Button
               icon={
                 theme === ThemeType.LIGHT ? (
@@ -53,8 +53,8 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
               style={{ height: 40 }}
               onClick={() => animateScroll.scrollToTop()}
             />
-          </Col>
-          <Col style={{ paddingRight: 8, paddingLeft: 32 }}>
+          </Col>  */}
+          <Col style={{ paddingRight: 8, paddingLeft: 40 }}>
             <StyledSwitch
               onClick={() => themeToggle()}
               checkedChildren={<MoonFilled />}
@@ -89,31 +89,31 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
         open={openMenu}
         closable={false}
         onClose={() => setOpenMenu(false)}
-        style={{ height: "auto" }}
+        height="auto"
       >
-        <Row justify="center" style={{ marginBottom: 32 }}>
+        <Row justify="center">
           <TextMenu
             to="about"
             smooth={true}
             duration={1500}
-            offset={-120}
+            offset={-128}
             onClick={() => setOpenMenu(false)}
           >
             ABOUT
           </TextMenu>
         </Row>
-        <Row justify="center" style={{ marginBottom: 32 }}>
+        <Row justify="center" style={{ marginTop: 40 }}>
           <TextMenu
-            to="design"
+            to="portfolio"
             smooth={true}
             duration={1500}
             offset={-96}
             onClick={() => setOpenMenu(false)}
           >
-            DESIGN
+            PORTFOLIO
           </TextMenu>
         </Row>
-        <Row justify="center">
+        <Row justify="center" style={{ marginTop: 40 }}>
           <TextMenu
             to="contact"
             smooth={true}
@@ -185,6 +185,6 @@ const WrapperNavbar = styled.div<PropsTheme>`
   padding: 0px 24px;
   height: 56px;
   align-content: center;
-  background: ${(props: PropsTheme) => props.theme.layout.filter};
+  // background: ${(props: PropsTheme) => props.theme.layout.filter};
   backdrop-filter: blur(12px);
 `;

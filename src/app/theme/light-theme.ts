@@ -51,7 +51,7 @@ const lightTheme = {
   layout: {
     background: "#FCFCFD",
     divider: "#DEE0E3",
-    filter: "rgba(252, 252, 253, 0.7)",
+    filter: "rgba(252, 252, 253, 0.5)",
   },
   primaryBtn: {
     default: "#131416", // bg
