@@ -3,22 +3,16 @@ import { Link } from "react-scroll";
 import { animateScroll } from "react-scroll";
 import { Grid, Row, Col } from "antd";
 import { ButtonPrimary, ButtonSecondary } from "@/app/components/button";
-import {
-  TextHeadline,
-  TextBody,
-  TextCaption,
-  TextNumber,
-} from "@/app/components/text";
+import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
 
 const AboutSection: React.FC = () => {
   const { useBreakpoint } = Grid;
-  const { xs, sm, md, lg } = useBreakpoint();
+  const { xs, sm } = useBreakpoint();
 
   return (
     <>
       <section id="about">
         <Row align="middle">
-          {/* <TextNumber>01.</TextNumber> */}
           <TextHeadline>ABOUT</TextHeadline>
         </Row>
         <Row style={{ marginTop: 4 }}>
@@ -33,8 +27,8 @@ const AboutSection: React.FC = () => {
             <Row style={{ marginTop: 24 }}>
               <Col span={24}>
                 <TextBody>
-                  UX/UI Designer with 5 years of experience in visual design for
-                  mobile applications and responsive websites.
+                  UX/UI Designer with 4+ years of experience in visual design
+                  for mobile applications and responsive websites.
                 </TextBody>
               </Col>
               <Col span={24} style={{ marginTop: 12 }}>
@@ -131,7 +125,7 @@ const AboutSection: React.FC = () => {
             <Row style={{ marginTop: 32 }}>
               <Col span={24}>
                 <TextBody>
-                  UX/UI Designer with 5 years of experience in visual design
+                  UX/UI Designer with 4+ years of experience in visual design
                 </TextBody>
               </Col>
               <Col span={24}>

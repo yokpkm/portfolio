@@ -6,12 +6,7 @@ import {
   InstagramFilled,
 } from "@ant-design/icons";
 import { ButtonIcon } from "@/app/components/button";
-import {
-  TextHeadline,
-  TextBody,
-  TextCaption,
-  TextNumber,
-} from "@/app/components/text";
+import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
 
 const ContactSection: React.FC = () => {
   const { useBreakpoint } = Grid;
@@ -27,7 +22,6 @@ const ContactSection: React.FC = () => {
             (xs || sm || md) && !lg ? { marginTop: 128 } : { marginTop: 192 }
           }
         >
-          {/* <TextNumber>03.</TextNumber> */}
           <TextHeadline>CONTACT</TextHeadline>
         </Row>
         <Row justify="end" style={{ marginTop: 4 }}>

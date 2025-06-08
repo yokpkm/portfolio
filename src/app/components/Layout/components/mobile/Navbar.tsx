@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
-import { animateScroll } from "react-scroll";
 import { Image } from "@heroui/react";
 import { Row, Col, Button } from "antd";
 import { ButtonIcon } from "../../../button";
@@ -30,30 +29,6 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
     <>
       <WrapperNavbar>
         <Row justify="end" align="middle">
-          {/* <Col flex="auto">
-            <Button
-              icon={
-                theme === ThemeType.LIGHT ? (
-                  <Image
-                    width={40}
-                    height={40}
-                    src="/logo/logo-lightTheme.svg"
-                    alt="false"
-                  />
-                ) : (
-                  <Image
-                    width={40}
-                    height={40}
-                    src="/logo/logo-darkTheme.svg"
-                    alt="false"
-                  />
-                )
-              }
-              type="link"
-              style={{ height: 40 }}
-              onClick={() => animateScroll.scrollToTop()}
-            />
-          </Col>  */}
           <Col style={{ paddingRight: 8, paddingLeft: 40 }}>
             <StyledSwitch
               onClick={() => themeToggle()}

@@ -3,11 +3,10 @@ import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
 import { animateScroll } from "react-scroll";
-import { Row, Col, Button } from "antd";
+import { Row, Col } from "antd";
 import { StyledSwitch } from "../../../switch";
 import { TextMenu } from "../../../text";
 import { MoonFilled } from "@ant-design/icons";
-import { Image } from "@heroui/react";
 
 interface Props {
   theme: ThemeType;
@@ -18,58 +17,9 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
   return (
     <WrapperNavbar>
       <StyledNavbar>
-        <Row justify="space-between" align="middle">
-          <Col>
-            {/* <Button
-              icon={
-                theme === ThemeType.LIGHT ? (
-                  <Image
-                    width={44}
-                    height={44}
-                    src="/logo/logo-lightTheme.svg"
-                    alt="false"
-                  />
-                ) : (
-                  <Image
-                    width={44}
-                    height={44}
-                    src="/logo/logo-darkTheme.svg"
-                    alt="false"
-                  />
-                )
-              }
-              type="link"
-              style={{ height: 44 }}
-              onClick={() => animateScroll.scrollToTop()}
-            /> */}
-          </Col>
-
+        <Row justify="end" align="middle">
           <Col>
             <Row gutter={[56, 0]} align="middle">
-              {/* <Col>
-            <Button
-              icon={
-                theme === ThemeType.LIGHT ? (
-                  <Image
-                    width={44}
-                    height={44}
-                    src="/logo/logo-lightTheme.svg"
-                    alt="false"
-                  />
-                ) : (
-                  <Image
-                    width={44}
-                    height={44}
-                    src="/logo/logo-darkTheme.svg"
-                    alt="false"
-                  />
-                )
-              }
-              type="link"
-              style={{ height: 44 }}
-              onClick={() => animateScroll.scrollToTop()}
-            />
-          </Col> */}
               <Col>
                 <TextMenu
                   to="about"
@@ -80,7 +30,6 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
                   ABOUT
                 </TextMenu>
               </Col>
-
               <Col>
                 <TextMenu
                   to="portfolio"

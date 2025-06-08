@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Grid, Row } from "antd";
-import { TextHeadline, TextCaption, TextNumber } from "../../components/text";
+import { TextHeadline, TextCaption } from "../../components/text";
 import { CardPerfume } from "./card-items/perfume";
 import { CardThesis } from "./card-items/thesis";
 import { CardERP } from "./card-items/erp";
@@ -25,7 +25,6 @@ const PortfolioSection: React.FC = () => {
             (xs || sm || md) && !lg ? { marginTop: 128 } : { marginTop: 200 }
           }
         >
-          {/* <TextNumber>02.</TextNumber> */}
           <TextHeadline>PORTFOLIO</TextHeadline>
         </Row>
         <Row justify="center" style={{ marginTop: 4 }}>

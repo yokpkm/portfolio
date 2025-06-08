@@ -112,3 +112,19 @@ export const TextModalContent = styled(Typography)<PropsTheme>`
   color: ${(props) => props.theme.textColor.secondary};
   margin-bottom: 0;
 `;
+
+export const TextModalLink = styled(Typography)<PropsTheme>`
+  font-size: ${(props) => props.theme.textSize.caption};
+  font-weight: 300;
+  letter-spacing: 0.035em;
+  color: ${(props) => props.theme.textColor.secondary};
+  margin-bottom: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: ${(props) => props.theme.textColor.tertiary};
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+`;

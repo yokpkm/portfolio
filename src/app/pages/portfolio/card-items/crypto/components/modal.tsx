@@ -9,6 +9,7 @@ import {
   TextModalTitle,
   TextModalSubtitle,
   TextModalContent,
+  TextModalLink,
 } from "../../../../../components/text";
 import { ExportOutlined } from "@ant-design/icons";
 
@@ -80,7 +81,6 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   UI Design, Design System, UX Research, UX Writing, Figma
                 </TextCaption>
               </Col>
-
               <Col span={24}>
                 <Row justify="center">
                   <Image
@@ -103,7 +103,6 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   data are kept confidential.
                 </TextModalContent>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>UX RESEARCH</TextLabel>
                 <TextModalTitle>Understanding the Users</TextModalTitle>
@@ -114,7 +113,6 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   difficulty understanding their trading outcomes.
                 </TextModalContent>
               </Col>
-
               <Col span={24}>
                 <TextModalTitle>User Personas</TextModalTitle>
                 <TextModalContent style={{ marginTop: 8 }}>
@@ -222,7 +220,6 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   </Col>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>UI DESIGN</TextLabel>
                 <TextModalTitle>High-Fidelity Mockups</TextModalTitle>
@@ -243,18 +240,23 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                     width="100%"
                     style={{ display: "flex" }}
                   />
-                  <TextCaption style={{ marginTop: 20 }}>
-                    🔒{" "}
-                    <b
-                      style={{
-                        fontWeight: 500,
-                      }}
-                    >
-                      Wallet Lock
-                    </b>{" "}
-                    – Secure your assets with a simple lock
-                    <ExportOutlined style={{ marginLeft: 6 }} />
-                  </TextCaption>
+                  <a
+                    href="https://www.orbixtrade.com/en/blog/article/what-is-wallet-lock-orbix"
+                    target="_blank"
+                  >
+                    <TextModalLink style={{ marginTop: 20 }}>
+                      🔒{" "}
+                      <b
+                        style={{
+                          fontWeight: 500,
+                        }}
+                      >
+                        Wallet Lock
+                      </b>{" "}
+                      – Secure your assets with a simple lock
+                      <ExportOutlined style={{ marginLeft: 6 }} />
+                    </TextModalLink>
+                  </a>
                 </Row>
               </Col>
 
@@ -267,18 +269,23 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                     width="100%"
                     style={{ display: "flex" }}
                   />
-                  <TextCaption style={{ marginTop: 20 }}>
-                    🔔{" "}
-                    <b
-                      style={{
-                        fontWeight: 500,
-                      }}
-                    >
-                      Price Alert
-                    </b>{" "}
-                    – Get notified of price changes in real-time
-                    <ExportOutlined style={{ marginLeft: 6 }} />
-                  </TextCaption>
+                  <a
+                    href="https://www.orbixtrade.com/en/blog/article/get-to-know-orbix-price-alert"
+                    target="_blank"
+                  >
+                    <TextModalLink style={{ marginTop: 20 }}>
+                      🔔{" "}
+                      <b
+                        style={{
+                          fontWeight: 500,
+                        }}
+                      >
+                        Price Alert
+                      </b>{" "}
+                      – Get notified of price changes in real-time
+                      <ExportOutlined style={{ marginLeft: 6 }} />
+                    </TextModalLink>
+                  </a>
                 </Row>
               </Col>
 
@@ -291,21 +298,25 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                     width="100%"
                     style={{ display: "flex" }}
                   />
-                  <TextCaption style={{ marginTop: 20 }}>
-                    💰{" "}
-                    <b
-                      style={{
-                        fontWeight: 500,
-                      }}
-                    >
-                      Profit & Loss
-                    </b>{" "}
-                    – Track your trading performance with clarity
-                    <ExportOutlined style={{ marginLeft: 6 }} />
-                  </TextCaption>
+                  <a
+                    href="https://www.orbixtrade.com/en/blog/article/what-is-orbix-balance"
+                    target="_blank"
+                  >
+                    <TextModalLink style={{ marginTop: 20 }}>
+                      💰{" "}
+                      <b
+                        style={{
+                          fontWeight: 500,
+                        }}
+                      >
+                        Profit & Loss
+                      </b>{" "}
+                      – Track your trading performance with clarity
+                      <ExportOutlined style={{ marginLeft: 6 }} />
+                    </TextModalLink>
+                  </a>
                 </Row>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>WHAT I LEARNED</TextLabel>
                 <TextModalTitle>UI Consistency</TextModalTitle>
@@ -325,7 +336,6 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   complex tasks for users.
                 </TextModalContent>
               </Col>
-
               <Col span={24}>
                 <TextModalTitle>Cross-Functional Collaboration</TextModalTitle>
                 <TextModalContent style={{ marginTop: 4 }}>
@@ -343,7 +353,6 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   .
                 </TextModalContent>
               </Col>
-
               <Col span={24}>
                 <TextLabel style={{ marginTop: 24 }}>CONCLUSION</TextLabel>
                 <TextModalTitle>What's Next</TextModalTitle>
