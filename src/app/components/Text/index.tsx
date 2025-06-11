@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { Typography } from "antd";
-import { Link } from "react-scroll";
 
 //  default of headline
 export const TextHeadline = styled(Typography)<PropsTheme>`
@@ -41,11 +40,12 @@ export const TextLabel = styled(Typography)<PropsTheme>`
 `;
 
 // adjust style for menu
-export const TextMenu = styled(Link)<PropsTheme>`
+export const TextMenu = styled(Typography)<PropsTheme>`
   font-size: ${(props) => props.theme.textSize.label};
   font-weight: 600;
   letter-spacing: 0.01em;
   color: ${(props) => props.theme.textColor.primary};
+  margin-bottom: 0;
 
   &:hover,
   &:focus,
@@ -54,16 +54,6 @@ export const TextMenu = styled(Link)<PropsTheme>`
     cursor: pointer;
     transition: color 0.2s;
   }
-`;
-
-//  adjust style for headline number
-export const TextNumber = styled(Typography)<PropsTheme>`
-  font-size: ${(props) => props.theme.textSize.title};
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: ${(props) => props.theme.textColor.tertiary};
-  margin-right: 12px;
-  margin-bottom: 0;
 `;
 
 // adjust style for card

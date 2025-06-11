@@ -26,15 +26,10 @@ const darkTheme = {
   },
   switch: {
     default: "#4B5058", 
-  },
-  // waiting for remove card
-  card: {
-    border: "rgba(247, 182, 214, 0.15)",
-  },
-  // waiting for remove tag
+  }, 
   tag: {
-    background: "rgba(19, 20, 22, 0.8)",
-    foreground: "#F7B6D2",
+    background: "rgba(245, 163, 218, 0.08)",
+    foreground: "#F5A3DA",
   },
   textColor: {
     primary: "rgba(252, 252, 253, 0.95)",

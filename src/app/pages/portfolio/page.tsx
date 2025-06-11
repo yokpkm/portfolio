@@ -22,7 +22,7 @@ const PortfolioSection: React.FC = () => {
           justify="center"
           align="middle"
           style={
-            (xs || sm || md) && !lg ? { marginTop: 128 } : { marginTop: 200 }
+            (xs || sm || md) && !lg ? { marginTop: 128 } : { marginTop: 192 }
           }
         >
           <TextHeadline>PORTFOLIO</TextHeadline>

@@ -20,6 +20,6 @@ const WrapperContainer = styled.div`
 `;
 
 const StyledContainer = styled.div`
-  margin: 144px auto 192px auto;
+  margin: 128px auto 192px auto;
   width: 864px;
 `;

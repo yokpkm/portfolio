@@ -27,14 +27,9 @@ const lightTheme = {
   switch: {
     default: "#CFD1D3", 
   },
-  // waiting for remove card
-  card: {
-    border: "rgba(237, 89, 163, 0.1)",
-  },
-  // waiting for remove tag
   tag: {
-    background: "rgba(252, 252, 253, 0.75)",
-    foreground: "#ED5999",
+    background: "rgba(246, 111, 201, 0.08)",
+    foreground: "#F66FC9",
   },
   textColor: {
     primary: "rgba(19, 20, 22, 0.87)",

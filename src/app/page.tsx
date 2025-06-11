@@ -1,6 +1,7 @@
 "use client";
 
 import { useContext, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { ThemeContext, ThemeProvider } from "styled-components";
 import { ConfigProvider, Grid } from "antd";
 import { GlobalStyle } from "./global-style";
@@ -51,21 +52,71 @@ const AppPage = () => {
           ) : (
             <>
               {(xs || sm || md) && !lg ? (
-                <NavbarMobile themeToggle={() => themeToggle()} theme={theme} />
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, ease: "easeIn" }}
+                >
+                  <NavbarMobile
+                    themeToggle={() => themeToggle()}
+                    theme={theme}
+                  />
+                </motion.div>
               ) : (
-                <>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, ease: "easeIn" }}
+                >
                   <NavbarDesktop
                     themeToggle={() => themeToggle()}
                     theme={theme}
                   />
-                </>
+                </motion.div>
               )}
               <MainLayout>
-                <AboutSection />
-                <PortfolioSection />
-                <ContactSection />
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, y: 16 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: "backIn" }}
+                >
+                  <AboutSection />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, y: 16 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: "backIn" }}
+                >
+                  <PortfolioSection />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, y: 16 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: "backIn" }}
+                >
+                  <ContactSection />
+                </motion.div>
               </MainLayout>
-              {(xs || sm || md) && !lg ? <FooterMobile /> : <FooterDesktop />}
+              {(xs || sm || md) && !lg ? (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, ease: "easeIn" }}
+                >
+                  <FooterMobile />
+                </motion.div>
+              ) : (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5, ease: "easeIn" }}
+                >
+                  <FooterDesktop />
+                </motion.div>
+              )}
             </>
           )}
         </ConfigProvider>

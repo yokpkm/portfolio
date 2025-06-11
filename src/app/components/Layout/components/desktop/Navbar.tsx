@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
 import { animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { Row, Col } from "antd";
 import { StyledSwitch } from "../../../switch";
 import { TextMenu } from "../../../text";
@@ -17,47 +18,33 @@ export const NavbarDesktop: React.FC<Props> = ({ theme, themeToggle }) => {
   return (
     <WrapperNavbar>
       <StyledNavbar>
-        <Row justify="end" align="middle">
+        <Row justify="end" align="middle" gutter={[48, 0]}>
           <Col>
-            <Row gutter={[56, 0]} align="middle">
-              <Col>
-                <TextMenu
-                  to="about"
-                  smooth={true}
-                  duration={1500}
-                  offset={-192}
-                >
-                  ABOUT
-                </TextMenu>
-              </Col>
-              <Col>
-                <TextMenu
-                  to="portfolio"
-                  smooth={true}
-                  duration={1500}
-                  offset={-144}
-                >
-                  PORTFOLIO
-                </TextMenu>
-              </Col>
-              <Col>
-                <TextMenu
-                  to="contact"
-                  smooth={true}
-                  duration={1500}
-                  onClick={() => animateScroll.scrollToBottom()}
-                >
-                  CONTACT
-                </TextMenu>
-              </Col>
-              <Col>
-                <StyledSwitch
-                  onClick={() => themeToggle()}
-                  checkedChildren={<MoonFilled />}
-                  unCheckedChildren={<MoonFilled />}
-                />
-              </Col>
-            </Row>
+            <Link to="about" smooth={true} duration={1500} offset={-208}>
+              <TextMenu>ABOUT</TextMenu>
+            </Link>
+          </Col>
+          <Col>
+            <Link to="portfolio" smooth={true} duration={1500} offset={-144}>
+              <TextMenu>PORTFOLIO</TextMenu>
+            </Link>
+          </Col>
+          <Col>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={1500}
+              onClick={() => animateScroll.scrollToBottom()}
+            >
+              <TextMenu>CONTACT</TextMenu>
+            </Link>
+          </Col>
+          <Col>
+            <StyledSwitch
+              onClick={() => themeToggle()}
+              checkedChildren={<MoonFilled />}
+              unCheckedChildren={<MoonFilled />}
+            />
           </Col>
         </Row>
       </StyledNavbar>

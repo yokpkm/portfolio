@@ -32,25 +32,13 @@ const AboutSection: React.FC = () => {
               <Col span={24} style={{ marginTop: 12 }}>
                 <TextBody>
                   I turn complexity into clarity through human-centered
-                  solutions with empathy, intuition and simple design.
+                  solutions with empathy, intuition, and simple design.
                 </TextBody>
               </Col>
             </Row>
 
+            {/* skills */}
             <Row gutter={[16, 8]} style={{ marginTop: 32 }}>
-              <Col xs={12}>
-                <TextCaption>
-                  <b
-                    style={{
-                      fontWeight: 900,
-                      marginRight: 8,
-                    }}
-                  >
-                    •
-                  </b>
-                  Figma
-                </TextCaption>
-              </Col>
               <Col xs={12}>
                 <TextCaption>
                   <b
@@ -87,19 +75,6 @@ const AboutSection: React.FC = () => {
                   >
                     •
                   </b>
-                  UX Writing
-                </TextCaption>
-              </Col>
-              <Col xs={12}>
-                <TextCaption>
-                  <b
-                    style={{
-                      fontWeight: 900,
-                      marginRight: 8,
-                    }}
-                  >
-                    •
-                  </b>
                   UX Research
                 </TextCaption>
               </Col>
@@ -113,7 +88,33 @@ const AboutSection: React.FC = () => {
                   >
                     •
                   </b>
-                  React TypeScript
+                  UX Writing
+                </TextCaption>
+              </Col>
+              <Col xs={12}>
+                <TextCaption>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  Design Thinking
+                </TextCaption>
+              </Col>
+              <Col xs={12}>
+                <TextCaption>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  TypeScript
                 </TextCaption>
               </Col>
             </Row>
@@ -138,24 +139,12 @@ const AboutSection: React.FC = () => {
                 </TextBody>
               </Col>
               <Col span={24}>
-                <TextBody>with empathy, intuition and simple design.</TextBody>
+                <TextBody>with empathy, intuition, and simple design.</TextBody>
               </Col>
             </Row>
 
+            {/* skills */}
             <Row gutter={[16, 16]} style={{ marginTop: 40 }}>
-              <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
-                <TextCaption>
-                  <b
-                    style={{
-                      fontWeight: 900,
-                      marginRight: 8,
-                    }}
-                  >
-                    •
-                  </b>
-                  Figma
-                </TextCaption>
-              </Col>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
                   <b
@@ -182,8 +171,6 @@ const AboutSection: React.FC = () => {
                   Design System
                 </TextCaption>
               </Col>
-            </Row>
-            <Row gutter={[16, 16]} style={{ marginTop: 8 }}>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
                   <b
@@ -197,6 +184,8 @@ const AboutSection: React.FC = () => {
                   UX Research
                 </TextCaption>
               </Col>
+            </Row>
+            <Row gutter={[16, 16]} style={{ marginTop: 8 }}>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
                 <TextCaption>
                   <b
@@ -220,7 +209,20 @@ const AboutSection: React.FC = () => {
                   >
                     •
                   </b>
-                  React TypeScript
+                  Design Thinking
+                </TextCaption>
+              </Col>
+              <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
+                <TextCaption>
+                  <b
+                    style={{
+                      fontWeight: 900,
+                      marginRight: 8,
+                    }}
+                  >
+                    •
+                  </b>
+                  TypeScript
                 </TextCaption>
               </Col>
             </Row>
@@ -231,7 +233,11 @@ const AboutSection: React.FC = () => {
           style={xs || !sm ? { marginTop: 40 } : { marginTop: 48 }}
         >
           <Col>
-            <a href="/Resume-Premkamon-UXUI.pdf" target="_blank">
+            <a
+              href="/Resume-Premkamon-UXUI.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
               <ButtonPrimary>View my resume</ButtonPrimary>
             </a>
           </Col>

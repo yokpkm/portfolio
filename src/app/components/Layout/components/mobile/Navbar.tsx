@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
 import { Image } from "@heroui/react";
+import { Link } from "react-scroll";
 import { Row, Col, Button } from "antd";
 import { ButtonIcon } from "../../../button";
 import { DividerMenu } from "../../../divider";
@@ -67,40 +68,50 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
         height="auto"
       >
         <Row justify="center">
-          <TextMenu
+          <Link
             to="about"
             smooth={true}
             duration={1500}
-            offset={-128}
+            offset={-144}
             onClick={() => setOpenMenu(false)}
           >
-            ABOUT
-          </TextMenu>
+            <TextMenu>ABOUT</TextMenu>
+          </Link>
         </Row>
         <Row justify="center" style={{ marginTop: 40 }}>
-          <TextMenu
+          <Link
             to="portfolio"
             smooth={true}
             duration={1500}
-            offset={-96}
+            offset={-112}
             onClick={() => setOpenMenu(false)}
           >
-            PORTFOLIO
-          </TextMenu>
+            <TextMenu>PORTFOLIO</TextMenu>
+          </Link>
         </Row>
         <Row justify="center" style={{ marginTop: 40 }}>
-          <TextMenu
+          <Link
             to="contact"
             smooth={true}
             duration={1500}
             offset={0}
             onClick={() => setOpenMenu(false)}
           >
-            CONTACT
-          </TextMenu>
+            <TextMenu>CONTACT</TextMenu>
+          </Link>
+        </Row>
+        <Row justify="center" style={{ marginTop: 40 }}>
+          <a href="/Resume-Premkamon-UXUI.pdf" target="_blank" rel="noreferrer">
+            <TextMenu>RESUME</TextMenu>
+          </a>
         </Row>
         <DividerMenu />
-        <Row justify="center" gutter={[16, 16]} align="middle">
+        <Row
+          justify="center"
+          align="middle"
+          gutter={[16, 16]}
+          style={{ marginTop: 8 }}
+        >
           <Col>
             <a
               target={"_blank"}

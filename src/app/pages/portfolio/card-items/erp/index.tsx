@@ -31,7 +31,7 @@ export const CardERP: React.FC<Props> = ({ open, setOpen }) => {
               <TextCardTitle>Order Management Website</TextCardTitle>
             </Col>
             <Col span={24}>
-              <TextCardContent>E-commerce - ERP</TextCardContent>
+              <TextCardContent>E-commerce – ERP</TextCardContent>
             </Col>
           </Row>
         </StyledCard>
