@@ -15,6 +15,8 @@ import { NavbarMobile } from "./components/layout/components/mobile/navbar";
 import AboutSection from "./pages/about/page";
 import PortfolioSection from "./pages/portfolio/page";
 import ContactSection from "./pages/contact/page";
+import { FooterDesktop } from "./components/layout/components/desktop/footer";
+import { FooterMobile } from "./components/layout/components/mobile/footer";
 
 const AppPage = () => {
   const { useBreakpoint } = Grid;
@@ -58,12 +60,12 @@ const AppPage = () => {
                   />
                 </>
               )}
-
               <MainLayout>
                 <AboutSection />
                 <PortfolioSection />
                 <ContactSection />
               </MainLayout>
+              {(xs || sm || md) && !lg ? <FooterMobile /> : <FooterDesktop />}
             </>
           )}
         </ConfigProvider>

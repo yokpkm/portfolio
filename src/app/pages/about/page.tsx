@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
-import { animateScroll } from "react-scroll";
 import { Grid, Row, Col } from "antd";
 import { ButtonPrimary, ButtonSecondary } from "@/app/components/button";
 import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
@@ -238,14 +236,13 @@ const AboutSection: React.FC = () => {
             </a>
           </Col>
           <Col>
-            <Link
-              to="contact"
-              smooth={true}
-              duration={1000}
-              onClick={() => animateScroll.scrollToBottom()}
+            <a
+              target={"_blank"}
+              href={"mailto:premkamon.work@gmail.com"}
+              rel="noreferrer"
             >
               <ButtonSecondary>Get in touch</ButtonSecondary>
-            </Link>
+            </a>
           </Col>
         </Row>
       </section>

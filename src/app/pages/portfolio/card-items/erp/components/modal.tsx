@@ -70,7 +70,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
               <Col xs={24} sm={11} md={11} lg={9} xl={9} xxl={9}>
                 <TextModalSubtitle>Project Info</TextModalSubtitle>
                 <TextCaption style={{ marginTop: 4 }}>
-                  E-commerce | ERP - 2022
+                  E-commerce - ERP | 2022
                 </TextCaption>
               </Col>
               <Col xs={24} sm={12} md={12} lg={11} xl={11} xxl={11}>

@@ -31,7 +31,7 @@ export const CardCrypto: React.FC<Props> = ({ open, setOpen }) => {
               <TextCardTitle>Cryptocurrecy Application</TextCardTitle>
             </Col>
             <Col span={24}>
-              <TextCardContent>Finance | Cryptocurrency - 2025</TextCardContent>
+              <TextCardContent>Finance – Cryptocurrency</TextCardContent>
             </Col>
           </Row>
         </StyledCard>

@@ -72,7 +72,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
               <Col xs={24} sm={11} md={11} lg={9} xl={9} xxl={9}>
                 <TextModalSubtitle>Project Info</TextModalSubtitle>
                 <TextCaption style={{ marginTop: 4 }}>
-                  Finance | Cryptocurrency - 2025
+                  Finance - Cryptocurrency | 2025
                 </TextCaption>
               </Col>
               <Col xs={24} sm={12} md={12} lg={11} xl={11} xxl={11}>

@@ -31,7 +31,7 @@ export const CardThesis: React.FC<Props> = ({ open, setOpen }) => {
               <TextCardTitle>Tracking Progress Web Application</TextCardTitle>
             </Col>
             <Col span={24}>
-              <TextCardContent>Education | Thesis - 2019</TextCardContent>
+              <TextCardContent>Education – Thesis</TextCardContent>
             </Col>
           </Row>
         </StyledCard>

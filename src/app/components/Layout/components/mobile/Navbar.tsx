@@ -160,6 +160,6 @@ const WrapperNavbar = styled.div<PropsTheme>`
   padding: 0px 24px;
   height: 56px;
   align-content: center;
-  // background: ${(props: PropsTheme) => props.theme.layout.filter};
+  background: ${(props: PropsTheme) => props.theme.layout.filter};
   backdrop-filter: blur(12px);
 `;

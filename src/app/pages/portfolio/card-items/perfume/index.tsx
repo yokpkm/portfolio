@@ -31,7 +31,7 @@ export const CardPerfume: React.FC<Props> = ({ open, setOpen }) => {
               <TextCardTitle>Perfume Application</TextCardTitle>
             </Col>
             <Col span={24}>
-              <TextCardContent>Lifestyle | Individual - 2018</TextCardContent>
+              <TextCardContent>Lifestyle – Individual</TextCardContent>
             </Col>
           </Row>
         </StyledCard>
