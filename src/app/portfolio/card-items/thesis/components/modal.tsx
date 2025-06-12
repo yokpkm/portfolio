@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
-import { StyledModal } from "../../../../../components/modal";
+import { StyledModal } from "@/app/components/modal";
 import { StyledTag } from "@/app/components/tag";
 import {
   TextHeadline,
@@ -11,7 +11,7 @@ import {
   TextModalTitle,
   TextModalSubtitle,
   TextModalContent,
-} from "../../../../../components/text";
+} from "@/app/components/text";
 
 interface Props {
   open: boolean;
@@ -46,10 +46,10 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
         closeIcon={
           showCloseIcon && (
             <Image
+              src="/icon/ic-close-default.svg"
+              alt=""
               width={20}
               height={20}
-              src="/icon/ic-close-default.svg"
-              alt="Close"
               style={{ display: "flex", cursor: "pointer" }}
             />
           )
@@ -100,7 +100,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify="center">
                     <Image
                       src="/image/card/thesis.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ borderRadius: 16 }}
                     />
@@ -134,7 +134,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                     <Row justify="center">
                       <Image
                         src="/image/modal/thesis/process.svg"
-                        alt="false"
+                        alt=""
                         width="100%"
                         style={{ display: "flex" }}
                       />
@@ -538,7 +538,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify="center">
                     <Image
                       src="/image/modal/thesis/web-structure.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -557,7 +557,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify="center">
                     <Image
                       src="/image/modal/thesis/style-guide.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -576,7 +576,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/thesis/01-project.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -597,7 +597,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/thesis/02-news.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -618,7 +618,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/thesis/03-form.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -639,7 +639,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/thesis/04-folder.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -660,7 +660,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/thesis/05-progress.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -692,7 +692,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                     <Row justify="center">
                       <Image
                         src="/image/modal/thesis/feedback.svg"
-                        alt="false"
+                        alt=""
                         width="100%"
                         style={{ borderRadius: 16 }}
                       />

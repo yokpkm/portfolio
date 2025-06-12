@@ -13,9 +13,9 @@ import { LoaderPage } from "./components/loader";
 import { MainLayout } from "./components/layout";
 import { NavbarDesktop } from "./components/layout/components/desktop/navbar";
 import { NavbarMobile } from "./components/layout/components/mobile/navbar";
-import AboutSection from "./pages/about/page";
-import PortfolioSection from "./pages/portfolio/page";
-import ContactSection from "./pages/contact/page";
+import AboutSection from "./about";
+import PortfolioSection from "./portfolio";
+import ContactSection from "./contact";
 import { FooterDesktop } from "./components/layout/components/desktop/footer";
 import { FooterMobile } from "./components/layout/components/mobile/footer";
 

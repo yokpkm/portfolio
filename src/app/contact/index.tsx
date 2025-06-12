@@ -8,7 +8,7 @@ import {
 import { ButtonIcon } from "@/app/components/button";
 import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
 
-const ContactSection: React.FC = () => {
+const ContactSection = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 

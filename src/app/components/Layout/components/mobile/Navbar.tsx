@@ -42,15 +42,17 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
               icon={
                 theme === ThemeType.LIGHT ? (
                   <Image
+                    src="/icon/ic-menu-lightTheme.svg"
+                    alt=""
                     width={24}
                     height={24}
-                    src="/icon/ic-menu-lightTheme.svg"
                   />
                 ) : (
                   <Image
+                    src="/icon/ic-menu-darkTheme.svg"
+                    alt=""
                     width={24}
                     height={24}
-                    src="/icon/ic-menu-darkTheme.svg"
                   />
                 )
               }

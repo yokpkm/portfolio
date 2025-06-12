@@ -1,12 +1,14 @@
+"use client";
+
 import { useState } from "react";
 import { Grid, Row } from "antd";
-import { TextHeadline, TextCaption } from "../../components/text";
+import { TextCaption, TextHeadline } from "../components/text";
 import { CardPerfume } from "./card-items/perfume";
 import { CardThesis } from "./card-items/thesis";
 import { CardERP } from "./card-items/erp";
 import { CardCrypto } from "./card-items/crypto";
 
-const PortfolioSection: React.FC = () => {
+const PortfolioSection = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 
@@ -28,7 +30,7 @@ const PortfolioSection: React.FC = () => {
           <TextHeadline>PORTFOLIO</TextHeadline>
         </Row>
         <Row justify="center" style={{ marginTop: 4 }}>
-          <TextCaption>Explore some projects I’ve worked on</TextCaption>
+          <TextCaption>Explore some projects I&apos;ve worked on</TextCaption>
         </Row>
 
         <Row

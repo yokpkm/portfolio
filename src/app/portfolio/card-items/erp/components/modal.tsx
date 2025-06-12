@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
-import { StyledModal } from "../../../../../components/modal";
+import { StyledModal } from "@/app/components/modal";
 import { StyledTag } from "@/app/components/tag";
 import {
   TextHeadline,
@@ -11,7 +11,7 @@ import {
   TextModalTitle,
   TextModalSubtitle,
   TextModalContent,
-} from "../../../../../components/text";
+} from "@/app/components/text";
 
 interface Props {
   open: boolean;
@@ -46,10 +46,10 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
         closeIcon={
           showCloseIcon && (
             <Image
+              src="/icon/ic-close-default.svg"
+              alt=""
               width={20}
               height={20}
-              src="/icon/ic-close-default.svg"
-              alt="Close"
               style={{ display: "flex", cursor: "pointer" }}
             />
           )
@@ -108,7 +108,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify="center">
                     <Image
                       src="/image/card/erp.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ borderRadius: 16 }}
                     />
@@ -336,7 +336,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify="center">
                     <Image
                       src="/image/modal/erp/style-guide.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -377,7 +377,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/product/01-list.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -398,7 +398,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/product/02-details.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -420,7 +420,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/product/03-form.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -452,7 +452,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/order/01-list.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -474,7 +474,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/order/02-details.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -496,7 +496,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/order/03-form.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -528,7 +528,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/sale-order/01-list.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -549,7 +549,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/sale-order/02-form.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -597,7 +597,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/mobile-responsive.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -633,7 +633,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/erp/database.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -652,7 +652,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <TextLabel style={{ marginTop: 24 }}>CONCLUSION</TextLabel>
-                  <TextModalTitle>What's Next</TextModalTitle>
+                  <TextModalTitle>What&apos;s Next</TextModalTitle>
                   <TextModalContent style={{ marginTop: 4 }}>
                     Following the demo testing, I gathered user feedback to
                     identify areas for improvement. The following features are

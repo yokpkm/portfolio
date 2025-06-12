@@ -18,7 +18,7 @@ export const CardPerfume: React.FC<Props> = ({ open, setOpen }) => {
           cover={
             <Image
               src="/image/card/perfume.svg"
-              alt="false"
+              alt=""
               width="100%"
               style={{ borderRadius: 16 }}
             />

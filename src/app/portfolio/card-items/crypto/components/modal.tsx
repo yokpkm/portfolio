@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
-import { StyledModal } from "../../../../../components/modal";
+import { StyledModal } from "@/app/components/modal";
 import { StyledTag } from "@/app/components/tag";
 import {
   TextHeadline,
@@ -12,7 +12,7 @@ import {
   TextModalSubtitle,
   TextModalContent,
   TextModalLink,
-} from "../../../../../components/text";
+} from "@/app/components/text";
 import { ExportOutlined } from "@ant-design/icons";
 
 interface Props {
@@ -48,10 +48,10 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
         closeIcon={
           showCloseIcon && (
             <Image
+              src="/icon/ic-close-default.svg"
+              alt=""
               width={20}
               height={20}
-              src="/icon/ic-close-default.svg"
-              alt="Close"
               style={{ display: "flex", cursor: "pointer" }}
             />
           )
@@ -107,7 +107,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify="center">
                     <Image
                       src="/image/card/crypto.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ borderRadius: 16 }}
                     />
@@ -148,7 +148,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify="center">
                     <Image
                       src="/image/modal/crypto/persona.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -259,7 +259,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/crypto/wallet-lock.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -288,7 +288,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/crypto/price-alert.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -317,7 +317,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                   <Row justify={xs && !sm ? "start" : "center"}>
                     <Image
                       src="/image/modal/crypto/p&l.svg"
-                      alt="false"
+                      alt=""
                       width="100%"
                       style={{ display: "flex" }}
                     />
@@ -382,7 +382,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <TextLabel style={{ marginTop: 24 }}>CONCLUSION</TextLabel>
-                  <TextModalTitle>What's Next</TextModalTitle>
+                  <TextModalTitle>What&apos;s Next</TextModalTitle>
                   <TextModalContent style={{ marginTop: 4 }}>
                     Usability testing was conducted internally with stakeholders
                     to validate the concept and clarity. The following are

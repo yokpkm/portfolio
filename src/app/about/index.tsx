@@ -3,7 +3,7 @@ import { Grid, Row, Col } from "antd";
 import { ButtonPrimary, ButtonSecondary } from "@/app/components/button";
 import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
 
-const AboutSection: React.FC = () => {
+const AboutSection = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm } = useBreakpoint();
 
@@ -15,8 +15,8 @@ const AboutSection: React.FC = () => {
         </Row>
         <Row style={{ marginTop: 4 }}>
           <TextCaption>
-            Hello, I'm <b style={{ fontWeight: 600 }}>Yok Premkamon</b> – UX/UI
-            Designer
+            Hello, I&apos;m <b style={{ fontWeight: 600 }}>Yok Premkamon</b> –
+            UX/UI Designer
           </TextCaption>
         </Row>
 
