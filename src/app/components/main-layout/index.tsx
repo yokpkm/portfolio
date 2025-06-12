@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "antd";
-import { ContainerDesktop } from "./components/desktop/container";
-import { ContainerMobile } from "./components/mobile/container";
+import { ContainerDesktop } from "./platforms/desktop/container";
+import { ContainerMobile } from "./platforms/mobile/container";
 
 interface Props {
   children: any;
