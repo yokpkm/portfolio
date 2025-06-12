@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Row, Col } from "antd";
-import { ButtonPrimary, ButtonSecondary } from "@/app/components/button";
-import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
+import { ButtonPrimary, ButtonSecondary } from "../components/button";
+import { TextHeadline, TextBody, TextCaption } from "../components/text";
 
 const AboutSection = () => {
   const { useBreakpoint } = Grid;

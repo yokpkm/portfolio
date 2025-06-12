@@ -5,8 +5,8 @@ import {
   GithubFilled,
   InstagramFilled,
 } from "@ant-design/icons";
-import { ButtonIcon } from "@/app/components/button";
-import { TextHeadline, TextBody, TextCaption } from "@/app/components/text";
+import { ButtonIcon } from "../components/button";
+import { TextHeadline, TextBody, TextCaption } from "../components/text";
 
 const ContactSection = () => {
   const { useBreakpoint } = Grid;

@@ -1,7 +1,7 @@
 import { BounceLoader } from "react-spinners";
 import styled from "styled-components";
 
-export const LoaderPage = () => {
+const Loader = () => {
   return (
     <>
       <ContainerLoader>
@@ -10,6 +10,8 @@ export const LoaderPage = () => {
     </>
   );
 };
+
+export default Loader;
 
 const ContainerLoader = styled.div`
   height: 100vh;

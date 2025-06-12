@@ -9,15 +9,15 @@ import { ThemeType } from "./constants";
 import { LightTheme, DarkTheme, lightTheme, darkTheme } from "./theme";
 import customTheme from "./configs/theme-config";
 import { animateScroll } from "react-scroll";
-import { LoaderPage } from "./components/loader";
 import { MainLayout } from "./components/layout";
 import { NavbarDesktop } from "./components/layout/components/desktop/navbar";
 import { NavbarMobile } from "./components/layout/components/mobile/navbar";
+import { FooterDesktop } from "./components/layout/components/desktop/footer";
+import { FooterMobile } from "./components/layout/components/mobile/footer";
 import AboutSection from "./about";
 import PortfolioSection from "./portfolio";
 import ContactSection from "./contact";
-import { FooterDesktop } from "./components/layout/components/desktop/footer";
-import { FooterMobile } from "./components/layout/components/mobile/footer";
+import Loader from "./components/loader";
 
 const AppPage = () => {
   const { useBreakpoint } = Grid;
@@ -48,7 +48,7 @@ const AppPage = () => {
           <GlobalStyle theme={themeContext} />
 
           {loading ? (
-            <LoaderPage />
+            <Loader />
           ) : (
             <>
               {(xs || sm || md) && !lg ? (
