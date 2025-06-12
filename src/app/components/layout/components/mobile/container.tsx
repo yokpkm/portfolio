@@ -4,7 +4,7 @@ interface Props {
   children: any;
 }
 
-export const ContainerDesktop: React.FC<Props> = ({ children }) => {
+export const ContainerMobile: React.FC<Props> = ({ children }) => {
   return (
     <>
       <WrapperContainer>
@@ -15,11 +15,10 @@ export const ContainerDesktop: React.FC<Props> = ({ children }) => {
 };
 
 const WrapperContainer = styled.div`
-  padding: 24px;
-  height: 100%;
+  padding: 0px 24px;
 `;
 
 const StyledContainer = styled.div`
-  margin: 128px auto 192px auto;
-  width: 864px;
+  margin: 96px 0px 128px 0px;
+  max-width: 991px;
 `;
