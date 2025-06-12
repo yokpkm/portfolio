@@ -14,9 +14,9 @@ import { NavbarDesktop } from "./components/layout/components/desktop/navbar";
 import { NavbarMobile } from "./components/layout/components/mobile/navbar";
 import { FooterDesktop } from "./components/layout/components/desktop/footer";
 import { FooterMobile } from "./components/layout/components/mobile/footer";
-import AboutSection from "./about";
-import PortfolioSection from "./portfolio";
-import ContactSection from "./contact";
+import About from "./about";
+import Portfolio from "./portfolio";
+import Contact from "./contact";
 import Loader from "./components/loader";
 
 const AppPage = () => {
@@ -81,7 +81,7 @@ const AppPage = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, ease: "backIn" }}
                 >
-                  <AboutSection />
+                  <About />
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -89,7 +89,7 @@ const AppPage = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, ease: "backIn" }}
                 >
-                  <PortfolioSection />
+                  <Portfolio />
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -97,7 +97,7 @@ const AppPage = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, ease: "backIn" }}
                 >
-                  <ContactSection />
+                  <Contact />
                 </motion.div>
               </MainLayout>
               {(xs || sm || md) && !lg ? (

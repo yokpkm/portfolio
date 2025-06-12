@@ -8,7 +8,7 @@ import {
 import { ButtonIcon } from "../components/button";
 import { TextHeadline, TextBody, TextCaption } from "../components/text";
 
-const ContactSection = () => {
+const Contact = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 
@@ -94,4 +94,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default Contact;

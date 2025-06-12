@@ -8,7 +8,7 @@ import { CardThesis } from "./card-items/thesis";
 import { CardERP } from "./card-items/erp";
 import { CardCrypto } from "./card-items/crypto";
 
-const PortfolioSection = () => {
+const Portfolio = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm, md, lg } = useBreakpoint();
 
@@ -50,4 +50,4 @@ const PortfolioSection = () => {
   );
 };
 
-export default PortfolioSection;
+export default Portfolio;

@@ -3,7 +3,7 @@ import { Grid, Row, Col } from "antd";
 import { ButtonPrimary, ButtonSecondary } from "../components/button";
 import { TextHeadline, TextBody, TextCaption } from "../components/text";
 
-const AboutSection = () => {
+const About = () => {
   const { useBreakpoint } = Grid;
   const { xs, sm } = useBreakpoint();
 
@@ -256,4 +256,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default About;
