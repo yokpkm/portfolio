@@ -1,12 +1,14 @@
+"use client";
+
 import { Grid, Row, Col } from "antd";
+import { ButtonIcon } from "../components/button";
+import { TextHeadline, TextBody, TextCaption } from "../components/text";
 import {
   MailFilled,
   LinkedinFilled,
   GithubFilled,
   InstagramFilled,
 } from "@ant-design/icons";
-import { ButtonIcon } from "../components/button";
-import { TextHeadline, TextBody, TextCaption } from "../components/text";
 
 const Contact = () => {
   const { useBreakpoint } = Grid;
