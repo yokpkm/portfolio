@@ -1,4 +1,6 @@
-onlyBuiltDependencies:
-  - unrs-resolver
 ignoredBuiltDependencies:
   - '@heroui/shared-utils'
+
+onlyBuiltDependencies:
+  - sharp
+  - unrs-resolver
