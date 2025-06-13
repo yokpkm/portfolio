@@ -5,7 +5,7 @@ import { ThemeType } from "@/app/constants";
 import { Image } from "@heroui/react";
 import { Link } from "react-scroll";
 import { Row, Col, Button } from "antd";
-import { ButtonIcon } from "../../../CTA";
+import { ButtonIcon } from "../../../Button";
 import { DividerMenu } from "../../../Divider";
 import { StyledDrawer } from "../../../Drawer";
 import { StyledSwitch } from "../../../Switch";
