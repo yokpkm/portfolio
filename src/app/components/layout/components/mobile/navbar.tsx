@@ -6,8 +6,8 @@ import { Image } from "@heroui/react";
 import { Link } from "react-scroll";
 import { Row, Col, Button } from "antd";
 import { ButtonIcon } from "../../../Button";
-import { DividerMenu } from "../../../Divider";
-import { StyledDrawer } from "../../../Drawer";
+import { DividerMenu } from "../../../divider";
+import { StyledDrawer } from "../../../drawer";
 import { StyledSwitch } from "../../../Switch";
 import { TextMenu } from "../../../Text";
 import {
