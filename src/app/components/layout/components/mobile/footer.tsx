@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { Row, Col } from "antd";
-import { TextCaption } from "../../../text";
+import { TextCaption } from "../../../typography";
 
 export const FooterMobile: React.FC = () => {
   return (

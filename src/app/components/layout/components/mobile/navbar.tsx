@@ -9,7 +9,7 @@ import { ButtonIcon } from "../../../button";
 import { DividerMenu } from "../../../divider";
 import { StyledDrawer } from "../../../drawer";
 import { StyledSwitch } from "../../../toggle";
-import { TextMenu } from "../../../text";
+import { TextMenu } from "../../../typography";
 import {
   MoonFilled,
   MailFilled,

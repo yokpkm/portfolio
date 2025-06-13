@@ -2,7 +2,7 @@ import { Image } from "@heroui/react";
 import { Row, Col } from "antd";
 import { ModalThesis } from "./components/modal";
 import { StyledCard } from "@/app/components/card";
-import { TextCardTitle, TextCardContent } from "@/app/components/text";
+import { TextCardTitle, TextCardContent } from "@/app/components/typography";
 
 interface Props {
   open: boolean;

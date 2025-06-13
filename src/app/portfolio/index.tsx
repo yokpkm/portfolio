@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Grid, Row } from "antd";
-import { TextCaption, TextHeadline } from "../components/text";
+import { TextCaption, TextHeadline } from "../components/typography";
 import { CardPerfume } from "./card-items/perfume";
 import { CardThesis } from "./card-items/thesis";
 import { CardERP } from "./card-items/erp";
