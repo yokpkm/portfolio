@@ -8,7 +8,7 @@ import { Row, Col, Button } from "antd";
 import { ButtonIcon } from "../../../button";
 import { DividerMenu } from "../../../divider";
 import { StyledDrawer } from "../../../drawer";
-import { StyledSwitch } from "../../../switch";
+import { StyledSwitch } from "../../../toggle";
 import { TextMenu } from "../../../text";
 import {
   MoonFilled,
