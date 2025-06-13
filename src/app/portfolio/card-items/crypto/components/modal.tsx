@@ -12,7 +12,7 @@ import {
   TextModalSubtitle,
   TextModalContent,
   TextModalLink,
-} from "@/app/components/Typography";
+} from "@/app/components/Text";
 import { ExportOutlined } from "@ant-design/icons";
 
 interface Props {

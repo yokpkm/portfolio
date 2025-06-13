@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { Row, Col } from "antd";
-import { TextCaption } from "../../../Typography";
+import { TextCaption } from "../../../Text";
 
 export const FooterDesktop: React.FC = () => {
   return (

@@ -11,7 +11,7 @@ import {
   TextModalTitle,
   TextModalSubtitle,
   TextModalContent,
-} from "@/app/components/Typography";
+} from "@/app/components/Text";
 
 interface Props {
   open: boolean;

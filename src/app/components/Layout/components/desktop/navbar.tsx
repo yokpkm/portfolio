@@ -6,7 +6,7 @@ import { animateScroll } from "react-scroll";
 import { Link } from "react-scroll";
 import { Row, Col } from "antd";
 import { StyledSwitch } from "../../../Switch";
-import { TextMenu } from "../../../Typography";
+import { TextMenu } from "../../../Text";
 import { MoonFilled } from "@ant-design/icons";
 
 interface Props {
