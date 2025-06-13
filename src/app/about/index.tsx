@@ -1,5 +1,5 @@
 import { Grid, Row, Col } from "antd";
-import { ButtonPrimary, ButtonSecondary } from "../components/Button";
+import { ButtonPrimary, ButtonSecondary } from "../components/CTA";
 import { TextHeadline, TextBody, TextCaption } from "../components/Text";
 
 const About = () => {

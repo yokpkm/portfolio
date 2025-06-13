@@ -1,5 +1,5 @@
 import { Grid, Row, Col } from "antd";
-import { ButtonIcon } from "../components/Button";
+import { ButtonIcon } from "../components/CTA";
 import { TextHeadline, TextBody, TextCaption } from "../components/Text";
 import {
   MailFilled,
