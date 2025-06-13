@@ -91,6 +91,9 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                       <StyledTag>Design System</StyledTag>
                     </Col>
                     <Col>
+                      <StyledTag>User Research</StyledTag>
+                    </Col>
+                    <Col>
                       <StyledTag>UX Research</StyledTag>
                     </Col>
                     <Col>
@@ -203,7 +206,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                   </TextModalContent>
                 </Col>
                 <Col span={24}>
-                  <TextLabel style={{ marginTop: 24 }}>UX RESEARCH</TextLabel>
+                  <TextLabel style={{ marginTop: 24 }}>USER RESEARCH</TextLabel>
                   <TextModalTitle>Interview</TextModalTitle>
                   <TextModalContent style={{ marginTop: 8 }}>
                     As part of the UX research, I conducted contextual inquiry

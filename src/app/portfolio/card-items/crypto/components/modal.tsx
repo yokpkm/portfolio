@@ -93,10 +93,13 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                       <StyledTag>Design System</StyledTag>
                     </Col>
                     <Col>
-                      <StyledTag>UX Research</StyledTag>
+                      <StyledTag>UX Writing</StyledTag>
                     </Col>
                     <Col>
-                      <StyledTag>UX Writing</StyledTag>
+                      <StyledTag>User Research</StyledTag>
+                    </Col>
+                    <Col>
+                      <StyledTag>UX Research</StyledTag>
                     </Col>
                     <Col>
                       <StyledTag>Figma</StyledTag>

@@ -88,7 +88,7 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
                       <StyledTag>UI Design</StyledTag>
                     </Col>
                     <Col>
-                      <StyledTag>UX Research</StyledTag>
+                      <StyledTag>User Research</StyledTag>
                     </Col>
 
                     <Col>
@@ -120,7 +120,7 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
                   </TextModalContent>
                 </Col>
                 <Col span={24}>
-                  <TextLabel style={{ marginTop: 24 }}>UX RESEARCH</TextLabel>
+                  <TextLabel style={{ marginTop: 24 }}>USER RESEARCH</TextLabel>
                   <TextModalTitle>
                     Understanding the User (Assumption-Based Approach)
                   </TextModalTitle>

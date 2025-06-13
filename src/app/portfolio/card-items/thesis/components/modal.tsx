@@ -88,9 +88,11 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                       <StyledTag>UI Design</StyledTag>
                     </Col>
                     <Col>
+                      <StyledTag>User Research</StyledTag>
+                    </Col>
+                    <Col>
                       <StyledTag>UX Research</StyledTag>
                     </Col>
-
                     <Col>
                       <StyledTag>Adobe XD</StyledTag>
                     </Col>
@@ -278,7 +280,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                   </Col>
                 )}
                 <Col span={24}>
-                  <TextLabel style={{ marginTop: 24 }}>UX RESEARCH</TextLabel>
+                  <TextLabel style={{ marginTop: 24 }}>USER RESEARCH</TextLabel>
                   <TextModalTitle>Interview</TextModalTitle>
                   <TextModalContent style={{ marginTop: 8 }}>
                     I conducted semi-structured, open-ended interviews with 6

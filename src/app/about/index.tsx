@@ -76,7 +76,7 @@ const About = () => {
                   >
                     •
                   </b>
-                  UX Research
+                  UX Writing
                 </TextCaption>
               </Col>
               <Col xs={12}>
@@ -89,7 +89,7 @@ const About = () => {
                   >
                     •
                   </b>
-                  UX Writing
+                  UX Research
                 </TextCaption>
               </Col>
               <Col xs={12}>
@@ -182,7 +182,7 @@ const About = () => {
                   >
                     •
                   </b>
-                  UX Research
+                  UX Writing
                 </TextCaption>
               </Col>
             </Row>
@@ -197,7 +197,7 @@ const About = () => {
                   >
                     •
                   </b>
-                  UX Writing
+                  UX Research
                 </TextCaption>
               </Col>
               <Col sm={8} md={8} lg={6} xl={5} xxl={4}>
