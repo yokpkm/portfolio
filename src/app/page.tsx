@@ -17,7 +17,7 @@ import { FooterMobile } from "./components/layout/components/mobile/footer";
 import About from "./about";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
-import Loader from "./components/loader";
+import Loader from "./components/loading";
 
 const AppPage = () => {
   const { useBreakpoint } = Grid;

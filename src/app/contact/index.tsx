@@ -1,5 +1,3 @@
-"use client";
-
 import { Grid, Row, Col } from "antd";
 import { ButtonIcon } from "../components/button";
 import { TextHeadline, TextBody, TextCaption } from "../components/typography";
