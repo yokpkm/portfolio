@@ -5,11 +5,11 @@ import { ThemeType } from "@/app/constants";
 import { Image } from "@heroui/react";
 import { Link } from "react-scroll";
 import { Row, Col, Button } from "antd";
-import { ButtonIcon } from "../../../button";
-import { DividerMenu } from "../../../divider";
-import { StyledDrawer } from "../../../drawer";
-import { StyledSwitch } from "../../../toggle";
-import { TextMenu } from "../../../typography";
+import { ButtonIcon } from "../../../Button";
+import { DividerMenu } from "../../../Divider";
+import { StyledDrawer } from "../../../Drawer";
+import { StyledSwitch } from "../../../Switch";
+import { TextMenu } from "../../../Typography";
 import {
   MoonFilled,
   MailFilled,

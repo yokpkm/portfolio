@@ -5,8 +5,8 @@ import { ThemeType } from "@/app/constants";
 import { animateScroll } from "react-scroll";
 import { Link } from "react-scroll";
 import { Row, Col } from "antd";
-import { StyledSwitch } from "../../../toggle";
-import { TextMenu } from "../../../typography";
+import { StyledSwitch } from "../../../Switch";
+import { TextMenu } from "../../../Typography";
 import { MoonFilled } from "@ant-design/icons";
 
 interface Props {
