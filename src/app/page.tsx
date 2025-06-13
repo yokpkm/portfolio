@@ -9,15 +9,15 @@ import { ThemeType } from "./constants";
 import { LightTheme, DarkTheme, lightTheme, darkTheme } from "./theme";
 import customTheme from "./configs/theme-config";
 import { animateScroll } from "react-scroll";
-import { MainLayout } from "./components/Layout";
-import { NavbarDesktop } from "./components/Layout/components/desktop/navbar";
-import { NavbarMobile } from "./components/Layout/components/mobile/navbar";
-import { FooterDesktop } from "./components/Layout/components/desktop/footer";
-import { FooterMobile } from "./components/Layout/components/mobile/footer";
+import { MainLayout } from "./components/layout";
+import { NavbarDesktop } from "./components/layout/components/desktop/navbar";
+import { NavbarMobile } from "./components/layout/components/mobile/navbar";
+import { FooterDesktop } from "./components/layout/components/desktop/footer";
+import { FooterMobile } from "./components/layout/components/mobile/footer";
 import About from "./about";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
-import Loader from "./components/Loader";
+import Loader from "./components/loader";
 
 const AppPage = () => {
   const { useBreakpoint } = Grid;

@@ -1,6 +1,6 @@
 import { Grid, Row, Col } from "antd";
-import { ButtonIcon } from "../components/Button";
-import { TextHeadline, TextBody, TextCaption } from "../components/Text";
+import { ButtonIcon } from "../components/button";
+import { TextHeadline, TextBody, TextCaption } from "../components/text";
 import {
   MailFilled,
   LinkedinFilled,

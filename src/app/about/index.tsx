@@ -1,6 +1,6 @@
 import { Grid, Row, Col } from "antd";
-import { ButtonPrimary, ButtonSecondary } from "../components/Button";
-import { TextHeadline, TextBody, TextCaption } from "../components/Text";
+import { ButtonPrimary, ButtonSecondary } from "../components/button";
+import { TextHeadline, TextBody, TextCaption } from "../components/text";
 
 const About = () => {
   const { useBreakpoint } = Grid;

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
-import { StyledModal } from "@/app/components/Modal";
-import { StyledTag } from "@/app/components/Tag";
+import { StyledModal } from "@/app/components/modal";
+import { StyledTag } from "@/app/components/tag";
 import {
   TextHeadline,
   TextCaption,
@@ -11,7 +11,7 @@ import {
   TextModalTitle,
   TextModalSubtitle,
   TextModalContent,
-} from "@/app/components/Text";
+} from "@/app/components/text";
 
 interface Props {
   open: boolean;

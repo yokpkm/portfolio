@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
-import { StyledModal } from "@/app/components/Modal";
-import { StyledTag } from "@/app/components/Tag";
+import { StyledModal } from "@/app/components/modal";
+import { StyledTag } from "@/app/components/tag";
 import {
   TextHeadline,
   TextCaption,
@@ -12,7 +12,7 @@ import {
   TextModalSubtitle,
   TextModalContent,
   TextModalLink,
-} from "@/app/components/Text";
+} from "@/app/components/text";
 import { ExportOutlined } from "@ant-design/icons";
 
 interface Props {

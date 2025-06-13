@@ -1,8 +1,8 @@
 import { Image } from "@heroui/react";
 import { Row, Col } from "antd";
 import { ModalCrypto } from "./components/modal";
-import { StyledCard } from "@/app/components/Card";
-import { TextCardTitle, TextCardContent } from "@/app/components/Text";
+import { StyledCard } from "@/app/components/card";
+import { TextCardTitle, TextCardContent } from "@/app/components/text";
 
 interface Props {
   open: boolean;
