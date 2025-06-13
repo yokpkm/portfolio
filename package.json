@@ -17,13 +17,13 @@
     "@types/react-scroll": "^1.8.10",
     "@types/styled-components": "^5.1.34",
     "antd": "^5.26.0",
-    "framer-motion": "^12.17.3",
+    "framer-motion": "^12.18.1",
     "next": "15.3.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-scroll": "^1.9.3",
     "react-spinners": "^0.17.0",
-    "styled-components": "^6.1.18"
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@types/node": "24.0.1",
