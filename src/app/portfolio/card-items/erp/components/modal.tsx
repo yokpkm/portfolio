@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
 import { StyledModal } from "@/app/components/modal";
 import { StyledTag } from "@/app/components/tag";
@@ -109,12 +109,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
+                    {/* <Image
                       src="/image/card/erp.svg"
                       alt=""
                       width="100%"
                       style={{ borderRadius: 16 }}
-                    />
+                    /> */}
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -337,12 +337,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/style-guide.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -378,12 +378,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/product/01-list.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       📋{" "}
                       <b
@@ -399,12 +399,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/product/02-details.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       🔍{" "}
                       <b
@@ -421,12 +421,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/product/03-form.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       📝{" "}
                       <b
@@ -453,12 +453,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/order/01-list.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       📋{" "}
                       <b
@@ -475,12 +475,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/order/02-details.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       🔍{" "}
                       <b
@@ -497,12 +497,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/order/03-form.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       📝{" "}
                       <b
@@ -529,12 +529,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/sale-order/01-list.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       📋{" "}
                       <b
@@ -550,12 +550,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/sale-order/02-form.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       📝{" "}
                       <b
@@ -598,12 +598,12 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
+                    {/* <Image
                       src="/image/modal/erp/mobile-responsive.svg"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
                     <TextCaption style={{ marginTop: 20 }}>
                       📱{" "}
                       <b
@@ -634,12 +634,31 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/erp/database.svg"
+                    {/* <Image
+                      src="/image/modal/erp/database.png"
                       alt=""
                       width="100%"
                       style={{ display: "flex" }}
-                    />
+                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "64/77",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/database.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          borderRadius: 16,
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       🗄️{" "}
                       <b
