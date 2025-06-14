@@ -29,7 +29,7 @@ export const CardCrypto: React.FC<Props> = ({ open, setOpen }) => {
         >
           <Row gutter={[0, 4]} style={{ marginTop: 12 }}>
             <Col span={24}>
-              <div
+              {/* <div
                 style={{
                   position: "relative",
                   width: "100%",
@@ -47,6 +47,22 @@ export const CardCrypto: React.FC<Props> = ({ open, setOpen }) => {
                     borderRadius: 16,
                     objectFit: "cover",
                   }}
+                />
+              </div> */}
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  aspectRatio: "1 / 1",
+                  marginBottom: 32,
+                }}
+              >
+                <img
+                  src="/image/card/crypto.svg"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  style={{ borderRadius: 16 }}
                 />
               </div>
             </Col>
