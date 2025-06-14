@@ -1,4 +1,4 @@
-import { Image } from "@heroui/react";
+import Image from "next/image";
 import { Row, Col } from "antd";
 import { ModalERP } from "./components/modal";
 import { StyledCard } from "@/app/components/card";
@@ -16,17 +16,30 @@ export const CardERP: React.FC<Props> = ({ open, setOpen }) => {
       <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
         <StyledCard
           cover={
-            <Image
-              src="/image/card/erp.svg"
-              alt=""
-              width="100%"
-              style={{ borderRadius: 16 }}
-            />
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                aspectRatio: "1/1",
+              }}
+            >
+              <Image
+                src="/image/card/erp.png"
+                alt=""
+                quality={100}
+                priority
+                fill
+                style={{
+                  borderRadius: 16,
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           }
           hoverable
           onClick={() => setOpen(true)}
         >
-          <Row gutter={[0, 4]} style={{ marginTop: 12 }}>
+          <Row style={{ marginTop: 20 }}>
             <Col span={24}>
               <TextCardTitle>Order Management Website</TextCardTitle>
             </Col>

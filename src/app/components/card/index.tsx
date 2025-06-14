@@ -17,6 +17,6 @@ export const StyledCard = styled(Card)<PropsTheme>`
   }
 
   &&.ant-card .ant-card-body {
-    // padding: 0 4px;
+    padding: 0 4px;
   }
 `;
