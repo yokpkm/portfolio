@@ -375,7 +375,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                         width: "100%",
                         maxWidth: 636,
                         margin: "0 auto",
-                        aspectRatio: "1.76666667",
+                        aspectRatio: "1.63076923",
                       }}
                     >
                       <Image
