@@ -30,8 +30,8 @@ export const CardThesis: React.FC<Props> = ({ open, setOpen }) => {
                 priority
                 fill
                 style={{
-                  borderRadius: 16,
                   objectFit: "cover",
+                  borderRadius: 16,
                 }}
               />
             </div>

@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
 import { StyledModal } from "@/app/components/modal";
 import { StyledTag } from "@/app/components/tag";
@@ -90,7 +90,6 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
                     <Col>
                       <StyledTag>User Research</StyledTag>
                     </Col>
-
                     <Col>
                       <StyledTag>Adobe XD</StyledTag>
                     </Col>
@@ -99,12 +98,25 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
 
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
-                      src="/image/card/perfume.svg"
-                      alt=""
-                      width="100%"
-                      style={{ borderRadius: 16 }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1/1",
+                      }}
+                    >
+                      <Image
+                        src="/image/card/perfume.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                          borderRadius: 16,
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -189,12 +201,26 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
-                      src="/image/modal/perfume/persona.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: 640,
+                        margin: "0 auto",
+                        aspectRatio: "1.42857143",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/perfume/persona.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -228,12 +254,24 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/perfume/visual-design.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "2.21",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/perfume/visual-design.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
 

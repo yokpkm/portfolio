@@ -109,12 +109,25 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    {/* <Image
-                      src="/image/card/erp.svg"
-                      alt=""
-                      width="100%"
-                      style={{ borderRadius: 16 }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1/1",
+                      }}
+                    >
+                      <Image
+                        src="/image/card/erp.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                          borderRadius: 16,
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -337,12 +350,26 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    {/* <Image
-                      src="/image/modal/erp/style-guide.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: 640,
+                        margin: "0 auto",
+                        aspectRatio: "1.30612245",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/style-guide.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -378,12 +405,24 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/product/01-list.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "0.98405467",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/product/01-list.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📋{" "}
                       <b
@@ -399,12 +438,24 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/product/02-details.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.06403941",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/product/02-details.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       🔍{" "}
                       <b
@@ -421,12 +472,24 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/product/03-form.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "0.50174216",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/product/03-form.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📝{" "}
                       <b
@@ -453,12 +516,24 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/order/01-list.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.10485934",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/order/01-list.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📋{" "}
                       <b
@@ -475,12 +550,24 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/order/02-details.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "0.82758621",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/order/02-details.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       🔍{" "}
                       <b
@@ -497,12 +584,24 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/order/03-form.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "0.82758621",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/order/03-form.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📝{" "}
                       <b
@@ -529,12 +628,24 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/sale-order/01-list.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.04096386",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/sale-order/01-list.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📋{" "}
                       <b
@@ -550,12 +661,24 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/sale-order/02-form.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.04",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/sale-order/02-form.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📝{" "}
                       <b
@@ -598,12 +721,25 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/mobile-responsive.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.56",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/erp/mobile-responsive.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          borderRadius: 16,
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📱{" "}
                       <b
@@ -634,17 +770,13 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <Image
-                      src="/image/modal/erp/database.png"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    /> */}
                     <div
                       style={{
                         position: "relative",
                         width: "100%",
-                        aspectRatio: "64/77",
+                        maxWidth: 640,
+                        margin: "0 auto",
+                        aspectRatio: "0.8311",
                       }}
                     >
                       <Image

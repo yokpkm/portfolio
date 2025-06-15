@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
 import { StyledModal } from "@/app/components/modal";
 import { StyledTag } from "@/app/components/tag";
@@ -100,12 +100,25 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
-                      src="/image/card/thesis.svg"
-                      alt=""
-                      width="100%"
-                      style={{ borderRadius: 16 }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1/1",
+                      }}
+                    >
+                      <Image
+                        src="/image/card/thesis.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                          borderRadius: 16,
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -134,12 +147,26 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 {(md || lg || xl || xxl) && (
                   <Col span={24}>
                     <Row justify="center">
-                      <Image
-                        src="/image/modal/thesis/process.svg"
-                        alt=""
-                        width="100%"
-                        style={{ display: "flex" }}
-                      />
+                      <div
+                        style={{
+                          position: "relative",
+                          width: "100%",
+                          maxWidth: 800,
+                          margin: "0 auto",
+                          aspectRatio: "25",
+                        }}
+                      >
+                        <Image
+                          src="/image/modal/thesis/process.png"
+                          alt=""
+                          quality={100}
+                          priority
+                          fill
+                          style={{
+                            objectFit: "cover",
+                          }}
+                        />
+                      </div>
                     </Row>
                     <Row justify="center">
                       <Col span={24} style={{ maxWidth: 800 }}>
@@ -538,12 +565,26 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
-                      src="/image/modal/thesis/web-structure.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: 640,
+                        margin: "0 auto",
+                        aspectRatio: "1.25",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/thesis/web-structure.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -557,12 +598,26 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
-                      src="/image/modal/thesis/style-guide.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        maxWidth: 640,
+                        margin: "0 auto",
+                        aspectRatio: "0.91559371",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/thesis/style-guide.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
 
@@ -576,12 +631,24 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/thesis/01-project.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.77777778",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/thesis/01-project.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       🗂️{" "}
                       <b
@@ -597,12 +664,24 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/thesis/02-news.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.77777778",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/thesis/02-news.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📰{" "}
                       <b
@@ -618,12 +697,24 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/thesis/03-form.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.77777778",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/thesis/03-form.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📝{" "}
                       <b
@@ -639,12 +730,24 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/thesis/04-folder.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.77777778",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/thesis/04-folder.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       📁{" "}
                       <b
@@ -660,12 +763,24 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/thesis/05-progress.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.77777778",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/thesis/05-progress.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <TextCaption style={{ marginTop: 20 }}>
                       🗓️{" "}
                       <b
@@ -692,12 +807,26 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
                 {(md || lg || xl || xxl) && (
                   <Col span={24}>
                     <Row justify="center">
-                      <Image
-                        src="/image/modal/thesis/feedback.svg"
-                        alt=""
-                        width="100%"
-                        style={{ borderRadius: 16 }}
-                      />
+                      <div
+                        style={{
+                          position: "relative",
+                          width: "100%",
+                          maxWidth: 800,
+                          margin: "0 auto",
+                          aspectRatio: "5.26315789",
+                        }}
+                      >
+                        <Image
+                          src="/image/modal/thesis/feedback.png"
+                          alt=""
+                          quality={100}
+                          priority
+                          fill
+                          style={{
+                            objectFit: "cover",
+                          }}
+                        />
+                      </div>
                     </Row>
                   </Col>
                 )}

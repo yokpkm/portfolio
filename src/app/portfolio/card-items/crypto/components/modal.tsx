@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Image } from "@heroui/react";
 import { Grid, Row, Col } from "antd";
 import { StyledModal } from "@/app/components/modal";
 import { StyledTag } from "@/app/components/tag";
@@ -108,12 +108,25 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
-                      src="/image/card/crypto.svg"
-                      alt=""
-                      width="100%"
-                      style={{ borderRadius: 16 }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1/1",
+                      }}
+                    >
+                      <Image
+                        src="/image/card/crypto.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                          borderRadius: 16,
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -149,12 +162,24 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                 </Col>
                 <Col span={24}>
                   <Row justify="center">
-                    <Image
-                      src="/image/modal/crypto/persona.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1.665",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/crypto/persona.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                   </Row>
                 </Col>
                 <Col span={24}>
@@ -260,12 +285,24 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                 {/* wallet lock feature */}
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/crypto/wallet-lock.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "2.21",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/crypto/wallet-lock.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <a
                       href="https://www.orbixtrade.com/en/blog/article/what-is-wallet-lock-orbix"
                       target="_blank"
@@ -289,12 +326,24 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                 {/* price alert feature */}
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/crypto/price-alert.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "2.21",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/crypto/price-alert.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <a
                       href="https://www.orbixtrade.com/en/blog/article/get-to-know-orbix-price-alert"
                       target="_blank"
@@ -318,12 +367,24 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                 {/* p&l feature */}
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    <Image
-                      src="/image/modal/crypto/p&l.svg"
-                      alt=""
-                      width="100%"
-                      style={{ display: "flex" }}
-                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "2.21",
+                      }}
+                    >
+                      <Image
+                        src="/image/modal/crypto/p&l.png"
+                        alt=""
+                        quality={100}
+                        priority
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
                     <a
                       href="https://www.orbixtrade.com/en/blog/article/what-is-orbix-balance"
                       target="_blank"
