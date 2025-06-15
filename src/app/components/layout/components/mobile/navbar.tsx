@@ -1,8 +1,8 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import styled from "styled-components";
 import { PropsTheme } from "@/app/theme";
 import { ThemeType } from "@/app/constants";
-import { Image } from "@heroui/react";
 import { Link } from "react-scroll";
 import { Row, Col, Button } from "antd";
 import { ButtonIcon } from "../../../button";
@@ -44,6 +44,8 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
                   <Image
                     src="/icon/ic-menu-lightTheme.svg"
                     alt=""
+                    quality={100}
+                    priority
                     width={24}
                     height={24}
                   />
@@ -51,6 +53,8 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
                   <Image
                     src="/icon/ic-menu-darkTheme.svg"
                     alt=""
+                    quality={100}
+                    priority
                     width={24}
                     height={24}
                   />
