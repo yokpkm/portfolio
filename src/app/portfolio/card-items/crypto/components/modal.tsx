@@ -291,7 +291,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                       style={{
                         position: "relative",
                         width: "100%",
-                        aspectRatio: "2.21",
+                        aspectRatio: "2.21538462",
                       }}
                     >
                       <Image
@@ -332,7 +332,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                       style={{
                         position: "relative",
                         width: "100%",
-                        aspectRatio: "2.21",
+                        aspectRatio: "2.21538462",
                       }}
                     >
                       <Image
@@ -369,31 +369,11 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
                 {/* p&l feature */}
                 <Col span={24}>
                   <Row justify={xs && !sm ? "start" : "center"}>
-                    {/* <div
-                      style={{
-                        position: "relative",
-                        width: "100%",
-                        aspectRatio: "2.21",
-                      }}
-                    >
-                      <Image
-                        src="/image/modal/crypto/p&l.png"
-                        alt=""
-                        quality={100}
-                        priority
-                        fill
-                        style={{
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div> */}
                     <div
                       style={{
                         position: "relative",
                         width: "100%",
-                        maxWidth: 636,
-                        margin: "0 auto",
-                        aspectRatio: "1.63265306",
+                        aspectRatio: "2.21538462",
                       }}
                     >
                       <Image
