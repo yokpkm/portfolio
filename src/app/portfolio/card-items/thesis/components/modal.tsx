@@ -48,9 +48,11 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
             <Image
               src="/icon/ic-close-default.svg"
               alt=""
+              quality={100}
+              priority
               width={20}
               height={20}
-              style={{ display: "flex", cursor: "pointer" }}
+              style={{ cursor: "pointer" }}
             />
           )
         }

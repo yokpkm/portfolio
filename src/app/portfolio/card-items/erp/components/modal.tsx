@@ -48,6 +48,8 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
             <Image
               src="/icon/ic-close-default.svg"
               alt=""
+              quality={100}
+              priority
               width={20}
               height={20}
               style={{ display: "flex", cursor: "pointer" }}
@@ -725,7 +727,9 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                       style={{
                         position: "relative",
                         width: "100%",
-                        aspectRatio: "1.56",
+                        maxWidth: 800,
+                        margin: "0 auto",
+                        aspectRatio: "1.5625",
                       }}
                     >
                       <Image
@@ -735,7 +739,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                         priority
                         fill
                         style={{
-                          borderRadius: 16,
                           objectFit: "cover",
                         }}
                       />
@@ -776,7 +779,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                         width: "100%",
                         maxWidth: 640,
                         margin: "0 auto",
-                        aspectRatio: "0.8311",
+                        aspectRatio: "0.83116883",
                       }}
                     >
                       <Image

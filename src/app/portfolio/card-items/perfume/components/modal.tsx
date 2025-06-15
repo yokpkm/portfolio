@@ -48,6 +48,8 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
             <Image
               src="/icon/ic-close-default.svg"
               alt=""
+              quality={100}
+              priority
               width={20}
               height={20}
               style={{ display: "flex", cursor: "pointer" }}
@@ -258,7 +260,7 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
                       style={{
                         position: "relative",
                         width: "100%",
-                        aspectRatio: "2.21",
+                        aspectRatio: "2.21538462",
                       }}
                     >
                       <Image
