@@ -752,7 +752,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                       >
                         Responsive
                       </b>{" "}
-                      – Example mobile responsive for product feature
+                      – Mobile-responsive example for a product feature
                     </TextCaption>
                   </Row>
                 </Col>
@@ -803,7 +803,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
                       >
                         Database
                       </b>{" "}
-                      – Example database diagram for sale order
+                      – Database diagram example for a sale order feature
                     </TextCaption>
                   </Row>
                 </Col>
