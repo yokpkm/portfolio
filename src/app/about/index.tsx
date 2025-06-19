@@ -243,7 +243,7 @@ const About = () => {
           <Col>
             <a
               target={"_blank"}
-              href={"mailto:premkamon.work@gmail.com"}
+              href={"mailto:premkamon.boo@gmail.com"}
               rel="noreferrer"
             >
               <ButtonSecondary>Get in touch</ButtonSecondary>

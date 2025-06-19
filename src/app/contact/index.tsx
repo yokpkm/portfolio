@@ -47,7 +47,7 @@ const Contact = () => {
           <Col>
             <a
               target={"_blank"}
-              href={"mailto:premkamon.work@gmail.com"}
+              href={"mailto:premkamon.boo@gmail.com"}
               rel="noreferrer"
             >
               <ButtonIcon type="link">

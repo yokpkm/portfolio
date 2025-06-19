@@ -85,6 +85,11 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
           </Link>
         </Row>
         <Row justify="center" style={{ marginTop: 40 }}>
+          <a href="/Resume-Premkamon-UXUI.pdf" target="_blank" rel="noreferrer">
+            <TextMenu>RESUME</TextMenu>
+          </a>
+        </Row>
+        <Row justify="center" style={{ marginTop: 40 }}>
           <Link
             to="portfolio"
             smooth={true}
@@ -106,11 +111,6 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
             <TextMenu>CONTACT</TextMenu>
           </Link>
         </Row>
-        <Row justify="center" style={{ marginTop: 40 }}>
-          <a href="/Resume-Premkamon-UXUI.pdf" target="_blank" rel="noreferrer">
-            <TextMenu>RESUME</TextMenu>
-          </a>
-        </Row>
         <DividerMenu />
         <Row
           justify="center"
@@ -121,7 +121,7 @@ export const NavbarMobile: React.FC<Props> = ({ theme, themeToggle }) => {
           <Col>
             <a
               target={"_blank"}
-              href={"mailto:premkamon.work@gmail.com"}
+              href={"mailto:premkamon.boo@gmail.com"}
               rel="noreferrer"
             >
               <ButtonIcon type="link">
