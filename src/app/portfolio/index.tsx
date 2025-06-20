@@ -1,12 +1,10 @@
-"use client";
-
 import { useState } from "react";
 import { Grid, Row } from "antd";
 import { TextCaption, TextHeadline } from "../components/text";
-import { CardPerfume } from "./card-items/perfume";
-import { CardThesis } from "./card-items/thesis";
-import { CardERP } from "./card-items/erp";
-import { CardCrypto } from "./card-items/crypto";
+import { CardPerfume } from "./items/perfume";
+import { CardThesis } from "./items/thesis";
+import { CardERP } from "./items/erp";
+import { CardCrypto } from "./items/crypto";
 
 const Portfolio = () => {
   const { useBreakpoint } = Grid;

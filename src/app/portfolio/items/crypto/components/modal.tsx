@@ -14,7 +14,7 @@ import {
   TextModalLink,
 } from "@/app/components/text";
 import { ExportOutlined } from "@ant-design/icons";
-import { CloseIcon } from "./close";
+import { CloseIcon } from "../../close-icon";
 
 interface Props {
   open: boolean;
@@ -31,7 +31,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
     if (open) {
       const timer = setTimeout(() => {
         setShowCloseIcon(true);
-      }, 800);
+      }, 600);
       return () => clearTimeout(timer);
     } else {
       setShowCloseIcon(false);
@@ -50,7 +50,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
             onCancel={() => setOpen(false)}
             closable={false}
             destroyOnHidden
-            styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.85)" } }}
+            styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.8)" } }}
           >
             <motion.div
               initial={{ opacity: 0 }}

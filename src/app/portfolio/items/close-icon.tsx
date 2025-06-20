@@ -7,6 +7,7 @@ interface Props {
 
 export const CloseIcon: React.FC<Props> = ({ onClose }) => {
   const [close, setClose] = useState(false);
+  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     setClose(true);
@@ -16,18 +17,21 @@ export const CloseIcon: React.FC<Props> = ({ onClose }) => {
 
   return createPortal(
     <img
-      src="/icon/ic-close.png"
+      src="/icon/ic-close-default.svg"
       alt="close"
       width={24}
       height={24}
       onClick={onClose}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
       style={{
         position: "fixed",
         top: 8,
         right: 8,
         zIndex: 9999,
         cursor: "pointer",
-        opacity: 0.8,
+        opacity: hover ? 1 : 0.8,
+        transition: "opacity 0.2s",
       }}
     />,
     document.body
