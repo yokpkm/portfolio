@@ -16,7 +16,7 @@ export const StyledModal = styled(Modal)<PropsTheme>`
   }
 
   .ant-modal-close {
-    position: fixed;
+    position: relative;
     top: 4px;
 
     // inset-inline-end: 4px;
