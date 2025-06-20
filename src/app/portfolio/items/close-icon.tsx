@@ -30,7 +30,7 @@ export const CloseIcon: React.FC<Props> = ({ onClose }) => {
         right: 8,
         zIndex: 9999,
         cursor: "pointer",
-        opacity: hover ? 1 : 0.8,
+        opacity: hover ? 1 : 0.85,
         transition: "opacity 0.2s",
       }}
     />,

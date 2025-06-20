@@ -48,7 +48,7 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
             onCancel={() => setOpen(false)}
             closable={false}
             destroyOnHidden
-            styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.8)" } }}
+            styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.85)" } }}
           >
             <motion.div
               initial={{ opacity: 0 }}
