@@ -14,7 +14,7 @@ import {
   TextModalLink,
 } from "@/app/components/text";
 import { ExportOutlined } from "@ant-design/icons";
-import { CloseIconPortal } from "./close";
+import { CloseIcon } from "./close";
 
 interface Props {
   open: boolean;
@@ -42,15 +42,15 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
     <>
       {open && (
         <>
-          <CloseIconPortal onClose={() => setOpen(false)} />
+          {showCloseIcon && <CloseIcon onClose={() => setOpen(false)} />}
           <StyledModal
             title=""
             footer=""
             open={open}
             onCancel={() => setOpen(false)}
-            destroyOnHidden
             closable={false}
-            styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.8)" } }}
+            destroyOnHidden
+            styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.85)" } }}
           >
             <motion.div
               initial={{ opacity: 0 }}

@@ -12,7 +12,7 @@ export const StyledCard = styled(Card)<PropsTheme>`
 
   &&.ant-card:hover {
     img {
-      opacity: 0.8;
+      opacity: 0.85;
     }
   }
 

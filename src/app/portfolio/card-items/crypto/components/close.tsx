@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
-export function CloseIconPortal({ onClose }: { onClose: () => void }) {
-  const [mounted, setMounted] = useState(false);
+interface Props {
+  onClose: () => void;
+}
+
+export const CloseIcon: React.FC<Props> = ({ onClose }) => {
+  const [close, setClose] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setClose(true);
   }, []);
 
-  if (!mounted) return null;
+  if (!close) return null;
 
   return createPortal(
     <img
@@ -28,4 +32,4 @@ export function CloseIconPortal({ onClose }: { onClose: () => void }) {
     />,
     document.body
   );
-}
+};
