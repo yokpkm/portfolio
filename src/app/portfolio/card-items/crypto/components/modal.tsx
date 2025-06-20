@@ -58,6 +58,17 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
         //     />
         //   )
         // }
+        closeIcon={
+          showCloseIcon && (
+            <img
+              src="/icon/ic-close-default.svg"
+              alt=""
+              width={20}
+              height={20}
+              style={{ display: "flex", cursor: "pointer" }}
+            />
+          )
+        }
         styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.8)" } }}
       >
         <motion.div
