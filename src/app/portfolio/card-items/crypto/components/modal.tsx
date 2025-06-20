@@ -65,12 +65,6 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
               alt=""
               width={20}
               height={20}
-              style={{
-                display: "flex",
-                cursor: "pointer",
-                background: "red",
-                zIndex: 9999,
-              }}
             />
           )
         }

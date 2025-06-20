@@ -15,12 +15,11 @@ export const StyledModal = styled(Modal)<PropsTheme>`
     align-items: center;
   }
 
-  .ant-modal-close {
-    position: relative;
-    top: 4px;
-
-    // inset-inline-end: 4px;
-  }
+  // .ant-modal-close {
+  //   position: fixed;
+  //   top: 4px;
+  //   inset-inline-end: 4px;
+  // }
 
   .ant-modal-close-x {
     opacity: 0.8;
