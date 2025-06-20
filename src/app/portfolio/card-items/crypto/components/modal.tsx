@@ -40,8 +40,8 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
   return (
     <>
       <StyledModal
-        title={null}
-        footer={null}
+        title=""
+        footer=""
         open={open}
         onCancel={() => setOpen(false)}
         destroyOnHidden
@@ -65,7 +65,12 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
               alt=""
               width={20}
               height={20}
-              style={{ display: "flex", cursor: "pointer" }}
+              style={{
+                display: "flex",
+                cursor: "pointer",
+                background: "red",
+                zIndex: 9999,
+              }}
             />
           )
         }
