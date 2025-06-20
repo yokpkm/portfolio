@@ -1,3 +1,5 @@
+import "antd/dist/reset.css";
+
 import { Inter } from "next/font/google";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 

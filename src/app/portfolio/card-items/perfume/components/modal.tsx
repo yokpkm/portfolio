@@ -46,10 +46,9 @@ export const ModalPerfume: React.FC<Props> = ({ open, setOpen }) => {
         closeIcon={
           showCloseIcon && (
             <Image
-              src="/icon/ic-close-default.svg"
+              src="/icon/ic-close.png"
               alt=""
               quality={100}
-              priority
               width={20}
               height={20}
               style={{ display: "flex", cursor: "pointer" }}

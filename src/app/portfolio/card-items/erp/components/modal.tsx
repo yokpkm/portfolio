@@ -49,7 +49,6 @@ export const ModalERP: React.FC<Props> = ({ open, setOpen }) => {
               src="/icon/ic-close-default.svg"
               alt=""
               quality={100}
-              priority
               width={20}
               height={20}
               style={{ display: "flex", cursor: "pointer" }}

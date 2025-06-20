@@ -45,15 +45,7 @@ export const ModalThesis: React.FC<Props> = ({ open, setOpen }) => {
         destroyOnHidden
         closeIcon={
           showCloseIcon && (
-            <Image
-              src="/icon/ic-close-default.svg"
-              alt=""
-              quality={100}
-              priority
-              width={20}
-              height={20}
-              style={{ display: "flex", cursor: "pointer" }}
-            />
+            <img src="/icon/ic-close.png" alt="" width={20} height={20} />
           )
         }
         styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.8)" } }}
