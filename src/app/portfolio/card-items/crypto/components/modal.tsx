@@ -14,6 +14,7 @@ import {
   TextModalLink,
 } from "@/app/components/text";
 import { ExportOutlined } from "@ant-design/icons";
+import { CloseIconPortal } from "./close";
 
 interface Props {
   open: boolean;
@@ -39,36 +40,14 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
 
   return (
     <>
+      <CloseIconPortal onClose={() => setOpen(false)} />
       <StyledModal
         title=""
         footer=""
         open={open}
         onCancel={() => setOpen(false)}
         destroyOnHidden
-        // closeIcon={
-        //   showCloseIcon && (
-        //     <Image
-        //       src="/icon/ic-close-default.svg"
-        //       alt=""
-        //       quality={100}
-        //       priority
-        //       width={20}
-        //       height={20}
-        //       style={{ display: "flex", cursor: "pointer" }}
-        //     />
-        //   )
-        // }
-        closable
-        closeIcon={
-          showCloseIcon && (
-            <img
-              src="/icon/ic-close-default.svg"
-              alt=""
-              width={20}
-              height={20}
-            />
-          )
-        }
+        closable={false}
         styles={{ mask: { backgroundColor: "rgba(0, 0, 0, 0.8)" } }}
       >
         <motion.div

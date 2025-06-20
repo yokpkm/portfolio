@@ -15,17 +15,17 @@ export const StyledModal = styled(Modal)<PropsTheme>`
     align-items: center;
   }
 
-  .ant-modal-close {
-    position: fixed;
-    top: 4px;
-    inset-inline-end: 4px;
-  }
+  // .ant-modal-close {
+  //   position: fixed;
+  //   top: 4px;
+  //   inset-inline-end: 4px;
+  // }
 
-  .ant-modal-close-x {
-    position: relative;
-    z-index: 1020;
-    opacity: 0.8;
-  }
+  // .ant-modal-close-x {
+  //   position: relative;
+  //   z-index: 1020;
+  //   opacity: 0.8;
+  // }
 
   .ant-modal-close-x:hover {
     opacity: 1;
