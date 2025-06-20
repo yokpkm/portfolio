@@ -19,8 +19,8 @@ export function CloseIconPortal({ onClose }: { onClose: () => void }) {
       onClick={onClose}
       style={{
         position: "fixed",
-        top: 16,
-        right: 16,
+        top: 8,
+        right: 8,
         zIndex: 9999,
         cursor: "pointer",
         opacity: 0.8,
