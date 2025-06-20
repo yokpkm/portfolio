@@ -44,7 +44,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
         footer=""
         open={open}
         onCancel={() => setOpen(false)}
-        // destroyOnHidden
+        destroyOnHidden
         // closeIcon={
         //   showCloseIcon && (
         //     <Image
@@ -58,6 +58,7 @@ export const ModalCrypto: React.FC<Props> = ({ open, setOpen }) => {
         //     />
         //   )
         // }
+        closable
         closeIcon={
           showCloseIcon && (
             <img
